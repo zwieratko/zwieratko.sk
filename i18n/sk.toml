@@ -1,0 +1,60 @@
+# Translations for English
+# https://gohugo.io/content-management/multilingual/#translation-of-strings
+
+# 404.html
+#
+[notFound]
+#other = "Oops, page not found…"
+other = "Och, stránka sa nenašla…"
+
+[home]
+#other = "Home"
+other = "Domov"
+
+[archives]
+#other = "Archives"
+other = "Archív"
+
+# posts/single.html
+#
+[seeAlso]
+#other = "See Also"
+other = "Pozri tiež"
+
+[wordCount]
+#other = "{{ .WordCount }} Words"
+#one = "{{ .WordCount }} slovo"
+#few = "{{ .WordCount }} slová"
+#many = "{{ .WordCount }} slov"
+other = "{{ .WordCount }} slov"
+
+[tableOfContents]
+#other = "Table of Contents"
+other = "Obsah"
+
+[newer]
+#other = "Newer"
+other = "Novšie"
+
+[older]
+#other = "Older"
+other = "Staršie"
+
+# partials/header.html
+#
+[menu]
+other = "Menu"
+
+[featuredImage]
+#other = "Featured Image"
+other = "Odporúčaný obrázok"
+
+# partials/footer.html
+#
+[madeWith]
+#other = "Made with"
+other = "Zostavil"
+
+[theme]
+#other = "Theme"
+other = "Téma"

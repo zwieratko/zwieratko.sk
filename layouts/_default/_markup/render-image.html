@@ -1,0 +1,32 @@
+{{ $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
+{{ with $image }}
+{{ $tiny := $image.Resize "320x q50" }}
+{{ $small := $image.Resize "480x q50" }}
+{{ $small2 := $image.Resize "640x q50" }}
+{{ $medium := $image.Resize "720x q50" }}
+{{ $big := $image.Resize "900x q50" }}
+{{ $alt := $.Text }}
+{{ $caption := "" }}
+{{ with .Title }}
+  {{ $caption = . | safeHTML }}
+{{ end }}
+
+<figure>
+  <a href="{{ $image.RelPermalink }}">
+    <img
+      loading="lazy"
+      sizes="(min-width: 1800px) 900px, (min-width: 641px) 720px, (min-width: 481px) 640px, (min-width: 321px) 480px, 320px"
+      srcset="{{ $tiny.RelPermalink }} 320w, {{ $small.RelPermalink }} 480w, {{ $small2.RelPermalink }} 640w, {{ $medium.RelPermalink }} 720w, {{ $big.RelPermalink }} 900w"
+      src="{{ $big.RelPermalink }}"
+      width="{{ $image.Width }}"
+      height="{{ $image.Height }}"
+      alt="{{ if $alt }}{{ $alt }}{{ else if $caption }}{{ $caption | markdownify | plainify }}{{ else }}&nbsp;{{ end }}"
+      >
+  </a>
+  {{ with $caption }}
+    <figcaption><p><b>{{ with $.Title | safeHTML }}{{ . }}{{ end }}</b></p></figcaption>
+  {{ end }}
+</figure>
+{{ else }}
+<img src="{{ .Destination | safeURL }}"  alt="{{ $.Text }}" loading="lazy" />
+{{ end }}

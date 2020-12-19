@@ -1,0 +1,71 @@
+AddDefaultCharset utf-8
+
+# Disable ServerTokens only in the server config !!!
+# Disable your Apache version number from showing up in HTTP headers for added security.
+#------------------------------
+ServerSignature Off
+
+<IfModule mod_access.c>
+# Set timezone for your server. A list of supported timezone can be found at
+# http://www.php.net/manual/en/timezones.php
+#------------------------------
+SetEnv TZ Europe/Bratislava
+</IfModule>
+
+<IfModule mod_rewrite.c>
+#Options +FollowSymlinks
+RewriteEngine on
+RewriteBase /
+
+#// REDIRECT ALL TO HTTPS //
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# To externally redirect /dir/foo.php to /dir/foo/
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,}\s([^.]+)\.php [NC]
+RewriteRule ^ %1 [R,L]
+# To internally redirect /dir/foo/ to /dir/foo.php
+RewriteCond %{DOCUMENT_ROOT}/$1.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+
+</IfModule>
+
+<IfModule mod_headers.c>
+
+# SECURITY HEADERS
+#------------------------------
+#Header set Strict-Transport-Security "max-age=157680000; includeSubDomains"
+Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header always set X-Content-Type-Options "nosniff"
+Header always set X-XSS-Protection "1; mode=block"
+Header always set X-Frame-Options "SAMEORIGIN"
+Header set Content-Security-Policy "default-src 'none'; font-src https://fonts.gstatic.com data:; frame-src https://www.google.com; img-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; media-src data:; style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; style-src-attr 'unsafe-inline'; script-src 'nonce-kSh6lWWYeduy8lJeus4PYw==' 'unsafe-inline' 'strict-dynamic' https:; manifest-src 'self'; connect-src 'self'; form-action 'self'; frame-ancestors 'none'; base-uri 'none'; report-to default; report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
+Header set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://zwieratko.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
+#Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; microphone 'none'; payment 'none'"
+Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), microphone=(), payment=()"
+Header set Referrer-Policy "no-referrer-when-downgrade"
+Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
+Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
+Header always unset Server
+Header always unset X-Powered-By
+# Disable ETag
+Header always unset ETag
+FileETag None
+
+# Expires and Cache
+#month
+<filesMatch "\.(ico|jpe?g|png|gif|swf|svg|webp)$">
+Header set Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
+</filesMatch>
+#week
+<filesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
+</filesMatch>
+#00day
+<filesMatch "\.(x?html?|php)$">
+Header always set Cache-Control "private, no-cache, no-store, no-transform, must-revalidate, proxy-revalidate, max-age=0"
+Header always set Pragma "no-cache"
+Header always set Expires 0
+</filesMatch>
+
+</IfModule>
