@@ -1,0 +1,6 @@
+[submodule "themes/hermit"]
+	path = themes/hermit
+	url = https://github.com/Track3/hermit.git
+[submodule "themes/zwhermit"]
+	path = themes/zwhermit
+	url = https://zwieratko@bitbucket.org/zwieratko/zwhermit.git

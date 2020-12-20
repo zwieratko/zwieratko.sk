@@ -10,6 +10,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: uliky-900px.webp
+images:
+  - /recepty/2019-12-24-uliky/uliky-1200px.jpg
 ---
 
 Nepečená kakaovo-orechová cukrovinka s plnkou z vaječného likéru.
@@ -18,40 +21,39 @@ Nepečená kakaovo-orechová cukrovinka s plnkou z vaječného likéru.
 
 ### Úľ
 
-- detské piškóty -- 240 g
-- vlašské orechy -- 100 g
-- práškový cukor -- 170 g
-- maslo -- 170 g
+- detské piškóty -- 120 g
+- vlašské orechy -- 50 g
+- práškový cukor -- 85 g
+- maslo -- 85 g
 - vanilkový cukor -- 1 ks
 - vanilínový cukor -- 1 ks
-- kakao -- 2 kl
+- kakao -- 1 kl (vrchovatá)
 - tuzemský rum -- 2 pl
 
 ### Náplň
 
-- maslo -- 120 g
-- práškový cukor -- 120 g
+- maslo -- 50 g
+- práškový cukor -- 50 g
 - vaječný likér -- 5 kl
 
 ### Iné
 
-- detské piškóty -- 30 ks (na uzavretie úľu)
-- vaječný likér -- 1 dl
+- detské piškóty -- 24 ks (na uzavretie úľu)
+- vaječný likér -- 0,5 dl
+- plastové formičky úlikov
+- čínska palička na jedenie
+- malá injekčná striekačka
+- tenká fólia
 
 ## Postup
 
-Žiaľ toto ešte nie je finálna podoba receptu, tá pôvodná sa niekam zapotrošila. Na znovu nájdení receptu sa intenzívne pracuje.
-
-<p><i><u>Suroviny:</u></i></p>
-<ul>
-<li>100g vlašské orechy</li>
-<li>240g detské piškóty</li>
-<li>170g práškový cukor</li>
-<li>170g maslo</li>
-<li>2 lyžice rum</li>
-<li>2čl kakao</li>
-<li>120g maslo</li>
-<li>120g práškový cukor</li>
-<li>1ks vaječný zĺtok</li>
-<li>1pl rum</li>
-</ul>
+1. Úplne nadrobno rozsekáme detské piškóty a orechy, kľudne v elektrickom mixéry. Má vzniknúť niečo konzistencie veľmi hrubej múky.
+2. Pridáme maslo a rukou vypracujeme cesto, po zmiešaní masla so sypkou zmesou pridáme rum. Ďalej miesime, hmota by mala držať po kope. Dáme na pol hodinky do chladničky.
+3. Maslo, práškový cukor a vaječný likér vyšľaháme do hladkej peny.
+4. Do plastovej formičky v tvare úliku si dám tenučkú potravinársku fóliu, aby sme mohli neskôr hotový úlik jednoduchšie z formičky vybrať.
+5. Formičku vystlanú fóliou naplníme hmotou. Čínskou paličkou na jedenie urobíme v prostriedku dutinu. Tú naplníme približne 1 ml vaječného likéru pomocou malej injekčnej striekačky, dutinu s likérom zapcháme kúskom vyšľahanej peny a priložíme detskou piškótou. Obrátime hore nohami, postavíme piškótou na tanier a pridržiavajúc fóliu opatrne stiahneme formičku.
+ 
+ ---
+ 
+ ![Úliky](uliky-1200px.jpg "Úliky (autor: zwieratko, 2020)")
+ 
