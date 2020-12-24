@@ -9,6 +9,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: ...webp
+images:
+  - /recepty/...
 ---
 
 ## Suroviny
