@@ -17,5 +17,7 @@
     ],
     "theme_color": "#494f5c",
     "background_color": "#494f5c",
-    "display": "standalone"
+    "display": "standalone",
+    "lang": "sk-SK",
+    "start_url": "/"
 }
