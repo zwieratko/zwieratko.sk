@@ -48,7 +48,7 @@ Header set Content-Security-Policy "default-src 'none'; \
   style-src-attr 'unsafe-inline'; \
   script-src 'nonce-kSh6lWWYeduy8lJeus4PYw==' 'unsafe-inline' 'strict-dynamic' https:; \
   manifest-src 'self'; \
-  connect-src 'self'; \
+  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; \
   form-action 'self'; \
   frame-ancestors 'none'; \
   base-uri 'none'; \
