@@ -1,0 +1,69 @@
+name: Deploy
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  deploy_job:
+    name: Deploy Job
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout main branch with submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: 'true'
+    - name: Change the version of Service Worker
+      run: |
+        sed -i "s/const\sversion\s=\s.*;/const version = '$GITHUB_RUN_ID';/g" static/sw.js
+        head static/sw.js
+    - name: Install Hugo
+      env:
+        HUGO_VERSION: 0.80.0
+      run: |
+        mkdir -p download
+        cd download
+        wget -q "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_Linux-64bit.tar.gz"
+        tar -xvf *
+        sudo cp hugo /usr/local/bin
+        cd ..
+    - name: Build the page with Hugo
+      run: hugo --minify
+    - name: Record the build variables
+      run: |
+        date > public/stav 2>&1
+        hugo version >> public/stav 2>&1
+        uname -a >> public/stav 2>&1
+        echo "$GITHUB_SHA" >> public/stav
+        echo "$GITHUB_RUN_ID" >> public/stav
+        echo "$GITHUB_RUN_NUMBER" >> public/stav
+    - name: Check and fix the version of bundle assets
+      run: |
+        sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
+        sed -i "s='/js/bundle.*,='/js/$(basename public/js/bundle*)',=g" public/sw.js
+    - name: Do brotli compression
+      run: |
+        brotli -V
+        for x in `/usr/bin/find public -type f -name '*.html' -o -name '*.css' -o -name '*.js'`; do
+        	brotli --force --output=${x}.br ${x};
+        done
+    - name: SSH setup
+      env:
+        DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }} #private SSH key
+        KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }} #output of ssh-keyscan -p PORT -H some.domain.com some_IP
+      run: |
+        mkdir -p ~/.ssh
+        echo "${KNOWN_HOSTS}" >> ~/.ssh/known_hosts
+        echo "${DEPLOY_KEY}" > ~/.ssh/my_rsync_key
+        echo "IdentityFile ~/.ssh/my_rsync_key" >> ~/.ssh/config
+        chmod -R 700 ~/.ssh
+    - name: Deploy the page with Rsync
+      env:
+        DEPLOY_USER: ${{ secrets.DEPLOY_USER }}
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
+        LOCAL_PATH: 'public/'
+        REMOTE_PATH: '~/zwieratko.sk/web/'
+      run: |
+        rsync -avzrh -e "ssh -p ${DEPLOY_PORT}" --delete "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
