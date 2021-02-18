@@ -30,7 +30,7 @@ let filesToCacheExtra = [
   '/poznamky/2020-02-07-aktualizacia-php/',
   '/poznamky/2020-02-09-bezpecnostne-hlavicky/',
   '/poznamky/2020-02-13-cache-control-hlavicka/',
-  //'/poznamky/2020-02-16-content-security-policy-hlavicka/',
+  '/poznamky/2020-02-16-content-security-policy-hlavicka/',
   '/poznamky/2020-02-20-koncova-lomka-v-url/',
   '/poznamky/2020-02-21-prehladat-riadky-a-doplnit-retazce/',
   '/poznamky/2020-11-20-synchronizovat-vzdialenu-sqlite3-databazu/',
