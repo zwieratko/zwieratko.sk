@@ -1,7 +1,7 @@
 ---
 title: "Content-Security-Policy hlavička"
 date: 2020-02-16T10:58:05+01:00
-draft: true
+draft: false
 description: Ako správne nastaviť bezpečnostnú hlavičku odpovede webového servera Content-Security-Policy.
 type: posts
 tags:
@@ -309,11 +309,15 @@ Všetky parametre je možné nastaviť úpravou hlavičky odpovede webového ser
 1. presne a jasne určiť všetky zdroje potrebné na správne zobrazenie stránky
 2. vytvoriť prvotný návrh CSP, kde bude všetko okrem potrebných zdrojov zakázané
 3. nasadiť hlavičku CSP v režime `Report-Only`
-4. 
+4. testovať, testovať a testovať
+5. testovať každú časť webu vo všetkých prehliadačoch
+6. nasadiť hlavičku v plnom režime a pozorne sledovať reporty
 
 ### Pokus a omyl
 
 Jednou z metód ako implementovať CSP bezpečnostnú hlavičku je najskôr všetky zdroje zakázať, potom testovať jednotlivé časti webu vo vývojárskom doplnku prehliadača a postupne potrebné zdroje pridávať a povoľovať. Takzvaná metóda pokus a omyl :), ale aspoň sa pri nej niečo priučím.
+
+Testovať je potrebné v rôznych prehliadačoch, lebo CSP je implementované rôznym spôsobom.
 
 Takže na začiatku všetky zdroje zakážem, pre prehľadnosť to nie je celá hlavička a každý parameter je na novom riadku:
 
@@ -337,6 +341,26 @@ Z takého hlásenia zistím, že nebolo možné načítať obrázok -- favicon z
 Aby som prehliadaču povolil pri zobrazovaní stránky načítať aj favicon, musím pridať parameter `img-src 'self'`. Po pridaní, zmene parametra musím stránku znovu načítať a skontrolovať hlásenia v konzole.
 
 Takto musím prejsť každú jednu zobrazovanú stránku na celom webe a vyriešiť všetky chybové hlásenia týkajúce sa CSP. Pri rozsiahlych weboch s veľkým množstvom obsahu z rôznych zdrojov je to žiaľ veľmi pomalý proces.
+
+Nakoniec sa môžem dopracovať k finálnej podobe:
+
+```
+default-src 'none';
+font-src https://fonts.gstatic.com data:;
+frame-src https://www.google.com https://www.youtube.com;
+img-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos;
+media-src data:;
+style-src 'self' https://fonts.googleapis.com 'unsafe-inline';
+style-src-attr 'unsafe-inline';
+script-src 'nonce-0123abcdefgh==' 'unsafe-inline' 'strict-dynamic' https:;
+manifest-src 'self';
+connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos;
+form-action 'self';
+frame-ancestors 'none';
+base-uri 'none';
+report-to default;
+report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;
+```
 
 ---
 
