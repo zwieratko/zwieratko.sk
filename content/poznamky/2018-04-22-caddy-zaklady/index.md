@@ -25,7 +25,7 @@ Ja Caddy webový server poznám a aj sa s ním hrám už niekedy od verzie 0.7.6
 
 ## Inštalácia
 
-Caddy tvorí jeden binárny súbor. A teda inštalácia spočíva v stiahnutí správcami už pripraveného, zostaveného a zabaleného balíčku alebo v stiahnutí zdrojákov a ich skompilovaní. Caddy je vydávaný pre rôzne operačné systémy. Sťahovať môžem z viacerých miest, ~~buď priamo zo stránky [projektu](https://caddyserver.com/v1/download)~~, alebo čistú verziu Caddy bez „plug-inov“ z [github.com](https://github.com/caddyserver/caddy/releases/tag/v1.0.4) -- posledné vydanie verzie 1.
+Caddy tvorí jeden binárny súbor. A teda inštalácia spočíva v stiahnutí správcami už pripraveného, zostaveného a zabaleného balíčku alebo v stiahnutí zdrojákov a ich skompilovaní. Caddy je vydávaný pre rôzne operačné systémy. Sťahovať môžem z viacerých miest, ~~buď priamo zo stránky projektu~~, alebo čistú verziu Caddy v1 bez „plug-inov“ z [github.com](https://github.com/caddyserver/caddy/releases/tag/v1.0.4) -- posledné vydanie verzie 1.
 
 Vytvorím si nový adresár, prepnem sa do novovytvoreného adresáru, stiahnem si archív s vanilkovou verziu Caddy, rozbalím archív a prekopírujem súbor caddy do adresáru `/usr/local/bin`:
 
