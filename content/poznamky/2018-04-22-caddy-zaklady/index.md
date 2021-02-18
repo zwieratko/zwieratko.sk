@@ -1,5 +1,5 @@
 ---
-title: "Caddy – základy"
+title: "Caddy v1 – základy"
 date: 2018-04-22T19:44:24+01:00
 draft: false
 description: Základy používania webového servera Caddy verzia 1.
@@ -25,7 +25,7 @@ Ja Caddy webový server poznám a aj sa s ním hrám už niekedy od verzie 0.7.6
 
 ## Inštalácia
 
-Caddy tvorí jeden binárny súbor. A teda inštalácia spočíva v stiahnutí správcami už pripraveného, zostaveného a zabaleného balíčku alebo v stiahnutí zdrojákov a ich skompilovaní. Caddy je vydávaný pre rôzne operačné systémy. Sťahovať môžem z viacerých miest, buď priamo zo stránky [projektu](https://caddyserver.com/v1/download), alebo čistú verziu Caddy bez „plug-inov“ z [github.com](https://github.com/caddyserver/caddy/releases).
+Caddy tvorí jeden binárny súbor. A teda inštalácia spočíva v stiahnutí správcami už pripraveného, zostaveného a zabaleného balíčku alebo v stiahnutí zdrojákov a ich skompilovaní. Caddy je vydávaný pre rôzne operačné systémy. Sťahovať môžem z viacerých miest, ~~buď priamo zo stránky [projektu](https://caddyserver.com/v1/download)~~, alebo čistú verziu Caddy bez „plug-inov“ z [github.com](https://github.com/caddyserver/caddy/releases/tag/v1.0.4) -- posledné vydanie verzie 1.
 
 Vytvorím si nový adresár, prepnem sa do novovytvoreného adresáru, stiahnem si archív s vanilkovou verziu Caddy, rozbalím archív a prekopírujem súbor caddy do adresáru `/usr/local/bin`:
 
@@ -145,7 +145,7 @@ Spúšťanie a beh Caddy zabezpečí `systemd`. Preto potrebujem takzvaný „un
 Stiahnem si unit súbor a vykonám v ňom prípadné úpravy:
 
 ```sh
-wget https://raw.githubusercontent.com/caddyserver/caddy/master/dist/init/linux-systemd/caddy.service
+wget https://raw.githubusercontent.com/caddyserver/dist/master/init/caddy.service
 ```
 
 Prekopírujem ho do adresáru s jednotkami, zmením vlastníka aj skupinu na `root` a upravím prístupové práva:
@@ -211,7 +211,7 @@ sudo systemctl start caddy.service
 
 ## Zdroj
 
-- [github.com](https://github.com/caddyserver/caddy/tree/master/dist/init/linux-systemd)
-- [caddyserver.com](https://caddyserver.com/v1/docs)
+- [github.com](https://github.com/caddyserver/dist/tree/master/init)
+- [caddyserver.com](https://caddyserver.com/caddy-v1-docs-archive.tar.gz)
 - [digitalocean.com](https://www.digitalocean.com/community/questions/discussion-about-permissions-for-web-folders)
 - [serverfault.com](https://serverfault.com/questions/357108/what-permissions-should-my-website-files-folders-have-on-a-linux-webserver)
