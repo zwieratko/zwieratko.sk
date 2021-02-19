@@ -212,6 +212,6 @@ sudo systemctl start caddy.service
 ## Zdroj
 
 - [github.com](https://github.com/caddyserver/dist/tree/master/init)
-- [caddyserver.com](https://caddyserver.com/caddy-v1-docs-archive.tar.gz)
+- [caddy.its-em.ma](https://caddy.its-em.ma/v1/docs/gzip)
 - [digitalocean.com](https://www.digitalocean.com/community/questions/discussion-about-permissions-for-web-folders)
 - [serverfault.com](https://serverfault.com/questions/357108/what-permissions-should-my-website-files-folders-have-on-a-linux-webserver)
