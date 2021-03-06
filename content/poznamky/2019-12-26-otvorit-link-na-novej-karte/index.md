@@ -63,9 +63,6 @@ A tá bude do HTML preložená ako:
 
 Hmmm, toto furt nie je ono.
 
-Zdroj:
-- [codeooze.com](https://www.codeooze.com/webdesign/hugo-shortcode-target-blank/)
-
 ---
 
 ### Počkať na Hugo 0.62 :)
