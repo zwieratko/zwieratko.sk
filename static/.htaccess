@@ -44,11 +44,11 @@ Header set Content-Security-Policy "default-src 'none'; \
   frame-src https://www.google.com https://www.youtube.com; \
   img-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; \
   media-src data:; \
-  style-src 'self' https://fonts.googleapis.com 'unsafe-inline'; \
+  style-src 'self' https://fonts.googleapis.com https://github.githubassets.com 'unsafe-inline'; \
   style-src-attr 'unsafe-inline'; \
-  script-src 'nonce-kSh6lWWYeduy8lJeus4PYw==' 'unsafe-inline' 'strict-dynamic' https:; \
+  script-src 'nonce-kSh6lWWYeduy8lJeus4PYw==' 'unsafe-inline' https://gist.github.com https:; \
   manifest-src 'self'; \
-  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; \
+  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos https://gist.github.com; \
   form-action 'self'; \
   frame-ancestors 'none'; \
   base-uri 'none'; \
