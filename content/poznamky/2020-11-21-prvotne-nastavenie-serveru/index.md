@@ -2,11 +2,13 @@
 title: "Prvotné nastavenie serveru"
 date: 2020-11-21T13:43:07+01:00
 draft: false
-description: Nastavenie a správa serverov. Prehľadný zoznam krokov, ktoré je potrebné vykonať hneď po inštalácii / spustení serveru.
+description: Bezpečnosť, nastavenie a správa serverov. Prehľadný zoznam krokov, ktoré je potrebné vykonať hneď po inštalácii / spustení serveru.
 type: posts
 tags:
   - Linux
   - Debian
+  - Bezpečnosť
+  - OpenSSH
 categories:
   - Poznámky
 toc: true
@@ -14,11 +16,11 @@ toc: true
 
 ## Cieľ
 
-Chcem zjednotiť a zefektívniť proces dôležitého prvotného nastavenia servera a zároveň sa držať najlepších praktických rád a odporúčaní komunity ohľadom bezpečnosti a správy serverov. Získané poznatky a osobné skúsenosti chcem zosumarizovať.
+Chcem zjednotiť a zefektívniť proces dôležitého prvotného nastavenia serveru a zároveň sa držať najlepších praktických rád a odporúčaní komunity ohľadom bezpečnosti a správy serverov. Získané poznatky a osobné skúsenosti chcem zosumarizovať.
 
 ## Riešenie
 
-
+Nasledujúce kroky je vhodné vykonať ako prvé, ihneď po inštalácii. Postup je určený primárne pre operačný systém Debian, respektíve pre systémy na ňom postavené. Táto poznámka je začiatok viac dielnej série.
 
 ### Pridanie nového užívateľa
 
@@ -50,7 +52,7 @@ Keďže som svojho bežného novovytvoreného užívateľa pridal do skupiny `su
 
 ```sh
 sudo apt update &&\
-sudo apt list --upgradable &&\
+apt list --upgradable &&\
 sudo apt upgrade &&\
 sudo apt full-upgrade
 ```
@@ -71,7 +73,7 @@ chmod -R go= ~/.ssh
 
 A potom prekopírujem obsah vybraného verejného kľúča napríklad zo súboru `~/.ssh/id_ed25519.pub` z lokálneho počítaču do súboru `~/.ssh/authorized_keys` na vzdialenom počítači. Každý kľúč musí byť na novom riadku.
 
-### Zvýšenie úrovne zabezpečenia SSH
+### Zvýšenie úrovne zabezpečenia OpenSSH
 
 Dôležité zásady na úvod:
 
@@ -80,7 +82,7 @@ Dôležité zásady na úvod:
 >3. Je vyslovene nevhodné bezhlavo kopírovať nejaké nastavenia či odporúčania z netu (je ich tam obrovské množstvo).
 >4. Zmeny je vhodné implementovať postupne, v malých krokoch a ihneď overovať ich funkčnosť.
 
-Prednastavenú úroveň zabezpečenia OpenSSH serveru chcem zvýšiť aby som čo najviac eliminoval riziko napadnutia systému útočníkmi. Vykonám to najskôr úpravou konfiguračného súboru.
+Prednastavenú úroveň zabezpečenia OpenSSH serveru chcem zvýšiť, aby som čo najviac eliminoval riziko napadnutia systému útočníkmi. Vykonám to úpravou konfiguračného súboru.
 
 ```sh
 sudo nano /etc/ssh/sshd_config
@@ -115,7 +117,7 @@ K tomuto ešte jedna poznámka. Zmeny v konfigurácii sa zvyčajne prejavia až 
 
 #### Prehľad zmien v `sshd_config`:
 
-- ***Číslo portu***
+#### Číslo portu
 
 ```sh
 Port 22222
@@ -123,15 +125,29 @@ Port 22222
 
 Zruším komentovanie (to znamená, že zmažem znak mriežky zo začiatku riadku) a zmením pred nastavenú hodnotu na nejaké inú. Je otázne či je toto práve zvýšením zabezpečenia, v tomto sa komunita vážne rozchádza. No každopádne to odfiltruje aspoň automatizované útoky cielené na všeobecne známy port 22.
 
-- ***Čas na úspešné prihlásenie***
+---
+
+#### Úroveň vytvárania záznamov
 
 ```sh
-LoginGraceTime 2m
+LogLevel VERBOSE
 ```
 
-Zruším komentovanie a ponechám pred nastavenú hodnotu. Ak sa užívateľ úspešne neprihlási v zadanom čase, server ho odpojí.
+Zruším komentovanie a zmením predvolenú hodnotu `INFO` na `VERBOSE`. Mierne zvýši množstvo zaznamenávaných údajov do logov o prihlasovaných užívateľoch, napr. pridá odtlačok kľúča úspešne prihláseného užívateľa.
 
-- ***Umožniť prihlásenie super užívateľa***
+---
+
+#### Čas na úspešné prihlásenie
+
+```sh
+LoginGraceTime 30s
+```
+
+Zruším komentovanie a zmením pred nastavenú hodnotu `2m` na `30s`. Ak sa užívateľ úspešne neprihlási v zadanom čase, server ho odpojí.
+
+---
+
+#### Umožniť prihlásenie super užívateľa
 
 ```sh
 PermitRootLogin no
@@ -139,7 +155,9 @@ PermitRootLogin no
 
 Zruším komentovanie a zmením pred nastavenú hodnotu `prohibit-password` na `no`. Týmto znemožním super užívateľovi prihlasovať sa cez SSH na vzdialený server.
 
-- ***Maximálny počet pokusov o overenie identity***
+---
+
+#### Maximálny počet pokusov o overenie identity
 
 ```sh
 MaxAuthTries 3
@@ -147,15 +165,49 @@ MaxAuthTries 3
 
 Zruším komentovanie a zmením pred nastavenú hodnotu 6 na 3. Po prekročení nastaveného počtu pokusov o overenie identity server ukončí spojenie. Taktiež po prekročení polovičného počtu pokusov začne zlyhané pokusy zaznamenávať.
 
-- ***Zoznam povolených užívateľov***
+---
+
+#### Maximálny počet SSH relácii v jednom TCP spojení
+
+```sh
+MaxSessions 2
+```
+
+Zruším komentovanie a zmením pred nastavenú hodnotu 10 na 2. OpenSSH môže použiť jedno TCP spojenie na uskutočnenie viacerých SSH relácii, takzvaný `SSH multiplexing`. Zmenou hodnoty na 1 multiplexing úplne zakážem.
+
+---
+
+#### Zoznam povolených užívateľov
 
 ```sh
 AllowUsers username1 username2 username3
 ```
 
-Takáto voľba sa nenachádza v pred nastavenom konfiguračnom súbore. Doplním ju na nový riadok. Vložím ju do sekcie `# Authentication:` za riadok 36 `#MaxSessions 10`. Týmto nastavením umožním prihlásiť sa do systému cez SSH len vymenovaným užívateľom a nikomu inému.
+Takáto voľba sa nenachádza v pred nastavenom konfiguračnom súbore. Doplním ju na nový riadok. Vložím ju do sekcie `# Authentication:` za riadok `MaxSessions 2`. Týmto nastavením umožním prihlásiť sa do systému cez SSH len vymenovaným užívateľom a nikomu inému.
 
-- ***Umožniť overovanie identity heslom***
+---
+
+#### Umožniť overovanie identity párom SSH kľúčov
+
+```sh
+PubkeyAuthentication yes
+```
+
+Zruším komentovanie a ponechám pred nastavenú hodnotu `yes`, toto je preferovaný a bezpečný spôsob overovania identity pri prihlasovaní na vzdialený server.
+
+---
+
+#### Súbory obsahujúce verejné kľúče
+
+```sh
+AuthorizedKeysFile     .ssh/authorized_keys
+```
+
+Zruším komentovanie a upravím predvolenú hodnotu tak, že zmažem druhú položku `.ssh/authorized_keys2` a teda ponechám prvú `.ssh/authorized_keys`. Týmto definujem súbor, kde sú uložené verejné časti páru SSH kľúčov užívateľov oprávnených sa prihlásiť na server.
+
+---
+
+#### Umožniť overovanie identity heslom
 
 ```sh
 PasswordAuthentication no
@@ -165,7 +217,9 @@ Keď chcem aplikovať túto zmenu, musím si byť absolútne istý, že som scho
 
 Zruším komentovanie a zmením pred nastavenú hodnotu `yes` na `no`. Týmto znemožním užívateľovi pri prihlasovaní použiť na overenie identity heslo. Toto nastavenie je veľmi dôležité!
 
-- ***Umožniť zadávanie prázdneho hesla***
+---
+
+#### Umožniť zadávanie prázdneho hesla
 
 ```sh
 PermitEmptyPasswords no
@@ -173,7 +227,19 @@ PermitEmptyPasswords no
 
 Zruším komentovanie a ponechám pred nastavenú hodnotu. Síce som prihlasovanie sa pomocou hesla v predchádzajúcom nastavení zakázal, ale pre istotu zakážem aj prázdne heslá :)
 
-- ***Umožniť overovanie identity systémom Kerberos***
+---
+
+#### Umožniť overovanie identity systémom výzvy a odpovede
+
+```sh
+ChallengeResponseAuthentication no
+```
+
+V operačnom systéme Debian vari od verzie 5 alebo ešte skôr je táto voľba v pred nastavenom stave `no`, ponechám ju tak. No v iných operačných systémoch môže byť predvolená hodnota iná. Napríklad v OpenBSD je predvolenou hodnotou `yes`. Keďže nie je nakonfigurovaný žiadny nástroj, ktorý by sa staral o takýto spôsob overovania identity je bezpečnejšie voľbu nepovoliť.
+
+---
+
+#### Umožniť overovanie identity systémom Kerberos
 
 ```sh
 KerberosAuthentication no
@@ -181,7 +247,9 @@ KerberosAuthentication no
 
 Zruším komentovanie a ponechám pred nastavenú hodnotu. Systém na overovanie identity ktorý neplánujem používať je vhodné vypnúť.
 
-- ***Umožniť overovanie identity systémom GSSAPI***
+---
+
+#### Umožniť overovanie identity systémom GSSAPI
 
 ```sh
 GSSAPIAuthentication no
@@ -189,15 +257,79 @@ GSSAPIAuthentication no
 
 Zruším komentovanie a ponechám pred nastavenú hodnotu. Systém na overovanie identity ktorý neplánujem používať je vhodné vypnúť.
 
-- ***Povolenie presmerovania z `X Window System`***
+---
+
+#### Umožniť overovanie identity pomocou PAM
+
+```sh
+UsePAM yes
+```
+
+V Debiane ponechám voľbu ako je `yes`. Systém môže použiť rôzne iné doplnkové moduly na overovanie identity.
+
+---
+
+#### Povolenie presmerovania `ssh-agent`
+
+```sh
+AllowAgentForwarding no
+```
+
+Zruším komentovanie a zmením predvolenú hodnotu na `no`. Zabránim tým možnosti presmerovať požiadavku vzdialeného serveru na lokálneho ssh-agenta (sú v ňom uložené SSH kľúče) akoby bol na vzdialenom serveri. Platí jednoduchá zásada, **nikdy** nespúšťať `ssh-agent` s vlastnými kľúčmi na stroji, kde má administrátorsky prístup neznáma alebo nedôveryhodná osoba. Čiže `ssh-agent` s mojimi vlastnými kľúčmi spúšťam zásadne len na mojich vlastných počítačoch, kde som `root` len ja sám.
+
+---
+
+#### Povolenie presmerovanie TCP spojenia
+
+```sh
+AllowTcpForwarding no
+```
+
+Zruším komentovanie a zmením predvolenú hodnotu na `no`, ak vyslovene nepotrebujem presmerovanie TCP spojenia. Povolenie tejto možnosti je potenciálne bezpečnostné riziko, lebo umožňuje obísť napríklad firewall.
+
+---
+
+#### Povolenie presmerovania z `X Window System`
 
 ```sh
 X11Forwarding no
 ```
 
-Zmením pred nastavenú hodnotu `yes` na `no`. Keďže neplánujem používať žiadne grafické rozhranie môžem toto nastavenie zakázať.
+V Debiane zmením pred nastavenú hodnotu `yes` na `no`. Keďže neplánujem používať žiadne grafické rozhranie môžem toto nastavenie zakázať. V OpenBSD je predvolenou hodnotou správne `no`.
 
-- ***Časový interval pre overovanie či je spojenie funkčné***
+---
+
+#### Povolenie zobraziť tzv. správu dňa
+
+```sh
+PrintMotd no
+```
+
+V Debiane ponechám odkomentované s hodnotou `no`. V OpenBSD je predvolená hodnota `yes`. Voľba zakáže zobrazovať takzvanú správu dňa po úspešnom prihlásení. V Debiane a spol. je toto riešené inak (`/etc/update-motd.d`).
+
+---
+
+#### Povolenie odosielania správy na udržanie TCP spojenia
+
+```sh
+TCPKeepAlive no
+```
+
+Zruším komentovanie a zmenim predvolenú hodnotu na `no`. Zamedzím tým odosielaniu `TCP keepalive messages`, možnosť ako udržiavať, resp. overovať funkčnosť TCP spojenia. Komunikácia, ale prebieha cez nezabezpečené spojenie. Podobnú možnosť zabezpečujú bezpečnejšie voľby nižšie -- `ClientAliveInterval` a `ClientAliveCountMax`, komunikácia prebieha v rámci zabezpečeného spojenia.
+
+---
+
+#### Povolenie použiť kompresiu
+
+```sh
+Compression no
+```
+
+Zruším komentovanie a zmenim predvolenú hodnotu na `no`. Keďže internetové linky sú dostatočne rýchle a akákoľvek zraniteľnosť v kompresnom algoritme môže kompromitovať celé spojenie, je bezpečnejšie túto voľbu zakázať.
+
+---
+
+#### Časový interval pre overovanie či je spojenie funkčné
 
 ```sh
 ClientAliveInterval 300
@@ -205,19 +337,63 @@ ClientAliveInterval 300
 
 Zruším komentovanie a zmením pred nastavenú hodnotu 0 na 300. To znamená, že ak server neprijme 300 sekúnd žiadne dáta od klienta, odošle mu kontrolnú správu na ktorú očakáva odpoveď. S týmto priamo súvisí aj nasledujúce nastavenie.
 
-- ***Maximálny počet pokusov o kontrolu funkčnosti spojenia***
+---
+
+#### Maximálny počet pokusov o kontrolu funkčnosti spojenia
 
 ```sh
-ClientAliveCountMax 3
+ClientAliveCountMax 2
 ```
 
 Zruším komentovanie a ponechám pred nastavenú hodnotu. To znamená, že server sa pokúsi tri krát po uplynutí istého časového limitu (viď vyššie) odoslať kontrolnú správu klientovi, na ktorú keď nedostane odpoveď, tak po poslednom pokuse  preruší spojenie.
 
 S týmto nastavením je spojená jedna zvláštnosť, ktorej úplne nerozumiem. Ak nastavím `ClientAliveCountMax` na hodnotu menšiu ako 2 (teda na hodnoty 1 alebo 0), tak po uplynutí času nastavenom v `ClientAliveInterval` dôjde automaticky k prerušeniu spojenia zo strany servera -- toto, ale nie je zmysel týchto nastavení ?!. Respektíve ak nastavím hodnotu 2 alebo vyššiu, tak sa to nedeje -- toto je správne chovanie. Na odpájanie spojenia z dôvodu nečinnosti užívateľa môžem použiť iné nastavenie, premennú `TMOUT` v `~/.bash_profile`.
 
-#### Ďalšie možnosti zvýšenia úrovne zabezpečenia
+---
 
+#### Oznam pred prihlásením
+
+```sh
+Banner /etc/issue.net
+```
+
+Zruším komentovanie a zmenim predvolenú hodnotu `none` na `/etc/issue.net`. Upravím obsah súboru `/etc/issue.net` tak, aby obsahoval oznam o tom, že pokračovaním v pripájaní sa, užívateľ vstupuje na zabezpečený server atď. Obsah súboru sa zobrazí ako prvá vec pri začatí nadväzovania spojenia.
+
+---
+
+#### Povolené premenné klienta
+
+```sh
+#AcceptEnv LANG LC_*
+```
+
+V Debiane pridám znak mriežky na začiatok riadku, ak vyslovene nepotrebujem predávať nejaké premenné prostredia z klienta prebiehajúcej relácii. OpenBSD má predvolenú voľbu neakceptovať žiadne premenné.
+
+---
+
+#### Konfigurovanie externého subsystému
+
+```sh
+#Subsystem      sftp    /usr/lib/openssh/sftp-server
+```
+
+V Debiane pridám znak mriežky na začiatok riadku ak vyslovene nepotrebujem `sftp-server`, teda zakážem ho. OpenBSD nemá prednastavený žiadny subsystém.
+
+---
+
+Všetky nastavenia zhrnuté na jednom mieste, použil som východiskový konfiguračný súbor `/usr/share/openssh/sshd_config`, z Debian Buster (OpenSSH_7.9p1) do ktorého som zapracoval všetky vyššie uvedené zmeny:
+
+{{< gist zwieratko 346fba028615d83f231f69623740e041 >}}
+
+---
+
+### Ďalšie možnosti zvýšenia úrovne zabezpečenia
+
+- odinštalovať nepotrebný a nepoužívaný softvér
 - vypnúť všetky nepotrebné a nepoužívané služby
+- zakázať slabé algoritmy v OpenSSH
+- vypnúť / zakázať nepotrebné moduly jadra
+- upraviť / sprísniť nastavenia jadra
 - `Firewall` -- paketový filter v jadre, základný obranný val systému,  v Debiane 10 je to `nftables`, je to samostatná problematika nad rámec tejto poznámky, dobrý seriál o ňom je na [root.cz](https://www.root.cz/serialy/firewall-s-nftables/)
 - `TCP Wrapper` -- filtrovanie prístupu k jednotlivým službám podľa IP klienta na užívateľskej úrovni, nie je štandardnou súčasťou všetkých distribúcii (v Ubuntu a Debiane je)
 - `Port Knocking` -- otvorenie zavretého portu (úpravou konfigurácie firewallu) pre konkrétnu IP adresu zaslaním série paketov na konkrétne, vopred dohodnuté čísla portov, v určitom, vopred dohodnutom poradí
@@ -225,15 +401,11 @@ S týmto nastavením je spojená jedna zvláštnosť, ktorej úplne nerozumiem. 
 - dvoj--faktorové overenie identity -- pridanie ďalšieho, druhého spôsobu overenia identity pri prihlasovaní
 - `Fail2Ban` -- skenovanie záznamov a následné blokovanie IP adries z ktorých prichádza podozrivo veľa neúspešných pokusov o prihlásenie
 
-
-### Doinštalovanie softvéru
-
-
-
 ---
 
 ## Zdroj
 
-- [manuálové stránky](https://linux.die.net/man/5/sshd_config)
+- [OpenBSD manuálové stránky](https://man.openbsd.org/sshd_config)
+- [Debian manuálové stránky](https://manpages.debian.org/buster/openssh-server/sshd_config.5.en.html)
 - [linuxexpres.cz](https://www.linuxexpres.cz/praxe/sprava-linuxoveho-serveru-prakticke-rady-pro-zabezpeceni-ssh)
 - [linux-audit.com](https://linux-audit.com/audit-and-harden-your-ssh-configuration/)
