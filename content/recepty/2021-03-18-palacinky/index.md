@@ -1,7 +1,7 @@
 ---
 title: "Palacinky"
 date: 2021-03-18T17:19:57+01:00
-draft: true
+draft: false
 description: Tenký, plochý múčnik pečený na panvici s chrumkavými okrajmi plnený sladkými alebo slanými plnkami.
 type: posts
 tags:
