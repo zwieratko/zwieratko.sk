@@ -69,7 +69,7 @@ let filesToCacheExtra = [
   '/recepty/2020-12-03-makovy-zavin/',
   '/recepty/2020-12-10-mandlovnicky/',
   '/recepty/2020-12-24-grilaz/',
-  '/recepty/2021-03-18-palacinky/'
+  '/recepty/2021-03-18-palacinky/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
