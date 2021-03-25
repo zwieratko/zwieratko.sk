@@ -109,10 +109,20 @@ self.addEventListener('activate', function (event) {
 
 /* Serve cached content when offline */
 /*Cache, falling back to network - https://web.dev/offline-cookbook/#cache-falling-back-to-network */
-self.addEventListener('fetch', function(e) {
+/*self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request).then(function(response) {
       return response || fetch(e.request);
     })
+  );
+});*/
+
+/* Serve cached content when offline */
+/*Network falling back to cache -  https://web.dev/offline-cookbook/#network-falling-back-to-cache */
+self.addEventListener('fetch', function (event) {
+  event.respondWith(
+    fetch(event.request).catch(function () {
+      return caches.match(event.request);
+    }),
   );
 });
