@@ -24,6 +24,8 @@ images:
 
 ### Prvá podkapitola (`###`)
 
+Štart -> Nastavenia -> Čas a jazyk -> [Jazyk](ms-settings:regionlanguage-quickime) -> Správcovské nastavenia jazyka -> Zmeniť miestne nastavenia systému...
+
 *Italics*
   
  _Italics_
