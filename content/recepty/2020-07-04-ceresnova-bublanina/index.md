@@ -20,13 +20,13 @@ Múčnik z treného cesta so zapečenými vykôstkovanými čerešňami.
 ## Suroviny
 
 - polohrubá múka -- 2 h
-- kryštálový cukor -- 1 h
+- kryštálový cukor -- 1/2 h
 - vanilkový cukor -- 1 ks
 - vanilínový cukor -- 1 ks
 - prášok do pečiva -- 1 ks
 - mlieko -- 1 h
-- vajce -- 3 ks
-- olej -- 1 h
+- vajce „L“ -- 3 ks
+- olej -- 1/2 h
 - čerešne
 
 ## Postup
