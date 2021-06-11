@@ -20,7 +20,7 @@ jobs:
         head static/sw.js
     - name: Install Hugo
       env:
-        HUGO_VERSION: 0.82.1
+        HUGO_VERSION: 0.83.1
       run: |
         mkdir -p download
         cd download
