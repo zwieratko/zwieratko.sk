@@ -39,6 +39,12 @@ Múčnik z treného cesta so zapečenými vykôstkovanými čerešňami.
 6. Polovičky čerešní ukladáme na cesto dužinou dolu, zachováme medzi nimi menšie rozostupy. Nechávame ich klesnúť len vlastnou váhou.
 7. Rúru predhrejeme na 200°C, vložíme plech a pečieme 18 až 22 minút. Kvalitu upečenia kontrolujeme špajľou.
 
+## Poznámky
+
+- na plechu 35 krát 35 cm je bublanina po upečení vysoká približne 2,5 cm
+- na menšom plechu bude vyššia no je potrebné predĺžiť čas pečenia
+- na 35 cm plech je potrebných približne 60 čerešní
+
 ---
 
 ![Čerešňová bublanina](ceresnova-bublanina-1200px.jpg "Čerešňová bublanina (autor: zwieratko, 2020)")
