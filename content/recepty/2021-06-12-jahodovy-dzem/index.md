@@ -1,7 +1,7 @@
 ---
 title: "Jahodový džem"
 date: 2021-06-12T22:15:43+02:00
-draft: true
+draft: false
 description: Poctivý jednodruhový džem z jahôd s jemným vanilkovým nádychom.
 type: posts
 tags:

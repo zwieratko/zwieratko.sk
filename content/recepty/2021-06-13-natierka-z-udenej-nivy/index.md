@@ -1,7 +1,7 @@
 ---
 title: "Nátierka z údenej Nivy"
 date: 2021-06-13T17:31:26+02:00
-draft: true
+draft: false
 description: Poctivá a chuťovo intenzívna nátierka z Nivy na hrianky alebo chlieb.
 type: posts
 tags:

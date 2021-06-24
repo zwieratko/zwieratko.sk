@@ -1,7 +1,7 @@
 ---
 title: "Zeleninové kari"
 date: 2021-06-23T11:39:11+02:00
-draft: true
+draft: false
 description:
 type: posts
 tags:
