@@ -2,7 +2,7 @@
 title: "Zeleninové kari"
 date: 2021-06-23T11:39:11+02:00
 draft: false
-description:
+description: Príjemne pikantné a hrejivé bezmäsité kari z dostupnej sezónnej zeleniny.
 type: posts
 tags:
   - Zelenina
@@ -17,6 +17,8 @@ images:
   - /recepty/2021-06-23-zeleninove-kari/zeleninove-kari-02.jpg
   - /recepty/2021-06-23-zeleninove-kari/zeleninove-kari-03.jpg
 ---
+
+Príjemne pikantné a hrejivé bezmäsité kari z dostupnej sezónnej zeleniny.
 
 ## Suroviny
 
