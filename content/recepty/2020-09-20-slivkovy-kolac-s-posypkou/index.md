@@ -54,6 +54,28 @@ Kysnutý koláč s vykôstkovanými slivkami a posýpkou.
 6. Pripravíme si posýpku. V myse si zmiešame múku, cukor aj oba vanilkové a pridáme mäkké maslo. Rukami rozmrvíme a rozložíme na vrch sliviek.
 7. Rúru predhrejeme na 200°C, vložíme plech a pečieme 18 až 20 minút.
 
+## Poznámky
+
+- z uvedeného množstva surovín je možné piecť na veľkom plechu (35x35 cm)
+- pre porovnanie viď nižšie prepočet na menší plech 32x23 cm
+
+surovina | 35x35 cm | 33x23 cm
+:---:|:---:|:---:
+mlieko - ml | 200 | 124
+cukor kryštálový - pl | 1 | 1
+droždie - ks | 1 | 1
+hladká múka - g | 400 | 248
+cukor kryštálový - g | 50 | 31
+vajíčko - ks | 1 | 1
+acidofilné mlieko - ml | 60 | 37
+soľ
+slivky vykôstkované - g | 670 | 415
+hrubá múka - g | 100 | 62
+cukor kryštálový - g | 100 | 62
+maslo - g | 100 | 62
+cukor vanilkový - ks | 1 | 1
+cukor vanilínový - ks | 1 | 1
+
 ---
 
 ![Slivkový koláč s posýpkou](kolac-s-posypkou-1200px.jpg "Koláč s posýpkou (autor: zwieratko, 2020)")
