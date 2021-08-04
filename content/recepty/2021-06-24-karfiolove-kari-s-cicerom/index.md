@@ -1,7 +1,7 @@
 ---
 title: "Karfiolové kari s cícerom"
 date: 2021-06-24T22:09:47+02:00
-draft: true
+draft: false
 description: Ďalšia variácia na tému bezmäsité, zeleninové kari. Sýte, bohaté na bielkoviny a mierne pikantné.
 type: posts
 tags:
