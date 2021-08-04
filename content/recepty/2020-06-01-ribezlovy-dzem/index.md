@@ -10,7 +10,10 @@ tags:
   - Džem
 categories:
   - Recepty
-toc: false
+toc: true
+featuredImg: ribezlovo-malinovy-dzem.webp
+images:
+  - /recepty/2020-06-01-ribezlovy-dzem/ribezlovo-malinovy-dzem.jpg
 ---
 
 Lahodný domáci džem aj sladký, aj mierne kyselkavý, voňajúci po viničkách a malinách, jednoducho fantastický.
@@ -56,4 +59,19 @@ vylisovaná šťava | 1,6 l | 1,2 l | 1,45 l
 šťava vs ovocie | 73 % | 71 % | 67 %
 kryštálový cukor | 1,5 kg | 1,16 kg | 1,36 kg
 cukor vs ovocie | 45 % | 68 % | 63 %
-cukor vs šťava | 94 % | 97 % | 94 %
+**cukor vs šťava** | **94 %** | **97 %** | **94 %**
+
+---
+
+surovina / várka | 2021a | 2021b
+:---:|:---:|:---:
+surové ovocie | 2,0 kg | 1,82 kg
+vylisovaná šťava | 1,44 kg | 1,26 kg
+šťava vs ovocie | 72,0 % | 69,4 %
+kryštálový cukor | 1,0 kg | 0,46 kg
+cukor vs ovocie | 50 % | 25 %
+**cukor vs šťava** | **69,4 %** | **36,2 %**
+
+---
+
+![Červené ríbezle](ribezlovo-malinovy-dzem.jpg "Červené ríbezle (autor: zwieratko, 2021)")
