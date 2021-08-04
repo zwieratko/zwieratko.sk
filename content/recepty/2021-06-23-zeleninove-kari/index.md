@@ -11,7 +11,7 @@ tags:
 categories:
   - Recepty
 toc: false
-featuredImg: zeleninove-kari-01.jpg
+featuredImg: zeleninove-kari-01.webp
 images:
   - /recepty/2021-06-23-zeleninove-kari/zeleninove-kari-01.jpg
   - /recepty/2021-06-23-zeleninove-kari/zeleninove-kari-02.jpg
