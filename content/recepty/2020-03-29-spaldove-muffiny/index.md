@@ -5,6 +5,7 @@ draft: false
 description: Tradičné čučoriedkové muffiny z netradičnej špaldovej múky.
 type: posts
 tags:
+  - Muffiny
   - Špaldová múka
   - Celozrnná múka
   - Čučoriedky
