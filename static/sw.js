@@ -78,6 +78,10 @@ let filesToCacheExtra = [
   '/recepty/2021-06-23-zeleninove-kari/',
   '/recepty/2021-06-24-karfiolove-kari-s-cicerom/',
   '/recepty/2021-06-25-bananove-muffiny/',
+  '/recepty/2021-08-16-kokosove-jeze/',
+  '/recepty/2021-08-16-kolac-z-kysleho-mlieka/',
+  '/recepty/2021-08-17-hrachova-kasa/',
+  '/recepty/2021-08-17-koprovo-zemiakova-omacka/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
