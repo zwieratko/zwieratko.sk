@@ -82,6 +82,9 @@ let filesToCacheExtra = [
   '/recepty/2021-08-16-kolac-z-kysleho-mlieka/',
   '/recepty/2021-08-17-hrachova-kasa/',
   '/recepty/2021-08-17-koprovo-zemiakova-omacka/',
+  '/recepty/2021-08-24-letna-hubova-polievka/',
+  '/recepty/2021-08-24-pirohy-z-kysleho-mlieka/',
+  '/recepty/2021-08-24-tvarohove-gule/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
