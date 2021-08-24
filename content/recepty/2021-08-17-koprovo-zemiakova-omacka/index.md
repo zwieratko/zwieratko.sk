@@ -36,6 +36,6 @@ Hutná a sýta omáčka s intenzívnou chuťou a vôňou kôpru.
 1. Do rozohriateho masla pridáme múku a zľahka popražíme, vytvoríme svetlú zápražku.
 2. Postupne prilievame vodu / vývar a intenzívne miešame aby sa zápražka dokonale rozpustila a neostali žiadne hrudky.
 3. Z kôpru oddelíme jemnú časť a odložíme ju bokom na záverečné dochutenie, stonky vložíme do rozriedenej zápražky spolu s nadrobno pokrájanými zemiakmi, soľou a bobkovým listom a privedieme k varu, znížime plameň a za občasného miešanie pomaly varíme prikryté aspoň 20 minút.
-4. Odoberieme stonky kôpru aj bobkov list, pridáme smotanu, cukor aj ocot a povaríme ešte 5 minút. Ochutnáme a doladíme s cukrom či octom.
+4. Odoberieme stonky kôpru aj bobkov list, pridáme smotanu aj cukor a povaríme ešte 5 minút.
 5. Ponorným mixérom rozmixujeme na požadovanú hladkosť omáčky.
-6. Na záver pridáme na drobno nasekanú jemnú časť kôpru.
+6. Na záver pridáme na drobno nasekanú jemnú časť kôpru a ocot. Ochutnáme a doladíme s cukrom či octom.
