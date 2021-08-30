@@ -85,6 +85,11 @@ let filesToCacheExtra = [
   '/recepty/2021-08-24-letna-hubova-polievka/',
   '/recepty/2021-08-24-pirohy-z-kysleho-mlieka/',
   '/recepty/2021-08-24-tvarohove-gule/',
+  '/recepty/2021-08-26-koprovo-tvarohovy-kolac/',
+  '/recepty/2021-08-27-nakladane-uhorky/',
+  '/recepty/2021-08-28-celozrnne-razne-pernicky/',
+  '/recepty/2021-08-28-cviklove-kari/',
+  '/recepty/2021-08-29-piskota-s-kakaovou-plnkou/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
