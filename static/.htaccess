@@ -77,11 +77,11 @@ FileETag None
 Header set Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
 </filesMatch>
 #week
-<filesMatch "\.(css|js)$">
+<filesMatch "\.(css|js)\.br$">
 Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
 </filesMatch>
 #00day
-<filesMatch "\.(x?html?|php)$">
+<filesMatch "\.(x?html?|php)\.br$">
 Header always set Cache-Control "private, no-cache, no-store, no-transform, must-revalidate, proxy-revalidate, max-age=0"
 Header always set Pragma "no-cache"
 Header always set Expires 0
