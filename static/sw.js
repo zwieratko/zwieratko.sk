@@ -90,6 +90,11 @@ let filesToCacheExtra = [
   '/recepty/2021-08-28-celozrnne-razne-pernicky/',
   '/recepty/2021-08-28-cviklove-kari/',
   '/recepty/2021-08-29-piskota-s-kakaovou-plnkou/',
+  '/recepty/2021-08-30-pohankova-krupicna-kasa/',
+  '/recepty/2021-09-05-kapia-v-sladko-kyslom-naleve/',
+  '/recepty/2021-09-05-nakladane-leco/',
+  '/recepty/2021-09-06-pikantna-paprikova-pomazanka/',
+  '/recepty/2021-09-06-plnena-paprika/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
