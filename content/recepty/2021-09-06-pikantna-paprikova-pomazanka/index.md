@@ -6,6 +6,7 @@ description: Zeleninová nátierka s výraznou ale príjemnou štipľavo papriko
 type: posts
 tags:
   - Paprika
+  - Nátierka
 categories:
   - Recepty
 toc: false
