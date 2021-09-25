@@ -10,9 +10,10 @@ tags:
 categories:
   - Recepty
 toc: false
-#featuredImg: ...webp
-#images:
-#  - /recepty/...
+featuredImg: natierka-z-udenej-nivy.webp
+images:
+  - /recepty/2021-06-13-natierka-z-udenej-nivy/natierka-z-udenej-nivy.jpg
+  - /recepty/2021-06-13-natierka-z-udenej-nivy/natierka-z-udenej-nivy-suroviny.jpg
 ---
 
 Poctivá a chuťovo intenzívna nátierka z Nivy na hrianky alebo chlieb.
@@ -44,3 +45,11 @@ Poctivá a chuťovo intenzívna nátierka z Nivy na hrianky alebo chlieb.
   - škvarky
 
 A tak vznikne vlastne nová nátierka.
+
+---
+
+![Nátierka z údenej Nivy -- suroviny](natierka-z-udenej-nivy-suroviny.jpg "Nátierka z údenej Nivy - suroviny (autor: zwieratko, 2021)")
+
+---
+
+![Nátierka z údenej Nivy](natierka-z-udenej-nivy.jpg "Nátierka z údenej Nivy (autor: zwieratko, 2021)")
