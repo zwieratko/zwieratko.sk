@@ -27,7 +27,7 @@ Starý, pôvodný rodinný recept na výrobu základnej piškóty s maslovou kak
 - vanilkový cukor -- 1 ks
 - vanilínový cukor -- 1 ks
 - teplá voda -- 5 pl
-- olej -- 50 ml
+- olej -- 70 ml
 - hladká múka -- 5 pl
 - prášok do pečiva -- 1 ks
 
