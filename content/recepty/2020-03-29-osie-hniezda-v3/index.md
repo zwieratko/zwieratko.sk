@@ -11,6 +11,11 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: osie-hniezda.webp
+images:
+  - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda.jpg
+  - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda-po-peceni.jpg
+  - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda-pred-pecenim.jpg
 ---
 
 Kysnutý koláč so škoricovou náplňou verzia 3. Momentálne najnovšia verzia :) Mierne upravené a navýšené množstvá surovín.
@@ -81,3 +86,15 @@ Z daného množstva je možné upiecť:
 - v3 -- 35 ks
 
 Rátané sú len celé osie hniezda a teda nie konce.
+
+---
+
+![Osie hniezda](osie-hniezda.jpg "Osie hniezda (autor: zwieratko, 2021)")
+
+---
+
+![Osie hniezda pred pečením](osie-hniezda-pred-pecenim.jpg "Osie hniezda pred pečením (autor: zwieratko, 2021)")
+
+---
+
+![Osie hniezda po pečení](osie-hniezda-po-peceni.jpg "Osie hniezda po pečení (autor: zwieratko, 2021)")

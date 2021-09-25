@@ -11,6 +11,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: osie-hniezda.webp
+images:
+  - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda.jpg
 ---
 
 Kysnutý koláč so škoricovou náplňou.
@@ -52,3 +55,7 @@ Kysnutý koláč so škoricovou náplňou.
 8. Rúru predhrejeme na 200 °C, vložíme plech a pečieme 15 až 20 minút.
 
 Keďže toto je asi môj najobľúbenejší kysnutý koláč, tak na jeho vylepšovaní neustále pracujem :). Ale chcem zachovať pre porovnanie aj túto podobu receptu, takže tu je [novšia](/recepty/2020-01-26-osie-hniezda-v2) verzia receptu a tu je [ešte novšia](/recepty/2020-03-29-osie-hniezda-v3.md) verzia receptu.
+
+---
+
+![Osie hniezda](osie-hniezda.jpg "Osie hniezda (autor: zwieratko, 2021)")

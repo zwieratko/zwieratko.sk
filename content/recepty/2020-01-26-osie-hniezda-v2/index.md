@@ -11,6 +11,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: osie-hniezda.webp
+images:
+  - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda.jpg
 ---
 
 Kysnutý koláč so škoricovou náplňou verzia 2. Mierne upravené množstvá surovín a postup. Vychádzam z [pôvodnej](/recepty/2019-12-10-osie-hniezda) verzie môjho receptu.
@@ -50,3 +53,7 @@ Kysnutý koláč so škoricovou náplňou verzia 2. Mierne upravené množstvá 
 6. Cesto zrolujeme. Ostrým nožom odkrajujeme kolieska hrubé približne 2,5 až 3cm. Z tohto množstva surovín je možné vyrobiť približne 25ks osích hniezd.
 7. Na plech si odtrhneme papier na pečenie. Naň ukladáme odkrojené kolieska. Vonkajší obvod natrieme olejom. Ukladáme na tesno vedľa seba.
 8. Rúru predhrejeme na 200°C, vložíme plech a pečieme 18 až 20 minút.
+
+---
+
+![Osie hniezda](osie-hniezda.jpg "Osie hniezda (autor: zwieratko, 2021)")
