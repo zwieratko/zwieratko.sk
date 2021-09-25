@@ -11,6 +11,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: kuraci-vyvar.webp
+images:
+  - /recepty/2020-10-01-kuraci-vyvar/kuraci-vyvar.jpg
 ---
 
 Základný, číry, voňavý kurací vývar, vynikajúca polievka, ale aj základ do ďalších receptov.
@@ -39,3 +42,7 @@ Základný, číry, voňavý kurací vývar, vynikajúca polievka, ale aj zákla
 5. Na bežnú polievku postačuje celková doba pomalého varenia dve hodiny. Na extra silný vývar je potrebné primerane predĺžiť dobu varenia.
 6. V osobitnom hrnci si pripravíme obľúbenú cestovinu do polievky.
 7. Polievku v tanieri dochutíme na drobno nakrájanou petržlenovou vňaťou.
+
+---
+
+![Kurací vývar](kuraci-vyvar.jpg "Kurací vývar (autor: zwieratko, 2021)")
