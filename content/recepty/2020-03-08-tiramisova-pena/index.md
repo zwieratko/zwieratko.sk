@@ -11,6 +11,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: tiramisova-pena.webp
+images:
+  - /recepty/2020-03-08-tiramisova-pena/tiramisova-pena.jpg
 ---
 
 Neskutočne ľahká a nadýchaná kávovo-vanilková pena s chuťou tiramisu.
@@ -33,3 +36,7 @@ Neskutočne ľahká a nadýchaná kávovo-vanilková pena s chuťou tiramisu.
 4. V inej nádobe zmiešame syr, vanilkový aj vanilínový cukor a vanilkovú esenciu, miešame až pokiaľ nebude zmes uplne hladká. Postupne primiešavame kávu po lyžičkách podľa chuti.
 5. Šľahačku zmiešame dokopy s mascarponovo-kávovou zmesou. Miešame až sa hmoty uplne prepoja a vznikne nadýchaná pena s kávovou príchuťou.
 6. Penu prekladáme do vychladených pohárov. Jednotlivé vrstvy peny v pohári poprášime kakaom.
+
+---
+
+![Tiramisová pena](tiramisova-pena.jpg "Tiramisová pena (autor: zwieratko, 2021)")
