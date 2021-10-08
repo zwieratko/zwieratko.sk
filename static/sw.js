@@ -95,6 +95,11 @@ let filesToCacheExtra = [
   '/recepty/2021-09-05-nakladane-leco/',
   '/recepty/2021-09-06-pikantna-paprikova-pomazanka/',
   '/recepty/2021-09-06-plnena-paprika/',
+  '/recepty/2021-09-17-hubova-omacka-na-cestoviny/',
+  '/recepty/2021-09-18-piskotova-rolada/',
+  '/recepty/2021-09-20-cestoviny-s-fetou-a-paradajkami/',
+  '/recepty/2021-09-20-hubove-rizoto/',
+  '/recepty/2021-09-20-jablkova-zemlovka/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
