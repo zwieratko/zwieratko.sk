@@ -21,20 +21,20 @@ Mleté mäso s ryžou v kapustnom liste. Svadobná klasika z východu.
 - olej -- 1 dl
 - ryža -- 400 g (guľatá)
 - cibuľa -- 2 ks
-- cesnak -- 2 strúčiky
+- cesnak -- 3 strúčiky
 - soľ -- 2 kl
 - korenie -- 1 kl
-- rasca -- 0,5 kl
+- rasca -- 1 kl
 - worcestrová omáčka -- 1 pl
 - sójová omáčka -- 1 pl
 - červená paprika -- 1 kl
-- bravčové pliecko / krkovička -- 0,5 kg
+- bravčové pliecko / krkovička -- 0,5 až 0,7 kg
 - kyslá kapusta -- 500 g
 
 ## Postup
 
 1. Kapustnú hlávku očistíme, odstránime poškodené listy, vyrežeme hlúbik a dáme variť do osolenej vody s olejom a octom.
-2. Po niekoľkých minútach vrenia sa pokúsime odobrať zo dva kapustné listy, zvyšok hlávky necháme ďalej variť. Odobraté listy necháme chladnúť. Takto postupujeme až odoberieme všetky použiteľné kapustné listy. Do nich budeme neskôr baliť vytvorenú zmes.
+2. Po niekoľkých minútach (približne 5 minút) vrenia sa pokúsime odobrať zo dva až štyri kapustné listy, zvyšok hlávky necháme ďalej variť. Odobraté listy necháme chladnúť. Takto postupujeme až odoberieme všetky použiteľné kapustné listy. Do nich budeme neskôr baliť vytvorenú zmes.
 3. Uvaríme hrnček obľúbenej ryže, na plnenie je vhodná guľatozrnná, môže byť aj hnedá (natural).
 4. Na rozohriatom oleji opražíme na drobno pokrájanú cibuľu.
 5. Po chvíli pridáme pokrájaný alebo pretlačený cesnak, ešte chvíľu pražíme pokiaľ sa cesnak poriadne nerozvonia.
@@ -43,8 +43,9 @@ Mleté mäso s ryžou v kapustnom liste. Svadobná klasika z východu.
 8. Pridáme pomleté mäso, veľmi zaujímavá je krkovička. Miešame pokiaľ mäso nezbelie a potom prikryté dusíme za občasného premiešania aspoň 15 minút.
 9. Zmiešame ryžu a udusené mäso, chvíľu necháme chladnúť, aby sme mohli zmes naberať do rúk.
 10. Do kapustného listu naberieme primerané množstvo ryžovo mäsovej zmesi a pokúsime sa list uzavrieť. Vzniknutý tvar pripomína malý valček.
-11. Do širokého hrnca dáme na spodok olej a nakladanú kyslú kapustu. Na to ukladáme holúbky, prilejeme menšie množstvo vody a privedieme k varu. Prikryté varíme tak 40 minút, dávame pozor aby nevyvrela všetka voda. Podávame samotné, alebo s chlebom, výborne chutia aj studené. Najlepšie sú na druhý deň.
+11. Do širokého hrnca dáme na spodok olej a nakladanú kyslú kapustu. Na to ukladáme holúbky, prilejeme menšie množstvo vody a privedieme k varu. Prikryté varíme tak 35 až 40 minút, dávame pozor aby nevyvrela všetka voda. Podávame samotné, alebo s chlebom, výborne chutia aj studené. Najlepšie sú na druhý deň.
 
 ## Poznámky
 
 - namiesto surovej kapustnej hlávky je možné použiť nakladané kapustné listy, pri nich sa doba varenia holúbkov môže skrátiť na 20 -- 25 minút.
+- na jeden kapustný list je potrebná jedna vrchovatá polievková lyžica hmoty
