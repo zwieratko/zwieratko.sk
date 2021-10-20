@@ -10,9 +10,9 @@ tags:
 categories:
   - Recepty
 toc: false
-#featuredImg: ...webp
-#images:
-#  - /recepty/...
+featuredImg: zemlovka.webp
+images:
+  - /recepty/2021-09-20-jablkova-zemlovka/zemlovka.jpg
 ---
 
 Klasika z detstva, jednoduchý a rýchly recept na bezmäsité, sladké jedlo z bieleho pečiva a jabĺk.
@@ -42,3 +42,7 @@ Klasika z detstva, jednoduchý a rýchly recept na bezmäsité, sladké jedlo z 
 
 - ako základ je možné použiť akékoľvek biele, tukové pečivo: rožky, žemle, vianočku, veku, sendvič či bagetu
 - ako náplň je možné použiť tiež hrudkovitý tvaroh s vanilkovým cukrom, hrozienkami v rume a vajíčkom
+
+---
+
+![Jablková žemľovka](zemlovka.jpg "Jablková žemľovka (autor: zwieratko, 2021)")
