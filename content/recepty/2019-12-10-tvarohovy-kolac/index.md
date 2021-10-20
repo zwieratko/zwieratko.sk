@@ -10,6 +10,9 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: tvarohovy-kolac.webp
+images:
+  - /recepty/2019-12-10-tvarohovy-kolac/tvarohovy-kolac.jpg
 ---
 
 Jednoduchý a skoro diétny :) koláč s nízkym obsahom múky a cukru.
@@ -38,3 +41,7 @@ Jednoduchý a skoro diétny :) koláč s nízkym obsahom múky a cukru.
 7. Namočené hrozienka precedíme a obalíme v škrobe, takto ich jemne primiešame do zmesi.
 8. Zmes vylejeme do okrúhlej tortovej formy (priemer 28cm), ktorú sme vymastili aj pomúčili a necháme 10 minút odstáť.
 9. Dáme piecť do rúry vyhriatej na 180--200 °C na 35--40 minút.
+
+---
+
+![Tvarohový koláč](tvarohovy-kolac.jpg "Tvarohový koláč (autor: zwieratko, 2021)")
