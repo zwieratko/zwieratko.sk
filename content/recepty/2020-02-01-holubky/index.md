@@ -10,6 +10,10 @@ tags:
 categories:
   - Recepty
 toc: false
+featuredImg: holubky-02.webp
+images:
+  - /recepty/2020-02-01-holubky/holubky-01.jpg
+  - /recepty/2020-02-01-holubky/holubky-02.jpg
 ---
 
 Mleté mäso s ryžou v kapustnom liste. Svadobná klasika z východu.
@@ -50,3 +54,11 @@ Mleté mäso s ryžou v kapustnom liste. Svadobná klasika z východu.
 - namiesto surovej kapustnej hlávky je možné použiť nakladané kapustné listy, pri nich sa doba varenia holúbkov môže skrátiť na 20 -- 25 minút.
 - na jeden kapustný list je potrebná jedna vrchovatá polievková lyžica hmoty
 - z uvedeného množstva je možné pripraviť približne 30 holúbkov
+
+---
+
+![Holúbky - príprava](holubky-01.jpg "Holúbky - príprava (autor: zwieratko, 2021)")
+
+---
+
+![Holúbky](holubky-02.jpg "Holúbky (autor: zwieratko, 2021)")
