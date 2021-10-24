@@ -1,4 +1,4 @@
-name: Deploy
+name: Deploy web test2
 on:
   push:
     branches:
