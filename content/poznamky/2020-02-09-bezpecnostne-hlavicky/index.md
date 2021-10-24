@@ -150,9 +150,9 @@ Kvôli množstvu parametrov podrobnejšie v samostatnej poznámke [Content-Secur
 
 ## Permissions-Policy
 
-Pôvodne sa táto hlavička volala `Feature-Policy` no na jeseň 2020 došlo k premenovaniu na `Permissions-Policy` a zmenil sa aj formát zápisu. Pre porovnanie viď nižšie formát zápisu oboch.
+Pôvodne sa používala hlavička `Feature-Policy`, no od nej sa upúšťa. Bola vytvorený návrh novej hlavičky `Permissions-Policy` a zmenil sa aj formát zápisu. Pre porovnanie viď nižšie formát zápisu oboch.
 
-Hlavička umožňuje povoľovať, zakazovať a meniť pristup ku rôznym vlastnostiam a funkciám prehliadača. Podobne ako CSP kontroluje bezpečnosť tým, že reguluje prístup webovej stránky ku zdrojom obsahu, tak FP kontroluje bezpečnosť a súkromie tým, že reguluje prístup webovej stránky ku funkciám webového prehliadača.
+Hlavička umožňuje správcom stránok povoľovať, zakazovať a meniť pristup ku rôznym vlastnostiam a funkciám prehliadača. Podobne ako CSP kontroluje bezpečnosť tým, že reguluje prístup webovej stránky ku zdrojom obsahu, tak táto hlavička kontroluje bezpečnosť a súkromie tým, že reguluje prístup webovej stránky ku funkciám a rozhraniam webového prehliadača.
 
 Parametrom je vlastnosť prehliadača a typ povolenie pre danú vlastnosť, vlastností je mnoho, oddeľujú sa bodkočiarkou. Nie každá vlastnosť je podporovaná vo všetkých prehliadačoch.
 
@@ -192,6 +192,8 @@ Referrer-Policy "no-referrer-when-downgrade"
 ---
 
 ## Expect-CT
+
+Od tejto hlavičky sa upúšťa.
 
 Hlavička núti prehliadač overiť si správnosť vydaného certifikátu pomocou mechanizmu [Certificate Transparency](https://www.certificate-transparency.org/) a umožní prehliadaču posielať report v prípade, že certifikát nie je v poriadku.
 
@@ -268,9 +270,9 @@ header / {
   X-Content-Type-Options "nosniff"
   X-XSS-Protection "1; mode=block"
   X-Frame-Options "SAMEORIGIN"
-  Public-Key-Pins "pin-sha256=\"sha256...=\" ; pin-sha256=\"sha256...=\" ; max-age=600 ; includeSubdomains ; report-uri=\"https://mojadomena.report-uri.com/r/d/hpkp/enforce\""
   Content-Security-Policy "upgrade-insecure-requests; block-all-mixed-content; default-src 'none' ; base-uri 'none' ; style-src 'self' 'sha256-z7zcnw/4WalZqx+PrNaRnoeLz/G9WXuFqV1WCJ129sg=' ; style-src-attr 'unsafe-inline' ; font-src 'self' data: ; img-src 'self' ; script-src 'nonce-h2q368NFu1IFU8SoxDwpsg==' 'nonce-rAnd0mNumb3r==' 'unsafe-inline' 'strict-dynamic' https: ; frame-src https://docs.google.com/ https://www.google.com/ ; child-src 'none' ; object-src 'none' ; manifest-src 'self' ; connect-src 'self' ; form-action 'self' ; frame-ancestors 'self' ; report-uri https://mojadomena.report-uri.com/r/d/csp/enforce "
   Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; microphone 'none'; payment 'none'"
+  Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), microphone=(), payment=()"
   Referrer-Policy "no-referrer-when-downgrade"
   Expect-CT "enforce, max-age=600, report-uri=https://mojadomena.report-uri.com/r/d/ct/enforce"
   node "zwerina-01"
@@ -326,8 +328,6 @@ add_header Strict-Transport-Security "max-age=31536000; includeSubDomains; prelo
 ## Zdroj
 
 - [developer.mozilla.org](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers#Security)
-- [scotthelme.co.uk](https://scotthelme.co.uk/)
+- [scotthelme.co.uk](https://scotthelme.co.uk/tag/security-headers/)
 - [securityheaders.cz](https://securityheaders.cz/)
-- [developers.google.com](https://developers.google.com/web/updates/2018/06/feature-policy)
-- [w3c.github.io](https://w3c.github.io/webappsec-permissions-policy/)
-- [httpwg.org](https://httpwg.org/)
+- [owasp.org](https://owasp.org/www-project-secure-headers/)
