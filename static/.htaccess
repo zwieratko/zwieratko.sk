@@ -68,10 +68,10 @@ Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geoloca
 Header set Referrer-Policy "no-referrer-when-downgrade"
 Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
-Header set Cross-Origin-Embedder-Policy require-corp; report-to="default"
-Header set Cross-Origin-Opener-Policy same-origin; report-to="default"
+Header set Cross-Origin-Embedder-Policy "require-corp; report-to=\"default\""
+Header set Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
 Header set Cross-Origin-Resource-Policy same-origin
-Header set Clear-Site-Data: "cookies"
+Header set Clear-Site-Data cookies
 Header set X-Permitted-Cross-Domain-Policies none
 Header always unset Server
 Header always unset X-Powered-By
