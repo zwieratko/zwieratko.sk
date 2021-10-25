@@ -63,15 +63,15 @@ Header set Content-Security-Policy "default-src 'none'; \
   report-to default; \
   report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
 Header set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://zwieratko.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
-#Header set Feature-Policy "accelerometer 'none'; ambient-light-sensor 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; microphone 'none'; payment 'none'"
+Header set Feature-Policy "accelerometer 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; microphone 'none'; payment 'none'"
 Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), microphone=(), payment=()"
 Header set Referrer-Policy "no-referrer-when-downgrade"
 Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
-Header set Cross-Origin-Embedder-Policy require-corp
 Header set Cross-Origin-Opener-Policy same-origin
 Header set Cross-Origin-Resource-Policy same-origin
-Header set Clear-Site-Data "cookies"
+Header set Cross-Origin-Embedder-Policy require-corp
+Header set Clear-Site-Data \"cookies\"
 Header set X-Permitted-Cross-Domain-Policies none
 Header always unset Server
 Header always unset X-Powered-By
