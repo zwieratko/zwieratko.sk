@@ -56,7 +56,7 @@ Header set Content-Security-Policy "default-src 'none'; \
   script-src-elem 'self' https://gist.github.com; \
   worker-src 'self'; \
   manifest-src 'self'; \
-  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos https://gist.github.com https://github.githubassets.com; \
+  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos https://gist.github.com https://github.githubassets.com https://zwieratko.report-uri.com; \
   form-action 'self'; \
   frame-ancestors 'none'; \
   base-uri 'none'; \
@@ -68,9 +68,9 @@ Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geoloca
 Header set Referrer-Policy "no-referrer-when-downgrade"
 Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
-Header set Cross-Origin-Opener-Policy same-origin
+Header set Cross-Origin-Embedder-Policy require-corp; report-to="default"
+Header set Cross-Origin-Opener-Policy same-origin; report-to="default"
 Header set Cross-Origin-Resource-Policy same-origin
-Header set Cross-Origin-Embedder-Policy require-corp
 Header set Clear-Site-Data: "cookies"
 Header set X-Permitted-Cross-Domain-Policies none
 Header always unset Server
