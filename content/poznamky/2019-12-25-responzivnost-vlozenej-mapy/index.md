@@ -50,14 +50,14 @@ Potom môžem vkladanú mapu, respektíve „iframe“ pomocou ktorého vkladám
 Mapa vložená len pomocou „iframu“:
 
 {{< rawhtml >}}
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.262020121058!2d21.90540110850619!3d48.94259420731785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473eb574cbf83289%3A0xcc162ac3a49bfc2c!2zUG9kIMWgaW51!5e1!3m2!1ssk!2ssk!4v1577257748391!5m2!1ssk!2ssk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" crossorigin="use-credentials"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.262020121058!2d21.90540110850619!3d48.94259420731785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473eb574cbf83289%3A0xcc162ac3a49bfc2c!2zUG9kIMWgaW51!5e1!3m2!1ssk!2ssk!4v1577257748391!5m2!1ssk!2ssk" width="100%" height="150" frameborder="0" style="border:0;" allowfullscreen="" crossorigin allow="cross-origin-isolated"></iframe>
 {{< /rawhtml >}}
 
 Mapa vložená pomocou toho istého „iframu“ ale už aj pomocou novovytvoreného prvku `.google-maps`:
 
 {{< rawhtml >}}
 <div class="google-maps">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.262020121058!2d21.90540110850619!3d48.94259420731785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473eb574cbf83289%3A0xcc162ac3a49bfc2c!2zUG9kIMWgaW51!5e1!3m2!1ssk!2ssk!4v1577257748391!5m2!1ssk!2ssk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" crossorigin="use-credentials"></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1987.262020121058!2d21.90540110850619!3d48.94259420731785!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473eb574cbf83289%3A0xcc162ac3a49bfc2c!2zUG9kIMWgaW51!5e1!3m2!1ssk!2ssk!4v1577257748391!5m2!1ssk!2ssk" width="200" height="150" frameborder="0" style="border:0;" allowfullscreen="" crossorigin></iframe>
 </div>
 {{< /rawhtml >}}
 
