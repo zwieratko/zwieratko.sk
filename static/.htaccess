@@ -39,12 +39,15 @@ RewriteRule ^(.*?)/?$ $1.php [L]
 
 # SECURITY HEADERS
 #------------------------------
+# Working draft
+Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), payment=(), serial=(), usb=()"
+# Active
 #Header set Strict-Transport-Security "max-age=157680000; includeSubDomains"
-Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+#Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+Header always set X-Frame-Options "deny"
 Header always set X-Content-Type-Options "nosniff"
-Header always set X-XSS-Protection "0"
-Header always set X-Frame-Options "sameorigin"
-Header set Content-Security-Policy "default-src 'none'; \
+Header always set Content-Security-Policy "default-src 'none'; \
   font-src https://fonts.gstatic.com data:; \
   frame-src https://www.google.com https://www.youtube.com; \
   img-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; \
@@ -62,17 +65,22 @@ Header set Content-Security-Policy "default-src 'none'; \
   base-uri 'none'; \
   report-to default; \
   report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
+Header always set X-Permitted-Cross-Domain-Policies "none"
+Header always set Referrer-Policy "no-referrer"
+Header always set Clear-Site-Data "\"cookies\""
+# COEP = "require-corp; report-to=\"default\""  [OR] "credentialless; report-to=\"default\""
+Header always set Cross-Origin-Embedder-Policy "credentialless; report-to=\"default\""
+Header always set Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
+Header always set Cross-Origin-Resource-Policy "same-origin"
+# Report uri
 Header set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://zwieratko.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
-Header set Feature-Policy "accelerometer 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'"
-Header set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), payment=(), serial=(), usb=()"
-Header set Referrer-Policy "no-referrer-when-downgrade"
-Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
-Header set Cross-Origin-Embedder-Policy "require-corp; report-to=\"default\""
-Header set Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
-Header set Cross-Origin-Resource-Policy same-origin
-Header set Clear-Site-Data cookies
-Header set X-Permitted-Cross-Domain-Policies none
+# Almost deprecated
+Header set Feature-Policy "accelerometer 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; serial 'none'; usb 'none'"
+Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
+# Deprecated
+Header always set X-XSS-Protection "0"
+# Other
 Header always unset Server
 Header always unset X-Powered-By
 # Disable ETag
