@@ -67,7 +67,7 @@ Header always set Content-Security-Policy "default-src 'none'; \
   report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
 Header always set X-Permitted-Cross-Domain-Policies "none"
 Header always set Referrer-Policy "no-referrer"
-Header always set Clear-Site-Data "\"cookies\""
+#Header always set Clear-Site-Data "\"cookies\",\"storage\""
 # COEP = "require-corp; report-to=\"default\""  [OR] "credentialless; report-to=\"default\""
 Header always set Cross-Origin-Embedder-Policy "credentialless; report-to=\"default\""
 Header always set Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
