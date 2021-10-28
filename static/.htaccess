@@ -39,32 +39,70 @@ RewriteRule ^(.*?)/?$ $1.php [L]
 
 # SECURITY HEADERS
 #------------------------------
+
 # Working draft
-Header always set Permissions-Policy "accelerometer=(), autoplay=(), camera=(), geolocation=(self), gyroscope=(), magnetometer=(), microphone=(), payment=(), serial=(), usb=()"
+Header always set Permissions-Policy "\
+    accelerometer=(), \
+    autoplay=(), \
+    camera=(), \
+    geolocation=(self), \
+    gyroscope=(), \
+    magnetometer=(), \
+    microphone=(), \
+    payment=(), \
+    serial=(), \
+    usb=()"
+
 # Active
 #Header set Strict-Transport-Security "max-age=157680000; includeSubDomains"
 #Header set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
 Header set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
 Header always set X-Frame-Options "deny"
 Header always set X-Content-Type-Options "nosniff"
-Header always set Content-Security-Policy "default-src 'none'; \
-  font-src https://fonts.gstatic.com data:; \
-  frame-src https://www.google.com https://www.youtube.com; \
-  img-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos; \
-  media-src data:; \
-  style-src 'self' https://fonts.googleapis.com https://github.githubassets.com; \
-  style-src-attr 'unsafe-inline'; \
-  style-src-elem 'self' 'unsafe-inline' https://github.githubassets.com; \
-  script-src 'nonce-kSh6lWWYeduy8lJeus4PYw==' 'unsafe-inline'; \
-  script-src-elem 'self' https://gist.github.com; \
-  worker-src 'self'; \
-  manifest-src 'self'; \
-  connect-src 'self' https://dummyimage.com https://picsum.photos https://i.picsum.photos https://gist.github.com https://github.githubassets.com https://zwieratko.report-uri.com; \
-  form-action 'self'; \
-  frame-ancestors 'none'; \
-  base-uri 'none'; \
-  report-to default; \
-  report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
+Header always set Content-Security-Policy "\
+    default-src 'none'; \
+    font-src \
+        https://fonts.gstatic.com \
+        data:; \
+    frame-src \
+        https://www.google.com \
+        https://www.youtube.com; \
+    img-src \
+        'self' \
+        https://dummyimage.com \
+        https://picsum.photos \
+        https://i.picsum.photos; \
+    media-src data:; \
+    style-src \
+        'self' \
+        https://fonts.googleapis.com \
+        https://github.githubassets.com; \
+    style-src-attr 'unsafe-inline'; \
+    style-src-elem \
+        'self' \
+        'unsafe-inline' \
+        https://github.githubassets.com; \
+    script-src \
+        'nonce-kSh6lWWYeduy8lJeus4PYw==' \
+        'unsafe-inline'; \
+    script-src-elem \
+        'self' \
+        https://gist.github.com; \
+    worker-src 'self'; \
+    manifest-src 'self'; \
+    connect-src \
+        'self' \
+        https://dummyimage.com \
+        https://picsum.photos \
+        https://i.picsum.photos \
+        https://gist.github.com \
+        https://github.githubassets.com \
+        https://zwieratko.report-uri.com; \
+    form-action 'self'; \
+    frame-ancestors 'none'; \
+    base-uri 'none'; \
+    report-to default; \
+    report-uri https://zwieratko.report-uri.com/r/d/csp/enforce;"
 Header always set X-Permitted-Cross-Domain-Policies "none"
 Header always set Referrer-Policy "no-referrer"
 #Header always set Clear-Site-Data "\"cookies\",\"storage\""
@@ -72,33 +110,51 @@ Header always set Referrer-Policy "no-referrer"
 Header always set Cross-Origin-Embedder-Policy "credentialless; report-to=\"default\""
 Header always set Cross-Origin-Opener-Policy "same-origin; report-to=\"default\""
 Header always set Cross-Origin-Resource-Policy "same-origin"
+
 # Report uri
 Header set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":[{\"url\":\"https://zwieratko.report-uri.com/a/d/g\"}],\"include_subdomains\":true}"
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
+
 # Almost deprecated
-Header set Feature-Policy "accelerometer 'none'; autoplay 'none'; camera 'none'; geolocation 'self'; gyroscope 'none'; magnetometer 'none'; microphone 'none'; payment 'none'; serial 'none'; usb 'none'"
+Header set Feature-Policy "\
+    accelerometer 'none'; \
+    autoplay 'none'; \
+    camera 'none'; \
+    geolocation 'self'; \
+    gyroscope 'none'; \
+    magnetometer 'none'; \
+    microphone 'none'; \
+    payment 'none'; \
+    serial 'none'; \
+    usb 'none'"
 Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
+
 # Deprecated
+#Header set Public-Key-Pins " "
 Header always set X-XSS-Protection "0"
+
 # Other
 Header always unset Server
 Header always unset X-Powered-By
+
 # Disable ETag
 Header always unset ETag
 FileETag None
 
 # Expires and Cache
-#month
+# 30 days
 <filesMatch "\.(ico|jpe?g|png|gif|swf|svg|webp)$">
 Header set Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
 </filesMatch>
-#week
+
+# 7 days
 <filesMatch "\.(css|js)\.br$">
 Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
 </filesMatch>
-#00day
+
+# 0 days
 <filesMatch "\.(x?html?|php)\.br$">
-Header always set Cache-Control "private, no-cache, no-store, no-transform, must-revalidate, proxy-revalidate, max-age=0"
+Header always set Cache-Control "no-store, max-age=0"
 Header always set Pragma "no-cache"
 Header always set Expires 0
 </filesMatch>
