@@ -97,10 +97,25 @@ Ak súbory môžu obsahovať citlivé, osobné alebo dôverné informácie alebo
 
 Toto je potrebné nastaviť tak, aby to rešpektovali podľa možnosti všetky používané prehliadače.
 
+.htaccess:
+```Apache
+# 0 days
+<filesMatch "\.(x?html?|php)\.br$">
+Header always set Cache-Control "no-store, max-age=0"
+Header always set Pragma "no-cache"
+Header always set Expires 0
+</filesMatch>
 ```
-Cache-Control "private, no-cache, no-store, no-transform, must-revalidate, proxy-revalidate, max-age=0"
-Pragma no-cache
-Expires 0
+
+Caddyfile:
+```sh
+# 0 days
+handle {
+  header Cache-Control "no-store, max-age=0"
+  header Pragma no-cache
+  header Expires 0
+  header a-extra-header "without-cache"
+}
 ```
 
 ### Súbory CSS / JS a obrázky
@@ -109,8 +124,14 @@ Ak súbory neobsahujú citlivé údaje alebo sú stále, nemenia sa často je mo
 
 .htaccess:
 ```Apache
-<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$">
-    Header set Cache-Control "max-age=2592000, stale-while-revalidate=86400, stale-if-error=604800"
+# 30 days
+<filesMatch "\.(ico|jpe?g|png|gif|swf|svg|webp)$">
+Header set Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
+</filesMatch>
+
+# 7 days
+<filesMatch "\.(css|js)\.br$">
+Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
 </filesMatch>
 ```
 
@@ -123,11 +144,22 @@ location ~* \.(ico|pdf|flv|jpg|jpeg|png|gif|js|css|swf)$ {
 
 Caddyfile:
 ```sh
-header /css {
-  Cache-Control "public, max-age=2592000, stale-while-revalidate=86400, stale-if-error=604800"
+# 30 days
+@image-path {
+  file
+  path *.ico *.png *.jpg *.jpeg *.svg *.webp
 }
-header /js {
-  Cache-Control "public, max-age=2592000, stale-while-revalidate=86400, stale-if-error=604800"
+handle @image-path {
+  header Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
+}
+
+# 7 days
+@css-js-path {
+  file
+  path *.css *.js
+}
+handle @css-js-path {
+  header Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
 }
 ```
 
