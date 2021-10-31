@@ -1,18 +1,20 @@
 ---
 title: "Dusená červená kyslá kapusta"
 date: 2021-10-09T22:47:40+02:00
-draft: true
-description:
+draft: false
+description: Veľmi zdravá klasická príloha ku kačaciemu mäsu.
 type: posts
 tags:
   - Kapusta
 categories:
   - Recepty
 toc: false
-#featuredImg: ...webp
-#images:
-#  - /recepty/...
+featuredImg: dusena-cervena-kapusta.webp
+images:
+  - /recepty/2021-10-09-dusena-cervena-kysla-kapusta/dusena-cervena-kapusta.webp
 ---
+
+Veľmi zdravá klasická príloha ku [kačaciemu mäsu](/tags/kačacie-prsia/).
 
 ## Suroviny
 
@@ -24,3 +26,12 @@ toc: false
 - kyslá červená kapusta -- 640 g
 
 ## Postup
+
+1. V kastróle rozohrejeme olej. Pridáme na drobno pokrájanú cibuľu a zľahka pražíme.
+2. Po chvíli pridáme drvenú rascu a mleté čierne korenie, pokračujeme v pražení až pokiaľ sa rasca poriadne nerozvonia.
+3. Ďalej pridáme kryštálový cukor a dôkladne miešame, kým sa cukor nerozpustí.
+4. Nakoniec pridáme aj samotnú kyslú červenú kapustu a za občasného premiešania dusíme prikryté približne 1 hodinu.
+
+---
+
+![Dusená červená kyslá kapusta](dusena-cervena-kapusta.webp "Dusená červená kyslá kapusta (autor: zwieratko, 2021)")
