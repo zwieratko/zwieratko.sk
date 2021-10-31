@@ -6,6 +6,7 @@ description: Klasika z detstva, jednoduchý a rýchly recept na bezmäsité, sla
 type: posts
 tags:
   - Bezmäsité jedlo
+  - Rožky
   - Jablká
 categories:
   - Recepty
@@ -36,7 +37,7 @@ Klasika z detstva, jednoduchý a rýchly recept na bezmäsité, sladké jedlo z 
 3. V nádobe zmiešame mlieko, vajíčko aj vanilínový cukor. Zmes dôkladne vyšľaháme, aby sa vajce zmiešalo s mliekom a cukor úplne rozpustil. Tekutú zmes vylejeme na rožky a zľahka premiešame.
 4. Jablká opláchneme, ošúpeme a vyrežeme jadrovník. Nakrájame ich na tenké plátky.
 5. Do vymastenej zapekacej formy dáme polovicu navlhnutých rožkov, mierne zarovnáme. Na vrch ďalej ukladáme plátky jabĺk, tie posypeme vanilkovým, vanilínovým aj škoricovým cukrom podľa chuti a na záver dáme druhú polovicu rožkov.
-6. Na vrch poukladáme plátky masla a dáme piecť do rúry predhriatej na 200 °C na približne 1 hodinu.
+6. Na vrch poukladáme plátky masla a dáme piecť do rúry pred hriatej na 200 °C na približne 1 hodinu.
 
 ## Poznámky
 
