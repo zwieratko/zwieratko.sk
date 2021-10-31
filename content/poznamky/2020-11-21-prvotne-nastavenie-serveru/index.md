@@ -383,7 +383,7 @@ V Debiane pridám znak mriežky na začiatok riadku ak vyslovene nepotrebujem `s
 
 Všetky nastavenia zhrnuté na jednom mieste, použil som východiskový konfiguračný súbor `/usr/share/openssh/sshd_config`, z Debian Buster (OpenSSH_7.9p1) do ktorého som zapracoval všetky vyššie uvedené zmeny:
 
-```
+```sh
 #	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
 # This is the sshd server system-wide configuration file.  See
