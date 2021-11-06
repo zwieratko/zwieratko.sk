@@ -142,22 +142,33 @@ Header always unset ETag
 FileETag None
 
 # Expires and Cache
+# , stale-while-revalidate=86400, stale-if-error=604800 ??
 # 30 days
 <filesMatch "\.(ico|jpe?g|png|gif|swf|svg|webp)$">
-Header set Cache-Control "max-age=2592000, public, stale-while-revalidate=86400, stale-if-error=604800"
+Header set Cache-Control "max-age=2592000, public"
 </filesMatch>
 
 # 7 days
 <filesMatch "\.(css|js)\.br$">
-Header set Cache-Control "max-age=604800, public, stale-while-revalidate=86400, stale-if-error=604800"
+Header set Cache-Control "max-age=604800, public, immutable"
+</filesMatch>
+
+# 7 days
+<filesMatch "\.(webmanifest)$">
+Header set Cache-Control "max-age=604800, public"
 </filesMatch>
 
 # 0 days
 <filesMatch "\.(x?html?|php)\.br$">
 Header always set Cache-Control "no-store, max-age=0"
-Header always set Pragma "no-cache"
-Header always set Expires 0
+#Header always set Pragma "no-cache"
+#Header always set Expires 0
 </filesMatch>
+
+# Specify webmanifest file type
+<Files site.webmanifest>
+    AddType "application/manifest+json" .webmanifest
+</Files>
 
 # Specify Brotli-encoded assets
 <Files *.js.br>
