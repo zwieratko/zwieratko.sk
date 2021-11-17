@@ -52,3 +52,4 @@ Thumbs.db
 public/
 server.sh
 .vscode/
+server.ps1
