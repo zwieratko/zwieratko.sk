@@ -1,5 +1,6 @@
 ---
 title: "TEST03 Test"
+slug: 2018-12-27-test03-test
 date: 2018-12-26T11:29:25+01:00
 draft: true
 description: Popis vo front matter príspevku
