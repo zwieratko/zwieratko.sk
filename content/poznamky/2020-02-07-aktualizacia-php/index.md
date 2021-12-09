@@ -19,6 +19,8 @@ Chcem aktualizovať PHP na najnovšiu podporovanú verziu na počítači s opera
 
 PHP je populárny, obľúbený a silný programovací jazyk. Momentálne (február 2020) sa pomaly končí podpora pre PHP verziu 7.2, oficialne už len bezpečnostné opravy. Aktívna podpora je pre verzie 7.3 (do 6.12.2020) a 7.4 (do 28.11.2021). Debian 9 má vo svojich repozitároch verziu 7.0 a Debian 10 má verziu 7.3, ja by som chcel však aktualizovať na najnovšiu verziu 7.4.
 
+### Aktualizácia na novšiu verziu PHP 8.1 viď [ďalšiu poznámku](/poznamky/2021-11-28-aktualizacia-php-na-verziu-8-1/).
+
 ## Upozornenie
 
 Novšie verzie PHP prinášajú zlepšenia a zvyčajne aj opravy a zrýchlenie, no môžu tak isto odstrániť niektoré vlastnosti, alebo priniesť chyby nové. Takže prechod na novú verziu PHP môže rozbiť funkčnosť systému! Na toto nesmiem zabudnúť. Pred prechodom je potrebné vyskúšať novšiu verziu na neprodukčných serveroch.
