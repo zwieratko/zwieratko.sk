@@ -17,9 +17,9 @@ toc: false
 
 Chcem prehľadať súbor, na základe kritéria v ňom nájsť riadky a doplniť na začiatok takých riadkov nejaký reťazec.
 
-Pri vytváraní logov nastala zmena (z ničoho nič, sama od seba :) a od istého dátumu sa riadok nezačína ip adresou, ale inými dvoma údajmi. Pri analýze logu viem niektoré údaje preskočiť. A keďže chcem v jednom kroku spracovať širšie časové rozpätie a postupnosť informácii nie je rovnaká v každom riadku, potrebujem všetky riadky nezačínajúce sa ip adresou doplniť o dva ľubovoľné reťazce, aby som zjednotil formu postupnosti údajov vo všetkých riadkoch v logu. Následne môžem logy štandardne spracovať.
+Pri vytváraní logov nastala zmena (z ničoho nič, sama od seba :) a od istého dátumu sa riadok nezačína IP adresou, ale inými dvoma údajmi. Pri analýze logu viem niektoré údaje preskočiť. A keďže chcem v jednom kroku spracovať širšie časové rozpätie a postupnosť informácii nie je rovnaká v každom riadku, potrebujem všetky riadky nezačínajúce sa IP adresou doplniť o dva ľubovoľné reťazce, aby som zjednotil formu postupnosti údajov vo všetkých riadkoch v logu. Následne môžem logy štandardne spracovať.
 
-## Riešemie
+## Riešenie
 
 Použijem príkaz `sed`. Prepínač `-i` určí, že sa operácia vykoná priamo na mieste v zadanom súbore.
 
