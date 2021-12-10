@@ -7,6 +7,7 @@ type: posts
 tags:
   - Paprika
   - Ryža
+  - Bravčové mäso
 categories:
   - Recepty
 toc: false
