@@ -1,7 +1,7 @@
 ---
 title: "Fašírky"
 date: 2021-12-10T14:08:04+01:00
-draft: true
+draft: false
 description: Klasický a úplne základný pokrm zo zmesi mletého bravčového mäsa a bieleho pečiva, s príjemnou cesnakovou vôňou a chuťou.
 type: posts
 tags:
