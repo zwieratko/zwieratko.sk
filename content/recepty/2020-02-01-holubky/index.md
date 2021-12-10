@@ -7,6 +7,7 @@ type: posts
 tags:
   - Kapusta
   - Ryža
+  - Bravčové mäso
 categories:
   - Recepty
 toc: false
