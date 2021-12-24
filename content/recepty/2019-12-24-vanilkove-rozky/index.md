@@ -37,13 +37,14 @@ Krehké vianočné pečivo s príjemnou vanilkovo-orieškovou chuťou.
 4. Do suchej zmesi pridáme na kúsky pokrájanú a zmäknutú Heru. Rukou vypracujeme cesto. Na noc odložíme do chladničky.
 5. Z cesta odoberieme menšie kusy a na zľahka pomúčenej doske ušúľame zhruba 1-1,5cm hrubý valec. Z neho nakrájame rovnaké asi 5-6cm dlhé kúsky.
 6. Z kúskov cesta tvarujeme rožteky, tie potom ukladáme na plech.
-7. Dáme piecť na 12 minút do rúry predhriatej na 200 °C.
+7. Dáme piecť na 12 až 15 minút do rúry predhriatej na 200 °C. Z vrchu by mali ostať svetlé, po okrajoch a zo spodnej strany mierne hnedé. Musíme dávať pozor aby sme ich príliš nevysušili.
 8. Po upečení obaľujeme v zmesi preosiateho práškového, vanilkového a vanilínového cukru.
 9. Ukladáme do uzatvárateľnej nádoby.
 
-## Poznámka
+## Poznámky
 
-Z navýšeného množstva surovín vznikne 1083 g cesta, z ktorého je možné vyrobiť 120 kusov rožtekov.
+- z navýšeného množstva surovín vznikne 1083 g cesta, z ktorého je možné vyrobiť 120 kusov rožtekov
+- rok 2021: z uvedeného množstva vzniklo cesto postačujúce na výrobu 152 ks vanilkových rožkov
 
 ---
 
