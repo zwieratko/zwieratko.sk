@@ -47,13 +47,28 @@ Nepečená kakaovo-orechová cukrovinka s plnkou z vaječného likéru.
 
 ## Postup
 
-1. Úplne nadrobno rozsekáme detské piškóty a orechy, kľudne v elektrickom mixéry. Má vzniknúť niečo konzistencie veľmi hrubej múky.
-2. Pridáme maslo a rukou vypracujeme cesto, po zmiešaní masla so sypkou zmesou pridáme rum. Ďalej miesime, hmota by mala držať po kope. Dáme na pol hodinky do chladničky.
+1. Úplne nadrobno rozsekáme detské piškóty a orechy, kľudne v elektrickom mixéry. Pridáme preosiaty cukor aj kakao, vanilkový a vanilínový cukor a premiešame.
+2. Pridáme mäkké maslo a rukou vypracujeme cesto, po zmiešaní masla so sypkou zmesou pridáme rum. Ďalej miesime, hmota by mala držať po kope. Dáme na pol hodinky do chladničky.
 3. Maslo, práškový cukor a vaječný likér vyšľaháme do hladkej peny.
 4. Do plastovej formičky v tvare úliku si dám tenučkú potravinársku fóliu, aby sme mohli neskôr hotový úlik jednoduchšie z formičky vybrať.
-5. Formičku vystlanú fóliou naplníme hmotou. Čínskou paličkou na jedenie urobíme v prostriedku dutinu. Tú naplníme približne 1 ml vaječného likéru pomocou malej injekčnej striekačky, dutinu s likérom zapcháme kúskom vyšľahanej peny a priložíme detskou piškótou. Obrátime hore nohami, postavíme piškótou na tanier a pridržiavajúc fóliu opatrne stiahneme formičku.
+5. Formičku vystlanú fóliou naplníme hmotou. Čínskou paličkou na jedenie urobíme v prostriedku dutinu. Tú naplníme približne 1 ml vaječného likéru pomocou malej injekčnej striekačky, dutinu s likérom zapcháme kúskom vyšľahanej maslovej peny a priložíme detskou piškótou. Obrátime hore nohami, postavíme piškótou na tanier a pridržiavajúc fóliu opatrne stiahneme formičku.
+
+## Poznámky
+
+surovina | pôvodné | navýšené
+:---|:---:|:---:
+detské piškóty | 120 g | 180 g
+vlašské orechy | 50 g | 75 g
+práškový cukor | 85 g | 120 g
+vanilkový cukor | 1 ks | 1 ks
+vanilínový cukor | 1 ks | 1 ks
+kakao | 1 kl | 1 kl
+maslo | 85 g | 110 g
+tuzemský rum | 2 pl | 4 pl
+
+- z navýšeného množstva vznikla hmota, z ktorej bolo možné vytvoriť 28 ks úlikov
+- 180 g detských piškót je množstvo, ktoré ostane vo veľkom balení (240g) po odobratí 30 ks (na zatváranie úlikov)
  
- ---
+---
  
- ![Úliky](uliky-1200px.jpg "Úliky (autor: zwieratko, 2020)")
- 
+![Úliky](uliky-1200px.jpg "Úliky (autor: zwieratko, 2020)")
