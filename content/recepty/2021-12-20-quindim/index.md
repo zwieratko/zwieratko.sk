@@ -1,7 +1,7 @@
 ---
 title: "Quindim"
 date: 2021-12-20T16:04:34+01:00
-draft: true
+draft: false
 description: Exotický, vaječný puding s príjemnou kokosovou a vanilkovou príchuťou, pečený vo vodnom kúpeli.
 type: posts
 tags:
