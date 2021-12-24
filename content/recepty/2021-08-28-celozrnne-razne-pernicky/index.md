@@ -12,9 +12,10 @@ tags:
 categories:
   - Recepty
 toc: false
-#featuredImg: ...webp
-#images:
-#  - /recepty/...
+featuredImg: celozrnne-razne-pernicky-02-1200px.webp
+images:
+  - /recepty/2021-08-28-celozrnne-razne-pernicky/celozrnne-razne-pernicky-01-1200px.webp
+  - /recepty/2021-08-28-celozrnne-razne-pernicky/celozrnne-razne-pernicky-02-1200px.webp
 ---
 
 Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s perníkovou príchuťou.
@@ -46,3 +47,25 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 
 - z uvedeného množstva je možné vyrobiť približne 25 ks perníkov
 - množstvo cukru a medu je možné upraviť podľa chuti
+- rok 2021: z uvedeného množstva vzniklo 1235 g cesta, postačujúceho na výrobu približne 100 ks medovníkov
+
+surovina | pôvodné | navýšené
+:---|:---:|:---:
+celozrnná ražná múka | 216 g | 477 g
+sóda bikarbóna | 1 kl | 2 kl
+zmes perníkového korenia | 2 kl | 4 kl
+prášok do pečiva | 1/2 ks | 1 ks
+trstinový cukor | 80 g | 144 g
+vlašské orechy mleté | 50 g | 120 g
+vajcia | 1 ks | 2 ks
+maslo | 70 g | 150 g
+med | 100 g | 220 g
+orechy na ozdobu | 25 ks | 100 ks
+
+---
+
+![Celozrnné ražné perníčky](celozrnne-razne-pernicky-01-1200px.webp "Celozrnné ražné perníčky (autor: zwieratko, 2021)")
+
+---
+
+![Celozrnné ražné perníčky - rozpolené](celozrnne-razne-pernicky-02-1200px.webp "Celozrnné ražné perníčky - rozpolené (autor: zwieratko, 2021)")
