@@ -1,7 +1,7 @@
 ---
 title: "Žĺtkovo orechové rezy"
 date: 2021-12-20T16:06:32+01:00
-draft: true
+draft: false
 description: Nadýchané, jemne orechové, šťavnaté a vláčne cesto so sladkou a hutnou, žĺtkovou polevou.
 type: posts
 tags:
