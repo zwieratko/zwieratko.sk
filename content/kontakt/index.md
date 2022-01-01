@@ -3,17 +3,17 @@ title = "Kontakt"
 description = "Kontaktné informácie a možnosti podpory."
 +++
 
-Spojiť sa so mnou môžete cez:
+Spojiť sa so mnou môžete cez internet:
 
-[FB messanger](https://m.me/zwieratko)
+[Správa na Twitter](https://twitter.com/zwieratko)
+
+[FB messenger](https://m.me/zwieratko)
 
 {{< rawhtml >}}
 <a href="skype:zwieratko?chat">Skype</a>
 {{< /rawhtml >}}
 
-[Whatsapp](https://api.whatsapp.com/send?phone=421949246818)
-
-[Hangouts](https://hangouts.google.com/chat/person/104375473120141989752)
+[WhatsApp](https://api.whatsapp.com/send?phone=421949246818)
 
 [WeChat QR kód](/kontakt/wechat-200px.jpg)
 
@@ -35,8 +35,8 @@ Podporiť ma môžete cez [PayPal](https://paypal.me/zwieratko) alebo v kryptome
 
 Ak plánujete nákup niektorého z nižšie uvedených produktov či služieb, môžete použiť tieto linky a aj ja dostanem malú odmenu a v niektorých prípadoch aj vy.
 
-- [DigitalOcean](https://m.do.co/c/b4aac5513479) -- poskytovateľ cloudovaj infraštruktúry z New Yorku s dátovými centrami po celom svete. Po vyklikaní bude server zriadený do 55 sekúnd.
+- [DigitalOcean](https://m.do.co/c/b4aac5513479) -- poskytovateľ cloudovej infraštruktúry z New Yorku s dátovými centrami po celom svete. Po zopár kliknutiach bude server zriadený do 55 sekúnd.
 
-- [Websupport](https://www.websupport.sk/?ref=NDIsGFM4) -- hádam najznámejší pôvodom slovenský poskytovateľ hostingu, na Slovensku určite najväčší a najlepší.
+- [Websupport](https://www.websupport.sk/?ref=NDIsGFM4) -- hádam najznámejší pôvodom slovenský poskytovateľ webového priestoru, na Slovensku určite najväčší a najlepší.
 
 - [Coinbase](https://www.coinbase.com/join/nirc_e) -- digitálna zmenáreň so sídlom v San Franciscu s celosvetovou pôsobnosťou.
