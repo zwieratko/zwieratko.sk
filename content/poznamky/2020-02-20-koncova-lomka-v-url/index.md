@@ -1,5 +1,5 @@
 ---
-title: "Koncová lomka v URL"
+title: "Koncová lomka v URL - Hugo"
 date: 2020-02-20T21:56:38+01:00
 draft: false
 description: Ako upraviť tému pre Huga tak, aby aj adresy generované pre značky (tagy) na konci príspevku boli správne zakončené lomkou.
