@@ -1,5 +1,5 @@
 ---
-title: "Otvoriť link na novej karte"
+title: "Otvoriť link na novej karte - Hugo"
 date: 2019-12-26T08:20:27+01:00
 draft: false
 description: Ako nastaviť Hugo 0.60 a vyšší tak, aby sa externý link otváral na novej karte prehliadača.
