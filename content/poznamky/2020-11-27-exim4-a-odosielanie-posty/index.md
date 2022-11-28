@@ -83,12 +83,12 @@ sudo nano /etc/email-addresses
 Záznam pre každého užívateľa na novom riadku v tvare:
 
 ```
-užívateľ1: emailová@adresa.sk
-užívateľ2: iná@adresa.sk
+užívateľ1: poštový@účet.sk
+užívateľ2: iný_poštový@účet.sk
 ```
 
 V [manuálových stránkach](https://manpages.debian.org/testing/exim4-config/etc-email-addresses.5.en.html#/etc/email-addresses) som sa dočítal, že: "/etc/email-addresses
-is used to rewrite the email addresses of users. This is particularly useful for users who use their ISP's domain for email.", no ak tu nastavím akúkoľvek inú emailovú adresu ako tú ktorú používam na prístup ku poštovému účtu, tak nie je možné odosielať poštu.
+is used to rewrite the email addresses of users. This is particularly useful for users who use their ISP's domain for email.", ~~no ak tu nastavím akúkoľvek inú emailovú adresu ako tú ktorú používam na prístup ku poštovému účtu, tak nie je možné odosielať poštu.~~ V prípade, že používam viacero `smarthost` poskytovateľov, tu môžem rozlíšiť, ktorý užívateľ má použiť, ktorého poskytovateľa.
 
 Po úspešnom nakonfigurovaní vykonám aktualizáciu nastavení agenta `Exim4`, znovu načítam jeho službu a pokúsim sa ho donútiť odoslať aj pred tým neodoslané (zamrznuté) správy.
 
