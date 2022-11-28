@@ -107,6 +107,10 @@ let filesToCacheExtra = [
   '/recepty/2021-10-09-kacacie-prsia-so-slivkovou-omackou/',
   '/recepty/2021-10-18-cokoladove-brownies/',
   '/recepty/2021-12-10-fasirky/',
+  '/recepty/2021-12-10-snehove-pusinky/',
+  '/recepty/2021-12-11-linecke-kolaciky/',
+  '/recepty/2021-12-20-quindim/',
+  '/recepty/2021-12-20-zltkovo-orechove-rezy/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
