@@ -116,6 +116,24 @@ sudo tail /var/log/exim4/mainlog
 
 Zo záznamov môžem vyčítať informáciu o úspešnom doručení ale aj prípadnú príčinu problému.
 
+### Nastavenie mena odosielateľa
+
+Ako meno odosielateľa emailu je použité celé meno užívateľa zadané pri inštalácii operačného systému, alebo vytváraní nového užívateľa.
+
+V prípade, že chcem toto celé meno zmeniť pre užívateľa s prihlasovacím menom `username` zadám:
+
+```sh
+sudo chfn -f "Nové Celé Meno" username
+```
+
+Novo nastavené celé meno môžem skontrolovať pomocou príkazu `finger`, alebo:
+
+```sh
+getent passwd username
+```
+
+Meno užívateľa je piata položka výstupu oddelená dvojbodkou.
+
 ---
 
 ## Zdroj
