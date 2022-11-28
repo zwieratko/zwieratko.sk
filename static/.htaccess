@@ -116,18 +116,18 @@ Header set Report-To "{\"group\":\"default\",\"max_age\":31536000,\"endpoints\":
 Header set NEL "{\"report_to\":\"default\",\"max_age\":31536000,\"include_subdomains\":true}"
 
 # Almost deprecated
-Header set Feature-Policy "\
-accelerometer 'none'; \
-autoplay 'none'; \
-camera 'none'; \
-geolocation 'self'; \
-gyroscope 'none'; \
-magnetometer 'none'; \
-microphone 'none'; \
-payment 'none'; \
-serial 'none'; \
-usb 'none'"
-Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
+#Header set Feature-Policy "\
+#accelerometer 'none'; \
+#autoplay 'none'; \
+#camera 'none'; \
+#geolocation 'self'; \
+#gyroscope 'none'; \
+#magnetometer 'none'; \
+#microphone 'none'; \
+#payment 'none'; \
+#serial 'none'; \
+#usb 'none'"
+#Header set Expect-CT "enforce, max-age=3600, report-uri=https://zwieratko.report-uri.com/r/d/ct/enforce"
 
 # Deprecated
 #Header set Public-Key-Pins " "
