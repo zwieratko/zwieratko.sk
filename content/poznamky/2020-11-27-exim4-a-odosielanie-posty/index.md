@@ -72,9 +72,16 @@ Doplním záznam o doméne poskytovateľa, poštovom účte a hesle k nemu v tva
 *.doména.poskytovateľa.com:poštový@účet.sk:tajnéheslo
 ```
 
-Údaje sú oddelené dvojbodkou.
+Údaje sú oddelené dvojbodkou. Každý poskytovateľ na novom riadku.
 
-Nastavím ešte poslednú vec. Ku jednotlivým užívateľom systému nastavím emailové adresy pre odchádzajúcu poštu.
+Ubezpečím sa, že je správne nastavené vlastníctvo a prístupové práva pre pre súbor `passwd.client`, keďže obsahuje citlivé informácie:
+
+```sh
+sudo chown root:Debian-exim /etc/exim4/passwd.client
+sudo chmod 640 /etc/exim4/passwd.client
+```
+
+Nastavím ešte poslednú vec. Ku jednotlivým užívateľom, ktorým chcem umožniť odosielať emaily, priradím emailové adresy pre odchádzajúcu poštu.
 
 ```sh
 sudo nano /etc/email-addresses
@@ -88,7 +95,7 @@ užívateľ2: iný_poštový@účet.sk
 ```
 
 V [manuálových stránkach](https://manpages.debian.org/testing/exim4-config/etc-email-addresses.5.en.html#/etc/email-addresses) som sa dočítal, že: "/etc/email-addresses
-is used to rewrite the email addresses of users. This is particularly useful for users who use their ISP's domain for email.", ~~no ak tu nastavím akúkoľvek inú emailovú adresu ako tú ktorú používam na prístup ku poštovému účtu, tak nie je možné odosielať poštu.~~ V prípade, že používam viacero `smarthost` poskytovateľov, tu môžem rozlíšiť, ktorý užívateľ má použiť, ktorého poskytovateľa.
+is used to rewrite the email addresses of users. This is particularly useful for users who use their ISP's domain for email.", ~~no ak tu nastavím akúkoľvek inú emailovú adresu ako tú ktorú používam na prístup ku poštovému účtu, tak nie je možné odosielať poštu.~~ V prípade, že používam viacero `smarthost` poskytovateľov, tu môžem rozlíšiť, ktorý lokálny užívateľ má použiť, ktorého poskytovateľa (emailový účet).
 
 Po úspešnom nakonfigurovaní vykonám aktualizáciu nastavení agenta `Exim4`, znovu načítam jeho službu a pokúsim sa ho donútiť odoslať aj pred tým neodoslané (zamrznuté) správy.
 
@@ -134,8 +141,83 @@ getent passwd username
 
 Meno užívateľa je piata položka výstupu oddelená dvojbodkou.
 
+### Nastavenie lokálnych presmerovaní
+
+Editáciou súboru `/etc/aliases` môžem nastaviť cieľových užívateľov, alebo cieľové emailové adresy, kam majú byť presmerované správy pre jednotlivých užívateľov systému.
+
+```sh
+sudo nano /etc/aliases
+```
+
+Podľa manuálových stránok je vhodné nastaviť alias minimálne pre užívateľa `postmaster`. Môžem všetkých užívateľov pre jednotlivé služby presmerovať na administrátora `root` a z toho nakoniec na môj užívateľský účet, z ktorého sa to prepošle na skutočný email.
+
+```sh
+# /etc/aliases
+mailer-daemon: postmaster
+postmaster: root
+nobody: root
+hostmaster: root
+usenet: root
+news: root
+webmaster: root
+www: root
+ftp: root
+abuse: root
+noc: root
+security: root
+root: užívateľ
+užívateľ: info@doména.sk
+```
+
+### Základné príkazy na správu Exim4
+
+Celkový počet emailov čakajúcich na spracovanie vo fronte, respektíve základné informácie o nich (čas zaradenia do fronty, veľkosť, jednoznačný identifikátor správy, odosielateľ a príjemca).
+
+```sh
+sudo exim -bpc
+sudo exim -bp
+```
+
+---
+
+Počet zmrazených emailov vo fronte:
+
+```sh
+sudo exim -bpr | grep frozen | wc -l
+```
+
+---
+
+Zobrazenie hlavičky, respektíve tela emailovej správy čakajúcej vo fronte.
+
+```sh
+sudo exim -Mvh jednoznačný_identifikátor_správy
+sudo exim -Mvb jednoznačný_identifikátor_správy
+```
+
+---
+
+Odstránenie všetkých zmrazených emailov z fronty pomocou [exiqgrep](https://linux.die.net/man/8/exiqgrep), respektíve bez:
+
+```
+sudo exiqgrep -z -i | xargs sudo exim -Mrm
+
+sudo exim -bpr | grep frozen | awk '{print $3}' | xargs sudo exim -Mrm
+```
+
+---
+
+Otestovanie možnosti doručiť email na zadanú adresu.
+
+```sh
+sudo exim -bt adresát
+```
+
+Odpoveď je vypísaná na štandardný výstup. V prípade, že adresát je skutočná emailová adresa v správnom tvare, email bude poslaný ďalej cez nastaveného `smarthost`, ak je to lokálny užívateľ nastavený v `/etc/aliases`, bude email ďalej poslaný cez sériu presmerovaní, respektíve ak je to iný adresát, email bude nedoručiteľný (`adresát is undeliverable: Unrouteable address`).
+
 ---
 
 ## Zdroj
 
 - [wiki.debian.org](https://wiki.debian.org/Exim4Gmail)
+- [The Exim command line](https://www.exim.org/exim-html-current/doc/html/spec_html/ch-the_exim_command_line.html)
