@@ -49,7 +49,7 @@ Digitálom zvečnené okamihy :)
 
 ---
 
-{{< figure-new2 src="Galéria - zwieratko - fotografia 012.jpg" alt= "Chryzantény na hrobe" caption="Huawei P20 Pro / Humenné, Slovensko" >}}
+{{< figure-new2 src="Galéria - zwieratko - fotografia 012.jpg" alt= "Chryzantémy na hrobe" caption="Huawei P20 Pro / Humenné, Slovensko" >}}
 
 ---
 
@@ -57,7 +57,7 @@ Digitálom zvečnené okamihy :)
 
 ---
 
-{{< figure-new2 src="Galéria - zwieratko - fotografia 014.jpg" alt= "Štartujúci dron" caption="Huawei P20 Pro / Kochanovce, Slovensko" >}}
+{{< figure-new2 src="Galéria - zwieratko - fotografia 014.jpg" alt= "Štartujúce diaľkovo riadené bezpilotné vozidlo" caption="Huawei P20 Pro / Kochanovce, Slovensko" >}}
 
 ---
 
