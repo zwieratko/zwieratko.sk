@@ -47,7 +47,8 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 
 - z uvedeného množstva je možné vyrobiť približne 25 ks perníkov
 - množstvo cukru a medu je možné upraviť podľa chuti
-- rok 2021: z uvedeného množstva vzniklo 1235 g cesta, postačujúceho na výrobu približne 100 ks medovníkov
+- rok 2021: z uvedeného navýšeného množstva vzniklo 1235 g cesta, postačujúceho na výrobu približne 100 ks medovníkov
+- rok 2022: z pôvodného, menšieho množstva vzniklo 68 ks perníčkov s vykrajovaným priemerom 4,5 cm, po upečení mali cca 5 cm a hrúbku 4-5 mm
 
 surovina | pôvodné | navýšené
 :---|:---:|:---:
