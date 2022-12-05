@@ -1,0 +1,68 @@
+{{ $p := where site.RegularPages "Type" "posts" }}
+{{ $p = where $p "Params.categories" "intersect" (slice "Poznámky") }}
+
+{{ range first 1 $p }}
+  <h5><a href="{{ .RelPermalink }}">{{ .Title }}</a></h5>
+{{ end }}
+
+{{ range $p }}
+  {{ .Kind }}: {{ .Title }}
+  <p>
+    {{ .Params.tags }} / {{ .Params.categories }}
+  </p>
+{{ end }}
+
+---
+
+{{ $data := newScratch }}
+{{ range $p }}
+  {{ $data.Add "tag_list" (apply .Params.tags "lower" ".") }}
+{{ end }}
+
+{{ $data.Get "tag_list" }}
+
+---
+
+xxx
+
+---
+
+
+
+---
+
+<p>
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <a href="/categories/{{ $name | urlize }}">#{{ $name | humanize }} ({{ $taxonomy.Count }})</a>
+  {{end}}
+</p>
+
+<ul>
+  {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+  {{ if in ($data.Get "tag_list") $name }}
+    <li><a href="/tags/{{ $name | urlize }}">#{{ $name | humanize }} ({{ $taxonomy.Count }})</a></li>
+  {{end}}
+  {{end}}
+</ul>
+
+
+<ul>
+  {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+    {{ if eq $taxonomyname "tags" }}
+    <li><a href="{{ "/" | relLangURL}}{{ $taxonomyname | urlize }}">{{ $taxonomyname }}</a>
+      <ul>
+        {{ range $key, $value := $taxonomy }}
+        {{ if in ($data.Get "tag_list") $key }}
+        <li> {{ $key }} </li>
+              <ul>
+              {{ range $value.Pages }}
+                  <li><a href="{{ .Permalink}}"> {{ .LinkTitle }} </a> </li>
+              {{ end }}
+              </ul>
+        {{ end }}
+        {{ end }}
+      </ul>
+    </li>
+    {{ end }}
+  {{ end }}
+</ul>
