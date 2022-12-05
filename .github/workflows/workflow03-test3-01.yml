@@ -37,7 +37,7 @@ jobs:
           echo "<p>"
           date
           echo -e "</p>\n<p>"
-          git version
+          hugo version
           echo -e "</p>\n<p>"
           uname -a
           echo -e "</p>\n<p>"

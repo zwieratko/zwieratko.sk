@@ -32,12 +32,21 @@ jobs:
       run: hugo --minify
     - name: Record the build variables
       run: |
-        date > public/stav 2>&1
-        hugo version >> public/stav 2>&1
-        uname -a >> public/stav 2>&1
-        echo "$GITHUB_SHA" >> public/stav
-        echo "$GITHUB_RUN_ID" >> public/stav
-        echo "$GITHUB_RUN_NUMBER" >> public/stav
+        {
+          echo "<p>"
+          date
+          echo -e "</p>\n<p>"
+          hugo version
+          echo -e "</p>\n<p>"
+          uname -a
+          echo -e "</p>\n<p>"
+          echo "$GITHUB_SHA"
+          echo -e "</p>\n<p>"
+          echo "$GITHUB_RUN_ID"
+          echo -e "</p>\n<p>"
+          echo "$GITHUB_RUN_NUMBER"
+          echo "</p> :)"
+        } > public/stav.html 2>&1
     - name: Check and fix the version of bundle assets
       run: |
         sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
