@@ -1,0 +1,20 @@
+{{ $p := where site.RegularPages "Type" "posts" }}
+{{ $p = where $p "Params.categories" "intersect" (slice .Page.Title) }}
+
+{{ $data := newScratch }}
+{{ range $p }}
+    {{ $data.Add "tag_list" (apply .Params.tags "lower" ".") }}
+{{ end }}
+
+<div class="tagcloud01 related-posts">
+    <h3>
+        Použité značky
+    </h3>
+        <ul>
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }}
+                {{ if in ($data.Get "tag_list") (replace $name "-" " ") }}
+                    <li><a href="/tags/{{ $name | urlize }}">#{{ $name | humanize }} ({{ $taxonomy.Count }})</a></li>
+                {{end}}
+            {{end}}
+        </ul>
+</div>
