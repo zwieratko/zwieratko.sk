@@ -58,3 +58,17 @@ other = "Zostavil"
 [theme]
 #other = "Theme"
 other = "Téma"
+
+# partials/series_link.html
+#
+[partOfSeries]
+#other = "This article is part of a series."
+other = "Tento príspevok je časťou série:"
+
+[part]
+#other = "Part"
+other = "Časť"
+
+[thisArticle]
+#other = "This Article"
+other = "Tento príspevok"

@@ -44,3 +44,14 @@ other = "Made with"
 
 [theme]
 other = "Theme"
+
+# partials/series_link.html
+#
+[partOfSeries]
+other = "This article is part of a series."
+
+[part]
+other = "Part"
+
+[thisArticle]
+other = "This Article"
