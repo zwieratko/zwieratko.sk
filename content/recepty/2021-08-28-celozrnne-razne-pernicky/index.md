@@ -41,7 +41,7 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 4. Rozvaľkáme na pomúčenej doske na hrúbku približne 5 -- 7 mm.
 5. Vykrajujeme požadované tvary, ukladáme na plech s papierom na pečenie. Medzi jednotlivými perníkmi nechávame aspoň 1 cm medzeru, lebo pri pečení ešte mierne zväčšia objem. Na vrch perníčkov môžeme položiť rôzne orechy či semená na ozdobu (lieskové orechy, mandle, búrske oriešky, tekvicové semienka atď.)
 6. Pečieme v rúre predhriatej na 170 °C 10 až 12 minút.
-7. Hneď po upečení sú ešte veľmi mäkké a krehké, perníčky musia dokonale vychladnúť. Potom je ich možné uskladniť v uzatvárateľnej nádobe, vydržia veľmi dlho.
+7. Hneď po upečení sú ešte veľmi mäkké a krehké, perníky musia dokonale vychladnúť. Potom je ich možné uskladniť v uzatvárateľnej nádobe, vydržia veľmi dlho.
 
 ## Poznámky
 
@@ -49,6 +49,7 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 - množstvo cukru a medu je možné upraviť podľa chuti
 - rok 2021: z uvedeného navýšeného množstva vzniklo 1235 g cesta, postačujúceho na výrobu približne 100 ks medovníkov
 - rok 2022: z pôvodného, menšieho množstva vzniklo 68 ks perníčkov s vykrajovaným priemerom 4,5 cm, po upečení mali cca 5 cm a hrúbku 4-5 mm
+- rok 2022: z navýšeného množstva surovín vzniklo 1330 g cesta postačujúceho na výrobu 111 ks perníkov
 
 surovina | pôvodné | navýšené
 :---|:---:|:---:
