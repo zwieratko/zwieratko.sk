@@ -83,4 +83,4 @@ jobs:
         LOCAL_PATH: 'public/'
         REMOTE_PATH: '~/zwieratko.sk/sub/test3/'
       run: |
-        rsync -azrhv --stats --delete -e "ssh -p ${DEPLOY_PORT}" "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
+        rsync -azrhv --stats --delete -e "ssh -T -x -v -p ${DEPLOY_PORT}" "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
