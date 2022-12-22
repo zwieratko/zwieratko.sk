@@ -47,6 +47,10 @@ Miňonky alebo tiež šuhajdy či košíčky. Jednoduchý nepečený orechovo-č
 4. Na plech si rozložíme 30 košíčkov. Z odstátej hmoty rukou tvarujeme malé guľôčky a vkladáme do pripravených košíčkov. Ľahko zatlačíme a sploštíme vloženú hmotu. Stlačené guľky by mali vyplniť tak asi jednu tretinu objemu.
 5. Vo vodnom kúpeli si rozpustíme tuk a čokoládu, neustále miešame. Vznikne lesklá a hladká čokoládová poleva. Jednu polievkovú lyžicu opatrne vlejeme do košíčka na povrch vloženej hmoty. Necháme vychladnúť a zatuhnúť.
 
+## Poznámky
+
+- rok 2022: z uvedeného množstva surovín sa podarilo vytvoriť 66 ks miňoniek
+
 ---
 
 ![Miňonky](minonky-1200px.jpg "Miňonky (autor: zwieratko, 2016)")

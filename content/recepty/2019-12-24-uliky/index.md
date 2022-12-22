@@ -21,14 +21,14 @@ Nepečená kakaovo-orechová cukrovinka s plnkou z vaječného likéru.
 
 ### Úľ
 
-- detské piškóty -- 120 g
-- vlašské orechy -- 50 g
-- práškový cukor -- 85 g
-- maslo -- 85 g
+- detské piškóty -- ~~120 g~~ 180 g
+- vlašské orechy -- ~~50 g~~ 75 g
+- práškový cukor -- ~~85 g~~ 120 g
+- maslo -- ~~85 g~~ 110g
 - vanilkový cukor -- 1 ks
 - vanilínový cukor -- 1 ks
 - kakao -- 1 kl (vrchovatá)
-- tuzemský rum -- 2 pl
+- tuzemský rum -- ~~2 pl~~ 4pl
 
 ### Náplň
 
@@ -38,12 +38,12 @@ Nepečená kakaovo-orechová cukrovinka s plnkou z vaječného likéru.
 
 ### Iné
 
-- detské piškóty -- 24 ks (na uzavretie úľu)
-- vaječný likér -- 0,5 dl
-- plastové formičky úlikov
+- detské piškóty -- 30 ks (na uzavretie úľu)
+- vaječný likér -- 1 dl
+- plastové formičky v tvare úlikov
 - čínska palička na jedenie
 - malá injekčná striekačka
-- tenká fólia
+- tenká potravinárska fólia
 
 ## Postup
 
@@ -68,6 +68,7 @@ tuzemský rum | 2 pl | 4 pl
 
 - z navýšeného množstva vznikla hmota, z ktorej bolo možné vytvoriť 28 ks úlikov
 - 180 g detských piškót je množstvo, ktoré ostane vo veľkom balení (240g) po odobratí 30 ks (na zatváranie úlikov)
+- rok 2022: z navýšeného množstva surovín sa podarilo vytvoriť 34 ks úlikov
  
 ---
  
