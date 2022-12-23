@@ -11,7 +11,7 @@ jobs:
 
     steps:
     - name: Checkout main branch with submodules
-      uses: actions/checkout@v2
+      uses: actions/checkout@v3
       with:
         ref: 'test3'
         submodules: 'true'
@@ -21,7 +21,7 @@ jobs:
         head static/sw.js
     - name: Install Hugo
       env:
-        HUGO_VERSION: 0.107.0
+        HUGO_VERSION: 0.109.0
       run: |
         mkdir -p download
         cd download
@@ -66,7 +66,14 @@ jobs:
         mkdir -p ~/.ssh
         echo "${KNOWN_HOSTS}" >> ~/.ssh/known_hosts
         echo "${DEPLOY_KEY}" > ~/.ssh/my_rsync_key
-        echo "IdentityFile ~/.ssh/my_rsync_key" >> ~/.ssh/config
+        {
+          echo "HostKeyAlgorithms ssh-ed25519-cert-v01@openssh.com,ssh-ed25519"
+          echo "KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org"
+          echo "Ciphers chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com"
+          echo "MACs umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com"
+          echo "IPQoS throughput"
+          echo "IdentityFile ~/.ssh/my_rsync_key"
+        } >> ~/.ssh/config
         chmod -R 700 ~/.ssh
     - name: Deploy the page with Rsync
       env:
@@ -76,4 +83,4 @@ jobs:
         LOCAL_PATH: 'public/'
         REMOTE_PATH: '~/zwieratko.sk/sub/test3/'
       run: |
-        rsync -avzrh -e "ssh -p ${DEPLOY_PORT}" --delete "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
+        rsync -azrhv --stats --delete -e "ssh -T -x -v -p ${DEPLOY_PORT}" "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"

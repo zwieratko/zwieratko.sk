@@ -16,7 +16,9 @@ toc: false
 draft: false
 featuredImg: medvedie-labky-900px.webp
 images:
-  - /recepty/2016-12-08-medvedie-labky/medvedie-labky-1200px.jpg
+  - /recepty/2016-12-08-medvedie-labky/medvedie-labky-1-1200px.jpg
+  - /recepty/2016-12-08-medvedie-labky/medvedie-labky-2-1200px.jpg
+  - /recepty/2016-12-08-medvedie-labky/medvedie-labky-3-1200px.jpg
 ---
 
 Najlepšie vianočné pečivo s orechovo-vanilkovou príchuťou. Základom je babkin recept.
@@ -47,7 +49,12 @@ Najlepšie vianočné pečivo s orechovo-vanilkovou príchuťou. Základom je ba
 
 - pri surovinách je uvedené aj pôvodné množstvo (v zátvorke, prečiarknuté), z navýšeného množstva surovín vznikne 1183 g cesta, z ktorého je možné naplniť 76 ks malých formičiek a 17 ks veľkých (skoro tri plechy)
 - rok 2021: z uvedeného množstva vzniklo cesto postačujúce na naplnenie 97 ks malých a 15 ks veľkých formičiek
+- rok 2022: z uvedeného navýšeného množstva surovín vzniklo 1187 g cesta postačujúceho na naplnenie 63 ks malých a 20 ks veľkých formičiek
 
 ---
 
-![Medvedie labky](medvedie-labky-1200px.jpg "Medvedie labky (autor: zwieratko, 2016)")
+![Medvedie labky](medvedie-labky-1-1200px.jpg "Medvedie labky (autor: zwieratko, 2016)")
+
+![Medvedie labky – pred pečením](medvedie-labky-2-1200px.jpg "Medvedie labky – pred pečením (autor: zwieratko, 2022)")
+
+![Medvedie labky – tesne po dopečení](medvedie-labky-3-1200px.jpg "Medvedie labky – tesne po dopečení (autor: zwieratko, 2022)")
