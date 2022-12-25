@@ -16,6 +16,7 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 # enableEmoji = true  # Shorthand emojis in content files - https://gohugo.io/functions/emojify/
 # googleAnalytics = "UA-123-45"
 # disqusShortname = "yourdiscussshortname"
+removePathAccents = true
 
 [author]
   name = "zwieratko.sk"
@@ -54,6 +55,10 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
   # Categories are disabled by default.
   category = "categories"
   series = "series"
+
+[permalinks]
+  recepty = "/recepty/:year/:month/:title"
+  poznamky = "/poznamky/:year/:month/:title"
 
 [params]
   #dateform        = "Jan 2, 2006"
