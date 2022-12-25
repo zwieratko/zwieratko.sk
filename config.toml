@@ -113,6 +113,14 @@ removePathAccents = true
     name = "twitter"
     url = "https://twitter.com/zwieratko/"
 
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/zwieratko"
+
+  [[params.social]]
+    name = "gitlab"
+    url = "https://gitlab.com/zwieratko"
+
 [menu]
 
   [[menu.main]]
