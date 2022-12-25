@@ -8,6 +8,8 @@ featuredImg: ""
 tags: 
   - demo
   - image
+series:
+  - Obrázky
 ---
 
 {{< rawhtml >}}

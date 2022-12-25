@@ -8,6 +8,8 @@ tags:
   - demo #Komentár vo front matter
 categories:
   - Poznámky #Komentár vo front matter
+series:
+  - Obrazok
 toc: true
 images:
   - /poznamky/vkladanie-obrazkov02/Git-Logo-1788C.png #Komentár vo front matter

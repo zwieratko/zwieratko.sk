@@ -7,6 +7,10 @@ description: Popis vo front matter príspevku
 type: posts
 tags:
   - demo
+categories:
+  - Poznámky
+series:
+  - Obrazok
 toc: true
 authors: 
   - Rado van Zwieratko #toto nefunguje v tejto téme - Hermit
