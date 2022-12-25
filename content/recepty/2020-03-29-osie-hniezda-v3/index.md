@@ -60,7 +60,7 @@ Kysnutý koláč so škoricovou náplňou verzia 3. Momentálne najnovšia verzi
 
 Keďže už mám tri rôzne verzie tohto receptu, zhrnul som suroviny potrebné na jeho prípravu v nasledujúcej tabuľke:
 
-surovina | [v1](/recepty/2019-12-10-osie-hniezda/) | [v2](/recepty/2020-01-26-osie-hniezda-v2/) | v3
+surovina | [v1](/recepty/2019/12/osie-hniezda/) | [v2](/recepty/2020/01/osie-hniezda-v2/) | v3
 :---:|:---:|:---:|:---:
 mlieko | 150 ml | 250 ml | 350 ml
 cukor kryštálový | 1 pl | 1 pl | 1 pl

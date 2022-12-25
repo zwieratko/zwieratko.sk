@@ -27,7 +27,7 @@ Ako pena ľahká, na povrchu jemne chrumkavá a z vnútra krehučká cukrovinka 
 
 ## Postup
 
-1. Vajíčka veľmi opatrne rozdelíme na bielky a žĺtky. Vaječné žĺtky môžeme odložiť do chladničky, v tomto recepte už nebudú potrebné. Žĺtky sa dajú použiť napríklad na prípravu [lineckých koláčikov](/recepty/2021-12-11-linecke-kolaciky/) alebo exotického [quindimu](/recepty/2021-12-20-quindim/).
+1. Vajíčka veľmi opatrne rozdelíme na bielky a žĺtky. Vaječné žĺtky môžeme odložiť do chladničky, v tomto recepte už nebudú potrebné. Žĺtky sa dajú použiť napríklad na prípravu [lineckých koláčikov](/recepty/2021/12/linecke-kolaciky/) alebo exotického [quindimu](/recepty/2021/12/quindim/).
 2. Vaječné bielky preložíme do čistej, odmastenej misy a necháme samovoľne ohriať na izbovú teplotu.
 3. Ručne alebo radšej elektrickým mixérom ich začneme šľahať na nižšej až strednej rýchlosti. Pridáme 1 kávovú lyžičku citrónovej šťavy. Veľmi pomaly a pozvoľne sa začne vytvárať hustá pena.
 4. Postupne začneme pridávať cukor, po jednotlivých polievkových lyžiciach. Po každej pridanej lyžici pokračujeme približne 1 minútu v šľahaní, aby sa rozpustil cukor. Takto postupujeme až minieme všetok pripravený cukor.

@@ -35,7 +35,7 @@ Exotický, vaječný puding s príjemnou kokosovou a vanilkovou príchuťou, pe�
 ## Postup
 
 1. Pripravíme menšie porcelánové zapekacie misky. Dno aj steny misiek poriadne vymastíme maslom a vysypeme kryštálovým cukrom. Rúru predhrejeme spolu s hlbokým plechom na pečenie na 180 °C. Dáme variť vodu.
-2. Vajíčka rozdelíme na vaječné žĺtky a bielky. Z vaječný bielkov môžeme pripraviť napr. sladké [snehové pusinky](/recepty/2021-12-10-snehove-pusinky/). Ďalej už nebudú potrebné.
+2. Vajíčka rozdelíme na vaječné žĺtky a bielky. Z vaječný bielkov môžeme pripraviť napr. sladké [snehové pusinky](/recepty/2021/12/snehove-pusinky/). Ďalej už nebudú potrebné.
 3. Vaječné žĺtky prepasírujeme do misy cez sito, aby sme odstránili tú jemnú blanku.
 4. K vaječným žĺtkom pridáme cukor, esenciu, maslo aj vodu. Všetko spolu dôkladne vymiešame, podľa možnosti len ručne, aby sme do zmesi nezapracovali veľa vzduchu.
 5. Hmotu rozdelíme rovnomerne do vymastených a cukrom vysypaných zapekacích misiek. Dávame pozor aby hmota nesiahala až po horný okraj misky.

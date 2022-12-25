@@ -38,14 +38,14 @@ Typické krehké vianočné pečivo, z múky, tuku, cukru a vaječných žĺtkov
 1. Do misy preosejeme hladkú múku.
 2. Postupne pridáme všetky suché ingrediencie: preosiaty cukor, citrónovú kôru, vanilkový aj vanilínový cukor a prášok do pečiva. Zmes dôkladne premiešame.
 3. Ďalej do zmesi pridáme rozkrájanú, zmäknutú Heru a rukou začneme miesiť.
-4. Po chvíľke miesenia pridáme ešte rozšľahané vaječné žĺtky a pokračujeme v miesení rukou až pokiaľ sa jednotlivé zložky úplne neprepoja a nevznikne vcelku lepivé cesto. Zvyšné vaječné bielky môžeme použiť na prípravu ľahučkých [snehových pusiniek](/recepty/2021-12-10-snehove-pusinky/)
+4. Po chvíľke miesenia pridáme ešte rozšľahané vaječné žĺtky a pokračujeme v miesení rukou až pokiaľ sa jednotlivé zložky úplne neprepoja a nevznikne vcelku lepivé cesto. Zvyšné vaječné bielky môžeme použiť na prípravu ľahučkých [snehových pusiniek](/recepty/2021/12/snehove-pusinky/)
 5. Po dôkladnom vymiesení preložíme cesto do fólie a odložíme do chladničky kľudne aj na noc.
 6. Na pomúčenej doske necháme cesto chvíľu oteplieť, len tak aby pri vaľkaní na okrajoch nepraskalo.
 7. Cesto vyvaľkáme tak na hrúbku približne 3 až 5 milimetrov. Snažíme sa, aby malo rovnakú hrúbku po celej ploche.
 8. Vykrajujeme z neho rôzne tvary podľa potreby, zvyčajne jedna polovica vykrojených tvarov je bez otvoru v prostriedku. Tá druhá polovica môže mať otvor v strede, pôjde na vrch koláčiku. Ukladáme ich na plech s papierom na pečenie. Nechávame medzi nimi dostatok miesta, pri pečeni sa mierne zväčšia.
 9. Plech dáme piecť do rúry vyhriatej na 200 °C, pečieme 11 až 12 minút.
 10. Po dopečení ich preložíme na taniere, časť koláčikov s otvorom môžeme poprášiť práškovým cukrom, necháme úplne vychladnúť.
-11. Koláčik bez otvoru (spodná časť) natrieme obľúbeným kyselkavým džemom, najlepší je samozrejme domáci [ríbezľový džem](/recepty/2020-06-01-ribezlovy-dzem/) a na vrch položíme časť s otvorom, ktorá je už posypaná práškovým cukrom a je to, máme linecký koláčik.
+11. Koláčik bez otvoru (spodná časť) natrieme obľúbeným kyselkavým džemom, najlepší je samozrejme domáci [ríbezľový džem](/recepty/2020/06/ribezlovo-malinovy-dzem/) a na vrch položíme časť s otvorom, ktorá je už posypaná práškovým cukrom a je to, máme linecký koláčik.
 12. Odkladáme ich do uzatvárateľnej nádoby, najlepšie sú až za pár dní, keď sa prepoja chute pečiva a džemu. Linecké koláčiky postupne zmäknú a stanú sa krehkými.
 
 ## Poznámky

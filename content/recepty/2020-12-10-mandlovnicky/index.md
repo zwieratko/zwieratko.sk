@@ -43,7 +43,7 @@ Vianočné krehké pečivo s lahodnou maslovo-mandľovou príchuťou.
 
 ## Poznámka
 
-Recept vznikol ako variácia na tému [medvedie labky](/recepty/2016-12-08-medvedie-labky/) ale s použitím mandlí. Z uvedeného množstva je možné pripraviť približne 50 kusov veľkosti malých formičiek.
+Recept vznikol ako variácia na tému [medvedie labky](/recepty/2016/12/medvedie-labky/) ale s použitím mandlí. Z uvedeného množstva je možné pripraviť približne 50 kusov veľkosti malých formičiek.
 
 ---
 

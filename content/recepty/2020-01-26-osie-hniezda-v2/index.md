@@ -16,7 +16,7 @@ images:
   - /recepty/2020-03-29-osie-hniezda-v3/osie-hniezda.jpg
 ---
 
-Kysnutý koláč so škoricovou náplňou verzia 2. Mierne upravené množstvá surovín a postup. Vychádzam z [pôvodnej](/recepty/2019-12-10-osie-hniezda) verzie môjho receptu.
+Kysnutý koláč so škoricovou náplňou verzia 2. Mierne upravené množstvá surovín a postup. Vychádzam z [pôvodnej](/recepty/2019/12/osie-hniezda/) verzie môjho receptu.
 
 ## Suroviny
 

@@ -14,7 +14,7 @@ images:
   - /recepty/2021-10-09-dusena-cervena-kysla-kapusta/dusena-cervena-kapusta.webp
 ---
 
-Veľmi zdravá klasická príloha ku [kačaciemu mäsu](/tags/kačacie-prsia/).
+Veľmi zdravá klasická príloha ku [kačaciemu mäsu](/tags/kacacie-prsia/).
 
 ## Suroviny
 

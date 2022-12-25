@@ -116,7 +116,7 @@ Hlavička má jediný povinný parameter, ktorý môže byť nastavený na jednu
 - `deny` -- zabráni akémukoľvek vkladaniu stránky pomocou HTML elementov
 - `sameorigin` -- stránka môže byť vkladaná pomocou HTML značiek, ale len z tej istej domény ako web
 - `allow-from domena.sk` -- stránka môže byť vkladaná do stránky na danej doméne (toto nie je podporované v moderných prehliadačoch)
-- modernejšou verziou tejto hlavičky je CSP parameter [frame-ancestors](/poznamky/2020-02-16-content-security-policy-hlavicka/#frame-ancestors)
+- modernejšou verziou tejto hlavičky je CSP parameter [frame-ancestors](/poznamky/2020/02/content-security-policy-hlavicka/#frame-ancestors)
 
 ```
 X-Frame-Options "SAMEORIGIN"
@@ -144,7 +144,7 @@ Je potrebné byť nanajvýš opatrný, nesprávnym nastavením tejto hlavičky j
 Content-Security-Policy: default-src https:
 ```
 
-Kvôli množstvu parametrov podrobnejšie v samostatnej poznámke [Content-Security-Policy hlavička](/poznamky/2020-02-16-content-security-policy-hlavicka/).
+Kvôli množstvu parametrov podrobnejšie v samostatnej poznámke [Content-Security-Policy hlavička](/poznamky/2020/02/content-security-policy-hlavicka/).
 
 ---
 
@@ -243,7 +243,7 @@ Pragma no-cache
 Expires 0
 ```
 
-Podrobnejšie o ukladaní obsahu z webového servera do vyrovnávacej pamäte v závislosti od typu obsahu v samostatnej poznámke [Cache-Control hlavička](/poznamky/2020-02-13-cache-control-hlavicka/).
+Podrobnejšie o ukladaní obsahu z webového servera do vyrovnávacej pamäte v závislosti od typu obsahu v samostatnej poznámke [Cache-Control hlavička](/poznamky/2020/02/cache-control-hlavicka/).
 
 ---
 

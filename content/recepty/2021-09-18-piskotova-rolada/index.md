@@ -46,7 +46,7 @@ Hebká a šťavnatá roláda z piškótového cesta s domácim ríbezľovým dž
 ## Poznámky
 
 - uvedené množstvá surovín su vhodné na pečenie na veľkom plechu 35x35 cm
-- ku sladkému piškótovému cestu sa obzvlášť hodí domáci, mierne kyselkavý, [ríbezľový džem](/recepty/2020-06-01-ribezlovy-dzem/)
+- ku sladkému piškótovému cestu sa obzvlášť hodí domáci, mierne kyselkavý, [ríbezľový džem](/recepty/2020/06/ribezlovo-malinovy-dzem/)
 - ak je džem príliš hustý, je možné ho mierne rozriediť pomocou horúcej vody alebo rumu, bude sa ľahšie roztierať
 
 ---

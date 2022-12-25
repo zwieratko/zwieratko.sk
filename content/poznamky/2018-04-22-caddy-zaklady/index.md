@@ -117,8 +117,8 @@ V konfiguračnom súbore `Caddyfile` môžem okrem iného nastaviť aj:
 - vlastnosť, aby adresy v adresnom riadku fungovali aj bez prípon, takzvané čisté adresy ([clean URL](https://en.wikipedia.org/wiki/Clean_URL))
 - adresár so samotným webom
 - adresáre kam a spôsob ako sa majú ukladať logy
-- miesto kam sa majú posielať [FastCGI](/poznamky/2020-02-07-aktualizacia-php/#php-a-systemd) požiadavky
-- [bezpečnostné hlavičky](/poznamky/2020-02-09-bezpecnostne-hlavicky/)
+- miesto kam sa majú posielať [FastCGI](/poznamky/2021/11/aktualizacia-php-na-verziu-8.1/#php-a-systemd) požiadavky
+- [bezpečnostné hlavičky](/poznamky/2020/02/bezpecnostne-hlavicky/)
 
 Príklad jednoduchého konfiguračného súboru pre miestny, testovací webový server bez `HTTPS`:
 

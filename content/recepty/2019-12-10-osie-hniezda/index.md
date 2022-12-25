@@ -54,7 +54,7 @@ Kysnutý koláč so škoricovou náplňou.
 7. Na plech si odtrhneme papier na pečenie. Naň ukladáme odkrojené kolieska. Vonkajší obvod natrieme olejom. Ukladáme na tesno vedľa seba.
 8. Rúru predhrejeme na 200 °C, vložíme plech a pečieme 15 až 20 minút.
 
-Keďže toto je asi môj najobľúbenejší kysnutý koláč, tak na jeho vylepšovaní neustále pracujem :). Ale chcem zachovať pre porovnanie aj túto podobu receptu, takže tu je [novšia](/recepty/2020-01-26-osie-hniezda-v2) verzia receptu a tu je [ešte novšia](/recepty/2020-03-29-osie-hniezda-v3.md) verzia receptu.
+Keďže toto je asi môj najobľúbenejší kysnutý koláč, tak na jeho vylepšovaní neustále pracujem :). Ale chcem zachovať pre porovnanie aj túto podobu receptu, takže tu je [novšia](/recepty/2020/01/osie-hniezda-v2/) verzia receptu a tu je [ešte novšia](/recepty/2020/03/osie-hniezda-v3/) verzia receptu.
 
 ---
 

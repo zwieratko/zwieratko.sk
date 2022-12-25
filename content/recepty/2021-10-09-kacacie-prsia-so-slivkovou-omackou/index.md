@@ -15,7 +15,7 @@ images:
   - /recepty/2021-10-09-kacacie-prsia-so-slivkovou-omackou/kacacie-prsia-02.webp
 ---
 
-Mamkin najobľúbenejší recept na prípravu hydiny, fantasticky chutí s [červenou kapustou](/recepty/2021-10-09-dusena-cervena-kysla-kapusta/) a [domácou hrnčekovou knedľou](/recepty/2021-10-08-hrncekova-knedla/).
+Mamkin najobľúbenejší recept na prípravu hydiny, fantasticky chutí s [červenou kapustou](/recepty/2021/10/dusena-cervena-kysla-kapusta/) a [domácou hrnčekovou knedľou](/recepty/2021/10/hrncekova-knedla/).
 
 ## Suroviny
 

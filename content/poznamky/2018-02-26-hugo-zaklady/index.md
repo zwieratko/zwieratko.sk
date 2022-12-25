@@ -13,7 +13,7 @@ toc: true
 
 [Hugo](https://gohugo.io/) je generátor statických stránok napísaný v jazyku Go. Podľa ich vlastného popisu najrýchlejší na svete. „Objektívne“ je vážne veľmi rýchly, ľahko použiteľný a dostatočne konfigurovateľný. Je to obdivuhodný a komunitou vyvíjaný kus softvéru s otvoreným zdrojovým kódom. Vlastne aj túto stránku má na svedomí Hugo.
 
-Hugo spracuje adresáre s obsahom, šablónami a konfiguráciou a vytvorí z toho plnohodnotnú HTML stránku. Obsah vytvárame v textových súboroch pomocou značkovacieho jazyka [Markdown](/poznamky/2019-12-04-markdown-zaklady). Súbory majú príponu `.md`. Na začiatku súboru je časť nazvaná „front matter“, obsahujúca metadáta (dátum vytvorenia, názov, krátky popis, značky atď.), po nej nasleduje samotný obsah príspevku.
+Hugo spracuje adresáre s obsahom, šablónami a konfiguráciou a vytvorí z toho plnohodnotnú HTML stránku. Obsah vytvárame v textových súboroch pomocou značkovacieho jazyka [Markdown](/poznamky/2019/12/markdown-zaklady/). Súbory majú príponu `.md`. Na začiatku súboru je časť nazvaná „front matter“, obsahujúca metadáta (dátum vytvorenia, názov, krátky popis, značky atď.), po nej nasleduje samotný obsah príspevku.
 
 Hugo má spracovanú kvalitnú a podrobnú [dokumentáciu](https://gohugo.io/documentation/). Tento text sa ju nesnaží v žiadnom prípade nahradiť :),  má slúžiť len ako pripomienka pre mňa.
 
