@@ -7,6 +7,7 @@ type: posts
 tags:
   - Vianoce
   - Vajcia
+  - Vaječný bielok
 categories:
   - Recepty
 toc: false
