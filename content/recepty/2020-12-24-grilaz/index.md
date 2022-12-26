@@ -7,6 +7,7 @@ type: posts
 tags:
   - Vianoce
   - Orechy
+  - Oblátky
 categories:
   - Recepty
 toc: false
