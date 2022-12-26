@@ -3,8 +3,30 @@
 
 {{ $data := newScratch }}
 {{ range $p }}
-    {{ $data.Add "tag_list" (apply .Params.tags "lower" ".") }}
-{{ end }}
+    {{ $temp := (apply .Params.tags "lower" ".") }}
+    {{ $temp := ( apply $temp "replace" "." "á" "a") }}
+    {{ $temp := ( apply $temp "replace" "." "ä" "a") }}
+    {{ $temp := ( apply $temp "replace" "." "č" "c") }}
+    {{ $temp := ( apply $temp "replace" "." "ď" "d") }}
+    {{ $temp := ( apply $temp "replace" "." "é" "e") }}
+    {{ $temp := ( apply $temp "replace" "." "í" "i") }}
+    {{ $temp := ( apply $temp "replace" "." "ĺ" "l") }}
+    {{ $temp := ( apply $temp "replace" "." "ľ" "l") }}
+    {{ $temp := ( apply $temp "replace" "." "ň" "n") }}
+    {{ $temp := ( apply $temp "replace" "." "ó" "o") }}
+    {{ $temp := ( apply $temp "replace" "." "ô" "o") }}
+    {{ $temp := ( apply $temp "replace" "." "ö" "o") }}
+    {{ $temp := ( apply $temp "replace" "." "ő" "o") }}
+    {{ $temp := ( apply $temp "replace" "." "ŕ" "r") }}
+    {{ $temp := ( apply $temp "replace" "." "š" "s") }}
+    {{ $temp := ( apply $temp "replace" "." "ť" "t") }}
+    {{ $temp := ( apply $temp "replace" "." "ú" "u") }}
+    {{ $temp := ( apply $temp "replace" "." "ü" "u") }}
+    {{ $temp := ( apply $temp "replace" "." "ű" "u") }}
+    {{ $temp := ( apply $temp "replace" "." "ý" "y") }}
+    {{ $temp := ( apply $temp "replace" "." "ž" "z") }}
+    {{ $data.Add "tag_list" $temp }}
+    {{ end }}
 
 <div class="tagcloud01 related-posts">
     <h3>

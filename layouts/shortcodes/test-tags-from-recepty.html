@@ -1,4 +1,58 @@
 {{ $p := where site.RegularPages "Type" "posts" }}
+{{ $p = where $p "Params.categories" "intersect" (slice .Page.Title) }}
+
+{{ $data := newScratch }}
+{{ range $p }}
+    {{ $data.Add "tag_list" (apply .Params.tags "lower" ".") }}
+    {{ $temp := (apply .Params.tags "lower" ".") }}
+    {{ $temp := ( apply $temp "replace" "." "č" "c") }}
+    {{ $temp := ( apply $temp "replace" "." "ť" "t") }}
+    {{ $temp := ( apply $temp "replace" "." "ý" "y") }}
+    {{ $temp := ( apply $temp "replace" "." "á" "a") }}
+    {{ $temp := ( apply $temp "replace" "." "í" "i") }}
+    {{ $data.Add "new_tag_list" $temp }}
+{{ end }}
+
+
+
+{{ $sk := dict 
+    "č" "c"
+    "ť" "t"
+    "ý" "y"
+    "á" "a"
+    "í" "i"
+}}
+
+{{ $sk }}
+
+<p>
+  <b>List of unique tags (some of them with diacritic and some one without):</b> <br>
+  {{ $data.Get "new_tag_list" | uniq }}
+</p>
+
+<p>
+  <b>List of unique tags (all of them with diacritic):</b> <br>
+  {{ $data.Get "tag_list" | uniq }}
+</p>
+
+<div class="tagcloud01 related-posts">
+    <h3>
+        Použité značky
+    </h3>
+        <ul>
+            {{ range $name, $taxonomy := .Site.Taxonomies.tags }} {{ $name }}
+                {{ if in ($data.Get "new_tag_list") (replace $name "-" " ") }}
+                    <li><a href="/tags/{{ $name | urlize }}">#{{ $name | humanize }} ({{ $taxonomy.Count }})</a></li>
+                {{end}}
+            {{end}}
+        </ul>
+</div>
+
+
+<hr>
+
+
+{{ $p := where site.RegularPages "Type" "posts" }}
 {{ $p = where $p "Params.categories" "intersect" (slice "Poznámky") }}
 
 {{ range first 1 $p }}
@@ -66,3 +120,7 @@ xxx
     {{ end }}
   {{ end }}
 </ul>
+
+<hr>
+
+{{ apply ($data.Get "tag_list") "replace" "." "č" "c" }}
