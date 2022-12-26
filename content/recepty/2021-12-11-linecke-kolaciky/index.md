@@ -38,7 +38,7 @@ Typické krehké vianočné pečivo, z múky, tuku, cukru a vaječných žĺtkov
 1. Do misy preosejeme hladkú múku.
 2. Postupne pridáme všetky suché ingrediencie: preosiaty cukor, citrónovú kôru, vanilkový aj vanilínový cukor a prášok do pečiva. Zmes dôkladne premiešame.
 3. Ďalej do zmesi pridáme rozkrájanú, zmäknutú Heru a rukou začneme miesiť.
-4. Po chvíľke miesenia pridáme ešte rozšľahané vaječné žĺtky a pokračujeme v miesení rukou až pokiaľ sa jednotlivé zložky úplne neprepoja a nevznikne vcelku lepivé cesto. Zvyšné vaječné bielky môžeme použiť na prípravu ľahučkých [snehových pusiniek](/recepty/2021/12/snehove-pusinky/)
+4. Po chvíľke miesenia pridáme ešte rozšľahané vaječné žĺtky a pokračujeme v miesení rukou až pokiaľ sa jednotlivé zložky úplne neprepoja a nevznikne vcelku lepivé cesto. Zvyšné vaječné bielky môžeme použiť na prípravu ľahučkých [snehových pusiniek](/recepty/2021/12/snehove-pusinky/) alebo hutnejších [snehových gulí](/recepty/2022/12/snehove-gule/)
 5. Po dôkladnom vymiesení preložíme cesto do fólie a odložíme do chladničky kľudne aj na noc.
 6. Na pomúčenej doske necháme cesto chvíľu oteplieť, len tak aby pri vaľkaní na okrajoch nepraskalo.
 7. Cesto vyvaľkáme tak na hrúbku približne 3 až 5 milimetrov. Snažíme sa, aby malo rovnakú hrúbku po celej ploche.
