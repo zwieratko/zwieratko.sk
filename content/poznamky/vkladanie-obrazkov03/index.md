@@ -10,7 +10,7 @@ tags:
 categories:
   - Poznámky
 series:
-  - Obrazok
+  - Obrázok
 toc: true
 authors: 
   - Rado van Zwieratko #toto nefunguje v tejto téme - Hermit

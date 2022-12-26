@@ -9,7 +9,7 @@ tags:
   - demo
   - image
 series:
-  - Obrázky
+  - Obrázok
 ---
 
 {{< rawhtml >}}
