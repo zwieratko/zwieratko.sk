@@ -30,7 +30,7 @@ jobs:
         sudo cp hugo /usr/local/bin
         cd ..
     - name: Build the page with Hugo
-      run: hugo --minify --buildDrafts --baseURL https://test2.zwieratko.sk/
+      run: hugo --enableGitInfo --minify --buildDrafts --baseURL https://test2.zwieratko.sk/
     - name: Record the build variables
       run: |
         {

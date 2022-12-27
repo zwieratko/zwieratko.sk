@@ -29,7 +29,7 @@ jobs:
         sudo cp hugo /usr/local/bin
         cd ..
     - name: Build the page with Hugo
-      run: hugo --minify
+      run: hugo --enableGitInfo --minify
     - name: Record the build variables
       run: |
         {
