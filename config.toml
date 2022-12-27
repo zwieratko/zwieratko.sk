@@ -47,8 +47,10 @@ removePathAccents = true
     startLevel = 2
 
 [frontmatter]
-  date = [ "date",":fileModTime", ":default"]
-  lastmod = ["lastmod" ,":fileModTime", ":default"]
+  date = [ "date", "publishDate", "lastmod"]
+  lastmod = ["lastmod" ,":git", "date", "publishDate"]
+  publishDate = ["publishDate", "date"]
+  expiryDate = ["expiryDate"]
 
 [taxonomies]
   tag = "tags"
