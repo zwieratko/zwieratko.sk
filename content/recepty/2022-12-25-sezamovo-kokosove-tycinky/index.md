@@ -2,7 +2,7 @@
 title: "Sezamovo-kokosové tyčinky"
 date: 2022-12-25T19:32:04+01:00
 draft: false
-description:
+description: Netradičná, ale vcelku jednoduchá nepečená sladká pochúťka zo sezamu a kokosu obalená v bielej čokoláde.
 type: posts
 tags:
   - Sezam
@@ -14,6 +14,8 @@ featuredImg: kokosovo-sezamove-tycinky.webp
 images:
   - /recepty/2022-12-25-sezamovo-kokosove-tycinky/kokosovo-sezamove-tycinky.webp
 ---
+
+Netradičná, ale vcelku jednoduchá nepečená sladká pochúťka zo sezamu a kokosu obalená v bielej čokoláde.
 
 ## Suroviny
 
