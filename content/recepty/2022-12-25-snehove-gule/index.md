@@ -2,7 +2,7 @@
 title: "Snehové gule"
 date: 2022-12-25T23:11:03+01:00
 draft: false
-description:
+description: Sladké nepečené gule z vyšľahaných vaječných bielkov a tortových oblátok poliate roztopenou čokoládou
 type: posts
 tags:
   - Vajcia
@@ -16,6 +16,8 @@ images:
   - /recepty/2022-12-25-snehove-gule/snehove-gule-01.webp
   - /recepty/2022-12-25-snehove-gule/snehove-gule-02.webp
 ---
+
+Sladké nepečené gule z vyšľahaných vaječných bielkov a tortových oblátok poliate roztopenou čokoládou
 
 ## Suroviny
 
