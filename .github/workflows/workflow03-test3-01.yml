@@ -15,6 +15,7 @@ jobs:
       with:
         ref: 'test3'
         submodules: 'true'
+        fetch-depth: '0'
     - name: Change the version of Service Worker
       run: |
         sed -i "s/const\sversion\s=\s.*;/const version = '$GITHUB_RUN_ID';/g" static/sw.js
