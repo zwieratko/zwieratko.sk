@@ -1,7 +1,7 @@
 ---
 title: APT (Advanced package tool) – základy
 date: 2022-12-04T22:29:06+01:00
-draft: true
+draft: flase
 description: Ako používať APT (Advanced package tool) správne a efektívne
 type: posts
 tags:
