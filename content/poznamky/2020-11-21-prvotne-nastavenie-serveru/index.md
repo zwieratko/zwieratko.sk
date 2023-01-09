@@ -82,9 +82,10 @@ Dôležité zásady na úvod:
 >3. Je vyslovene nevhodné bezhlavo kopírovať nejaké nastavenia či odporúčania z netu (je ich tam obrovské množstvo).
 >4. Zmeny je vhodné implementovať postupne, v malých krokoch a ihneď overovať ich funkčnosť.
 
-Prednastavenú úroveň zabezpečenia OpenSSH serveru chcem zvýšiť, aby som čo najviac eliminoval riziko napadnutia systému útočníkmi. Vykonám to úpravou konfiguračného súboru.
+Prednastavenú úroveň zabezpečenia OpenSSH serveru chcem zvýšiť, aby som čo najviac eliminoval riziko napadnutia systému útočníkmi. Vykonám to úpravou konfiguračného súboru. Najskôr však pre istotu vytvorím záložnú kópiu pôvodného konfiguračného súboru.
 
 ```sh
+sudo cp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak
 sudo nano /etc/ssh/sshd_config
 ```
 
@@ -133,7 +134,7 @@ Zruším komentovanie (to znamená, že zmažem znak mriežky zo začiatku riadk
 LogLevel VERBOSE
 ```
 
-Zruším komentovanie a zmením predvolenú hodnotu `INFO` na `VERBOSE`. Mierne zvýši množstvo zaznamenávaných údajov do logov o prihlasovaných užívateľoch, napr. pridá odtlačok kľúča úspešne prihláseného užívateľa.
+Zruším komentovanie a zmením predvolenú hodnotu `INFO` na `VERBOSE`. Mierne zvýši množstvo zaznamenávaných údajov do logov o prihlasovaných užívateľoch, napr. pridá informáciu o čísle riadku v `authorized_keys` so záznamom verejného kľúča úspešne prihláseného užívateľa.
 
 ---
 
@@ -381,10 +382,10 @@ V Debiane pridám znak mriežky na začiatok riadku ak vyslovene nepotrebujem `s
 
 ---
 
-Všetky nastavenia zhrnuté na jednom mieste, použil som východiskový konfiguračný súbor `/usr/share/openssh/sshd_config`, z Debian Buster (OpenSSH_7.9p1) do ktorého som zapracoval všetky vyššie uvedené zmeny:
+Všetky nastavenia zhrnuté na jednom mieste, použil som východiskový konfiguračný súbor `/usr/share/openssh/sshd_config`, z Debian ~~Buster (OpenSSH_7.9p1)~~ Bullseye (OpenSSH_8.4p1) do ktorého som zapracoval všetky vyššie uvedené zmeny:
 
 ```sh
-#	$OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
+#       $OpenBSD: sshd_config,v 1.103 2018/04/09 20:41:22 tj Exp $
 
 # This is the sshd server system-wide configuration file.  See
 # sshd_config(5) for more information.
@@ -396,14 +397,16 @@ Všetky nastavenia zhrnuté na jednom mieste, použil som východiskový konfigu
 # possible, but leave them commented.  Uncommented options override the
 # default value.
 
+Include /etc/ssh/sshd_config.d/*.conf
+
 Port 22222
 #AddressFamily any
 #ListenAddress 0.0.0.0
 #ListenAddress ::
 
-#HostKey /etc/ssh/ssh_host_rsa_key
+HostKey /etc/ssh/ssh_host_rsa_key
 #HostKey /etc/ssh/ssh_host_ecdsa_key
-#HostKey /etc/ssh/ssh_host_ed25519_key
+HostKey /etc/ssh/ssh_host_ed25519_key
 
 # Ciphers and keying
 #RekeyLimit default none
@@ -424,7 +427,7 @@ AllowUsers username1 username2 username3
 PubkeyAuthentication yes
 
 # Expect .ssh/authorized_keys2 to be disregarded by default in future.
-AuthorizedKeysFile	.ssh/authorized_keys
+AuthorizedKeysFile     .ssh/authorized_keys
 
 #AuthorizedPrincipalsFile none
 
@@ -473,7 +476,7 @@ UsePAM yes
 AllowAgentForwarding no
 AllowTcpForwarding no
 #GatewayPorts no
-X11Forwarding yes
+X11Forwarding no
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
@@ -492,20 +495,20 @@ ClientAliveCountMax 2
 #VersionAddendum none
 
 # no default banner path
-Banner /etc/issue.net
+#Banner none
 
 # Allow client to pass locale environment variables
 #AcceptEnv LANG LC_*
 
 # override default of no subsystems
-#Subsystem	sftp	/usr/lib/openssh/sftp-server
+#Subsystem       sftp    /usr/lib/openssh/sftp-server
 
 # Example of overriding settings on a per-user basis
 #Match User anoncvs
-#	X11Forwarding no
-#	AllowTcpForwarding no
-#	PermitTTY no
-#	ForceCommand cvs server
+#       X11Forwarding no
+#       AllowTcpForwarding no
+#       PermitTTY no
+#       ForceCommand cvs server
 ```
 
 ---
