@@ -517,7 +517,7 @@ ClientAliveCountMax 2
 
 - odinštalovať nepotrebný a nepoužívaný softvér
 - vypnúť všetky nepotrebné a nepoužívané služby
-- zakázať slabé algoritmy v OpenSSH
+- zakázať slabé algoritmy v OpenSSH (viď poznámku [OpenSSH – inštalácia a základné nastavenie](/poznamky/2022/12/openssh-instalacia-a-zakladne-nastavenie/))
 - vypnúť / zakázať nepotrebné moduly jadra
 - upraviť / sprísniť nastavenia jadra
 - `Firewall` -- paketový filter v jadre, základný obranný val systému,  v Debiane 10 je to `nftables`, je to samostatná problematika nad rámec tejto poznámky, dobrý seriál o ňom je na [root.cz](https://www.root.cz/serialy/firewall-s-nftables/)
