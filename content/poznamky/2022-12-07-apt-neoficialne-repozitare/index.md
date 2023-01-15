@@ -2,7 +2,7 @@
 title: APT – neoficiálne repozitáre
 date: 2022-12-07T17:20:21+01:00
 draft: false
-description: Ako pridať neoficiálne APT úložisko podľa osvedčených postupov
+description: Ako pridať neoficiálne APT úložisko podľa osvedčených postupov.
 type: posts
 tags:
   - Debian

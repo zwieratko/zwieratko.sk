@@ -2,7 +2,7 @@
 title: APT – neplatný podpisový kľúč
 date: 2022-12-06T08:31:37+01:00
 draft: false
-description: Ako obnoviť platnosť OpenPGP podpisového kľúča ku APT úložisku
+description: Ako obnoviť platnosť OpenPGP podpisového kľúča ku APT úložisku.
 type: posts
 tags:
   - Debian
