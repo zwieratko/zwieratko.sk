@@ -31,7 +31,7 @@ Jednoduché nekysnuté placky len z múky a vody.
 3. Na pomúčenej doske vyvaľkáme lokšu.
 4. Pečieme na sucho, na predhriatej liatinovej platni alebo panvici.
 
-## POznámka 
+## Poznámka
 
 Z tohto množstva surovín sa dá upiecť približne 22 lokší.
 
