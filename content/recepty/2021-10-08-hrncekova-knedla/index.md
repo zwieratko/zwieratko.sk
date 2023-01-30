@@ -28,6 +28,7 @@ Vynikajúca, ale pri tom veľmi jednoduchá domáca knedľa z pečiva.
 - prášok do pečiva -- 1 ks
 - maslo -- 90 g
 - mlieko -- 300 ml
+- vajcia -- 3 ks
 
 ## Postup
 
@@ -36,9 +37,9 @@ Vynikajúca, ale pri tom veľmi jednoduchá domáca knedľa z pečiva.
 3. V inej nádobe zmiešame múku, soľ aj prášok do pečiva, premiešame a prisypeme ku zmesi.
 4. Rozpustené no nie prepražené maslo prilejeme do misy s rožkami.
 5. Ďalej tam pridáme mlieko zmiešané s vaječnými žĺtkami. Zmes dôkladne premiešame.
-6. Z vaječných bielkov a soli vyšľaháme tuhý sneh a veľmi opatrne ho zapracujeme do rožkovej zmesi.
+6. Z vaječných bielkov a štipky soli vyšľaháme tuhý sneh a veľmi opatrne ho zapracujeme do rožkovej zmesi.
 7. Porcelánové hrnčeky vymastíme maslom a vysypeme hrubou múkou až po vrchný okraj.
-8. Hrnčeky naplníme zmesou tak do troch štvrtín a preložíme ich do hrnca s vodou. Hrnčeky by mali byť ponorené zhruba do polovičky.
+8. Vymastené hrnčeky naplníme zmesou tak do troch štvrtín a preložíme ich do hrnca s vodou. Hrnčeky by mali byť ponorené zhruba do polovičky.
 9. Vodu privedieme k varu a prikryté varíme 25 minút.
 
 ---
