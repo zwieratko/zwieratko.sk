@@ -15,6 +15,10 @@ categories: [
 ]
 toc: false
 draft: false
+featuredImg: ananasove-rezy-02.webp
+images:
+  - /recepty/2018/03/ananasove-rezy/ananasove-rezy-01.webp
+  - /recepty/2018/03/ananasove-rezy/ananasove-rezy-02.webp
 ---
 
 Piškóta s vanilkovým krémom, kúskami ananásu a ananásovým želé.
@@ -76,3 +80,11 @@ Piškóta s vanilkovým krémom, kúskami ananásu a ananásovým želé.
 4. Privedieme k varu, po zhustnutí ihneď odstavíme z plameňa. Stále miešame.
 5. Necháme vychladnúť, no buď to stále miešame alebo dáme na vrch celofánovú fóliu aby sa nám nevytvorila kožka a zároveň nám to nesmie stuhnúť.
 6. Do krému na piškóte sme si naukladali kúsky ananásu a na to vylejeme vychladenú ale ešte stále dostatočne tekutú želatínu, necháme v chlade poriadne stuhnúť.
+
+---
+
+![Ananásové rezy 1](ananasove-rezy-01.webp "Ananásové rezy 1 (autor: zwieratko, 2023)")
+
+---
+
+![Ananásové rezy 2](ananasove-rezy-02.webp "Ananásové rezy 2 (autor: zwieratko, 2023)")
