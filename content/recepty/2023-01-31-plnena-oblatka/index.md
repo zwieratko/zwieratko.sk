@@ -12,9 +12,11 @@ tags:
 categories:
   - Recepty
 toc: false
-#featuredImg: ...webp
-#images:
-#  - /recepty/...
+featuredImg: plnene-oblatky-02.webp
+images:
+  - /recepty/2023/01/plnene-oblatky/plnene-oblatky-00.webp
+  - /recepty/2023/01/plnene-oblatky/plnene-oblatky-01.webp
+  - /recepty/2023/01/plnene-oblatky/plnene-oblatky-02.webp
 ---
 
 Tortové oblátky plnené striedavo klasickou kakaovo-kávovou maslovou plnkou a džemom.
@@ -39,3 +41,15 @@ Tortové oblátky plnené striedavo klasickou kakaovo-kávovou maslovou plnkou a
 6. Na pracovnú dosku položíme prvú tortovú oblátku a natrieme ju primeraným množstvom maslovej plnky, na vrch položíme ďalšiu oblátku, mierne zatlačíme a pokračujeme v natieraní maslovou plnkou alebo džemom.
 7. Na záver odstránime vytlačenú plnku či džem z okrajov a naplnené oblátky zabalíme do papiera na pečenie a vložíme do igelitového vrecúška, položíme na rovný povrch a na niekoľko hodín zaťažíme niekoľkými kilogramami.
 8. Po zmäknutí môžeme plnené oblátky rozkrájať na požadovanú veľkosť.
+
+---
+
+![Plnené oblátky - plnenie](plnene-oblatky-00.webp "Plnené oblátky - plnenie (autor: zwieratko, 2023)")
+
+---
+
+![Plnené oblátky 1](plnene-oblatky-01.webp "Plnené oblátky 1 (autor: zwieratko, 2023)")
+
+---
+
+![Plnené oblátky 2](plnene-oblatky-02.webp "Plnené oblátky 2 (autor: zwieratko, 2023)")
