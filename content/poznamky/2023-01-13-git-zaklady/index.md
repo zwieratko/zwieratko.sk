@@ -1,7 +1,7 @@
 ---
 title: Git (systém na správu verzii) – základy
 date: 2023-01-13T11:56:38+01:00
-draft: true
+draft: false
 description: Git systém na správu verzii, objasnenie základných pojmov, inštalácia a úvodné nastavenie
 type: posts
 tags:

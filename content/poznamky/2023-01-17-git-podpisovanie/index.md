@@ -1,7 +1,7 @@
 ---
 title: Git – podpisovanie záznamov o zmenách
 date: 2023-01-17T12:38:46+01:00
-draft: true
+draft: fasle
 description: Git systém na správu verzii, podpisovanie záznamov o zmenách a značiek pomocou moderného a silného kriptografického algoritmu
 type: posts
 tags:

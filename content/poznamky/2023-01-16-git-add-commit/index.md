@@ -1,7 +1,7 @@
 ---
 title: Git – zaznamenávanie zmien
 date: 2023-01-16T10:38:46+01:00
-draft: true
+draft: false
 description: Git systém na správu verzii, pridávanie súborov a adresárov do prípravnej oblasti a vykonávanie záznamu o zmenách v úložisku
 type: posts
 tags:

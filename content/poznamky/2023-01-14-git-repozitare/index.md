@@ -1,7 +1,7 @@
 ---
 title: Git – práca s repozitármi
 date: 2023-01-14T17:02:21+01:00
-draft: true
+draft: false
 description: Git systém na správu verzii, záklkady práce so vzdialenými aj miestnymi repozitármi, ich vytváranie, pripájanie a klonovanie
 type: posts
 tags:
