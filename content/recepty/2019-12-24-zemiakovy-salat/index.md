@@ -6,6 +6,7 @@ description: Klasický vianočný zemiakový šalát.
 type: posts
 tags:
   - Vianoce
+  - Veľká noc
   - Zemiaky
 categories:
   - Recepty
