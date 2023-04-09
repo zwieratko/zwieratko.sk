@@ -23,6 +23,8 @@ Nadýchané, jemne orechové, šťavnaté a vláčne cesto so sladkou a hutnou, 
 
 ## Suroviny
 
+Na menší plech cca 33x23 cm.
+
 - práškový cukor (cesto) -- 155 g
 - maslo -- 155 g
 - vlašské orechy -- 186 g
@@ -41,6 +43,22 @@ Nadýchané, jemne orechové, šťavnaté a vláčne cesto so sladkou a hutnou, 
 5. Cesto vylejeme na plech, špachtličkou zarovnáme a dáme piecť do rúry predhriatej na 180 °C a pečieme 28 až 30 minút. Stav pečenia kontrolujeme špajľou.
 6. Medzi tým si v hlbšej nádobe vyšľaháme vaječné žĺtky a preosiaty práškový cukor. Niekoľko minút intenzívne miešame / šľaháme. Hmota musí byť úplne svetlá, konzistenciou pripomínajúca med.
 7. Žĺtkovú polevy vylejeme na koláč ihneď po dopečení, po vybratí z rúry. Snažíme sa ju rozotrieť rovnomerne po celom povrchu. Necháme úplne vychladnúť. Poleva dokonale zaschne až tak na druhý deň.
+
+## Poznámka
+
+Prepočet množstva surovín na menší aj väčší plech.
+
+surovina | malý plech | veľký plech
+:---:|:---:|:---:
+_ | 33x23 cm | 35x35 cm
+práškový cukor (cesto) | 155 g | 250 g
+maslo | 155 g | 250 g
+vlašské orechy | 186 g | 300 g
+hladká múka | 93 g | 150 g
+prášok do pečiva | 1 ks | 1 ks
+vajcia | 4 ks | 6 ks
+soľ
+práškový cukor (poleva) | 155 g | 250 g
 
 ---
 
