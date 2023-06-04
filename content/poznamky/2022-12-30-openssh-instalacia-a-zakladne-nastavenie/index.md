@@ -188,7 +188,7 @@ OpenSSH klient je bežnou súčasťou rôznych operačných systémov. V prípad
 
 ```bash
 sudo apt update
-sudo apt instrall openssh-client
+sudo apt install openssh-client
 ```
 
 #### Konfigurácia
