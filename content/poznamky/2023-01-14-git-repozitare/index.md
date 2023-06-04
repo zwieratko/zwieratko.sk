@@ -2,7 +2,7 @@
 title: Git – práca s repozitármi
 date: 2023-01-14T17:02:21+01:00
 draft: false
-description: Git systém na správu verzii, záklkady práce so vzdialenými aj miestnymi repozitármi, ich vytváranie, pripájanie a klonovanie
+description: Git systém na správu verzii, základy práce so vzdialenými aj miestnymi repozitármi, ich vytváranie, pripájanie a klonovanie
 type: posts
 tags:
   - Git
@@ -21,10 +21,10 @@ Chcem zosumarizovať poznatky o základnej práci so vzdialenými a lokálnymi r
 
 ### Príkazy
 
-- git init
-- git clone
-- git submodule
-- git remote
+- [git init](https://git-scm.com/docs/git-init)
+- [git clone](https://git-scm.com/docs/git-clone)
+- [git submodule](https://git-scm.com/docs/git-submodule)
+- [git remote](https://git-scm.com/docs/git-remote)
 
 ## Riešenie
 

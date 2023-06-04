@@ -21,11 +21,11 @@ Chcem podpisovať záznamy o zmenách (`commits`) a značky (`tags`) v systéme 
 
 ### Príkazy
 
-- git config
-- git commit
-- git tag
-- git verify-commit
-- git verify-tag
+- [git config](https://git-scm.com/docs/git-config)
+- [git commit](https://git-scm.com/docs/git-commit)
+- [git tag](https://git-scm.com/docs/git-tag)
+- [git verify-commit](https://git-scm.com/docs/git-verify-commit)
+- [git verify-tag](https://git-scm.com/docs/git-verify-tag)
 
 ## Riešenie
 
@@ -111,7 +111,7 @@ git config --global commit.gpgsign true
 git config --global tag.gpgsign true
 ```
 
-Naopak ak mám nastavené automatické podpisovanie záznamov o zmene a značiek, môžem pri jednotlivých zázanmoch túto vlastnosť vypnúť.
+Naopak ak mám nastavené automatické podpisovanie záznamov o zmene a značiek, môžem pri jednotlivých záznamoch túto vlastnosť vypnúť.
 
 ```bash
 git commit --no-gpg-sign
@@ -122,7 +122,7 @@ git tag --no-sign v0.0.001-lw
 
 ### Spustenie agenta
 
-V prípade ak sa pokúšam podpísať záznam o zmene a `gpg-agent` nie je spsustený dostanem hlásenie o chybe:
+V prípade ak sa pokúšam podpísať záznam o zmene a `gpg-agent` nie je spustený dostanem hlásenie o chybe:
 
 ```bash
 gpg: can`t connect to the gpg-agent: IPC connect call failed
@@ -214,9 +214,9 @@ Takto importovaný kľúč má neznámu mieru dôveryhodnosti (pokiaľ nie je po
 gpg --edit-key 0123456789ABCDEF
 ```
 
-Po výzve `gpg>` zadám príkaz `trust` a z ponúkaneho rozsahu môžem vybrať najvyšiu mieru doveryhodnosti – 5 (`I trust ultimately`).
+Po výzve `gpg>` zadám príkaz `trust` a z ponúkaného rozsahu môžem vybrať najvyššiu mieru dôveryhodnosti – 5 (`I trust ultimately`).
 
-Pri inom ako mnou vydanom kľúči jeho dôveryhodnosť zvýšim tým, že ho podpíšm vlastným kľúčom.
+Pri inom ako mnou vydanom kľúči jeho dôveryhodnosť zvýšim tým, že ho podpíšem vlastným kľúčom.
 
 ```bash
 gpg --lsign-key 0123456789ABCDEF

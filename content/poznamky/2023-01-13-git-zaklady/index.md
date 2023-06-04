@@ -21,8 +21,8 @@ Chcem objasniť základné pojmy a zosumarizovať poznatky ohľadom inštalácie
 
 ### Príkazy
 
-- git version
-- git config
+- [git version](https://git-scm.com/docs/git-version)
+- [git config](https://git-scm.com/docs/git-config)
 
 ## Riešenie
 
@@ -62,11 +62,16 @@ Chcem objasniť základné pojmy a zosumarizovať poznatky ohľadom inštalácie
 
 #### Linux
 
-1. Debian / Ubuntu priamo z úložiska operačného systému pomocou `apt`.
+1. Priamo z úložiska operačného systému pomocou balíkovacieho systému.
 
 ```bash
+# Debian / Ubuntu
 sudo apt update
 sudo apt install git
+
+# RHEL / CentOS / Fedora / Almalinux
+sudo dnf update
+sudo dnf install git
 ```
 
 2. Ubuntu, najnovšiu verziu z úložiska tretej strany.
@@ -77,17 +82,25 @@ sudo apt update
 sudo apt install git
 ```
 
-3. Debian / Ubuntu zostaviť najnovšiu verziu (s použitím staršej verzie).
+3. Zostaviť najnovšiu verziu (s použitím staršej verzie).
 
 ```bash
+# nástroje potrebné na stiahnutie a zostavenie pre Debian a spol
 sudo apt update
-# nástroje potrebné na stiahnutie a zostavenie
 sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev \
 libexpat1-dev gettext
+
+# nástroje potrebné na stiahnutie a zostavenie pre RHEL a spol
+sudo dnf update
+sudo dnf install gettext-devel openssl-devel perl-CPAN perl-devel \
+zlib-devel gcc autoconf
+
 # naklonujem repo so zdrojákmi
 git clone https://github.com/git/git.git
+
 # prepnem sa do novovytvoreného adresára
 cd git
+
 # zostavím a nainštalujem Git
 make prefix=/usr/local all
 sudo make prefix=/usr/local install
