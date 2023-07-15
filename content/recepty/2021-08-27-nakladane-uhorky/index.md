@@ -13,6 +13,8 @@ toc: false
 featuredImg: nakladane-uhorky.webp
 images:
   - /recepty/2021-08-27-nakladane-uhorky/nakladane-uhorky.jpg
+  - /recepty/2021-08-27-nakladane-uhorky/nakladane-uhorky-01.webp
+  - /recepty/2021-08-27-nakladane-uhorky/nakladane-uhorky-02.webp
 ---
 
 Domáce, chrumkavé, sterilizované uhorky v slano-pikantnom náleve. Mamkin recept. Jediné povinné zaváranie :)
@@ -59,6 +61,44 @@ Domáce, chrumkavé, sterilizované uhorky v slano-pikantnom náleve. Mamkin rec
 
 - z uvedeného množstva je možné pripraviť 5 ks fliaš s objemom 0,72 l, ktoré budú poriadne naplnené
 - uhorky sú približne 7 cm dlhé, 17 -- 20 ks na zaváraciu fľašu
+- sezóna 2023:
+  - z 10 kg uhoriek bolo možné pripraviť 27 ks sedemdecových zaváracích fliaš
+  - približne 17-18 uhoriek na fľašu
+  - 1 uhorka má približne 7 cm a váži 22,3 g
+  - v priemere vychádza 0,37 l nálevu na zaváraciu fľašu
+  - sušené čili nahradené 2 malými čili papričkami (silne pálivé, do nálevu)
+
+surovina | na 100 ks | na 10 kg
+:---:|:---:|:---:
+voda - l | 1 | 6,75
+ocot - l | 0,5 | 3,4
+soľ - g | 50 | 337
+krištáľový cukor - pl | 2 | 13
+čierne korenie celé - ks | 20 | 135
+nové korenie celé - ks | 10 | 67
+bobkov list - ks | 4 | 27
+klinček - ks | 10 | 35
+horčičné semienko - kl/g | 3 | 60
+zázvor sušený prášok - kl | 1 | 7
+čili sušené mleté - kl/ks | 1 | 2
+uhorka nakladačka - ks/kg | 100 | 10
+mrkva - ks | 1 | 5
+chren - ks | - | 0,5
+cibuľa - ks | - | 2
+cesnak - hlávka | 0,5 | 2
+kôpor - zväzok | - | 1
+paprika sladká - ks | 0,5 | 1
+paprika štipľavá - ks | 0,25 | 0,5
+feferón - ks | 2,5 | - |
+čili sladké - ks | - | 2
+
+---
+
+![Nakladané uhorky - príprava](nakladane-uhorky-01.webp "Nakladané uhorky - príprava (autor: zwieratko, 2023)")
+
+---
+
+![Nakladané uhorky - dno fľaše](nakladane-uhorky-02.webp "Nakladané uhorky - dno fľaše (autor: zwieratko, 2023)")
 
 ---
 
