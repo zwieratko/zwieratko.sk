@@ -128,6 +128,10 @@ let filesToCacheExtra = [
   '/recepty/2023/01/plnene-oblatky/',
   '/recepty/2023/04/velkonocna-hrudka/',
   '/recepty/2023/04/velkonocna-cvikla/',
+  '/recepty/2023/06/nepeceny-kokosovo-vanilkovy-cheesecake/',
+  '/recepty/2023/07/marhulovy-dzem/',
+  '/recepty/2023/07/marhulovy-kolac-s-posypkou/',
+  '/recepty/2023/08/babovka-z-prepelicich-vajec/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
