@@ -37,7 +37,7 @@ Klasická jemná bábovka s citrónovo-vanilkovou príchuťou z netradičných p
 1. Do väčšej misy si pripravíme kryštálový, vanilkový aj vanilínový cukor.
 2. Opatrne rozklepneme prepeličie vajíčka a pokúsime sa oddeliť vaječný žĺtok, pridávame ho do misy s cukrom. Vaječné bielky dávame do inej misy.
 3. K zmesi cukru a prepeličích žĺtkov pridáme ešte vodu a olej a začneme zľahka šľahať až pokiaľ sa kryštálový cukor úplne nerozpustí.
-4. Za stáleho šľahania po častiach pridávame pripravenú zmes preosiatej múky, bezfosfátového prášku do pečiva a sušenej citrónovej kôry. Vznikne hmota podobné cestu na palacinky.
+4. Za stáleho šľahania po častiach pridávame pripravenú zmes preosiatej múky, bezfosfátového prášku do pečiva a sušenej citrónovej kôry. Vznikne hmota podobná cestu na palacinky.
 5. V ďalšej miske si vyšľaháme vaječné bielky so soľou. Mal by vzniknúť vcelku tuhý sneh.
 6. Sneh z vaječných bielkov pridávame po častiach ku zmesi z vaječných žĺtkov a pozvoľna miešame, ale už len ručne.
 7. Vzniknuté piškótové cesto nalejeme do bábovkovej formy vymastenej maslom a vysypanej polohrubou múkou. Nakoniec formou ľahko buchneme o tvrdý podklad.
