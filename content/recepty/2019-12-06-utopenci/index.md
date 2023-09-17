@@ -7,6 +7,7 @@ description: "Absolútna klasika. Špekáčiky nakladané v kyslo-pikantnom nál
 toc: false
 tags:
   - Ku pivu
+  - Bez pečenia
 ---
 
 Absolútna klasika. Špekáčiky nakladané v kyslo-pikantnom náleve. Ku pivu najlepšia pochúťka.

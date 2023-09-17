@@ -8,6 +8,7 @@ tags:
   - Vajcia
   - Oblátky
   - Vaječný bielok
+  - Bez pečenia
 categories:
   - Recepty
 toc: false

@@ -7,6 +7,7 @@ type: posts
 tags:
   - Nátierka
   - Ku pivu
+  - Bez pečenia
 categories:
   - Recepty
 toc: false

@@ -8,6 +8,7 @@ tags:
   - Kokos
   - Vanilka
   - Mascarpone
+  - Bez pečenia
 categories:
   - Recepty
 toc: false

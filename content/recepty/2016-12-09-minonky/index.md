@@ -6,7 +6,8 @@ type: posts
 #authors: ["zwieratko"]
 tags: [
     "Vianoce",
-    "Orechy"
+    "Orechy",
+    "Bez pečenia"
 ]
 categories: [
     "Recepty"

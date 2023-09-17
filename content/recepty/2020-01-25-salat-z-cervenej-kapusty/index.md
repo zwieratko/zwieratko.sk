@@ -8,6 +8,7 @@ tags:
   - Kapusta
   - Zelenina
   - Šalát
+  - Bez pečenia
 categories:
   - Recepty
 toc: false
