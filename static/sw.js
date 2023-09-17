@@ -132,6 +132,7 @@ let filesToCacheExtra = [
   '/recepty/2023/07/marhulovy-dzem/',
   '/recepty/2023/07/marhulovy-kolac-s-posypkou/',
   '/recepty/2023/08/babovka-z-prepelicich-vajec/',
+  '/recepty/2023/09/nepecena-rolada-s-gastanovym-pyre/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
