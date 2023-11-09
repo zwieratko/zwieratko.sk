@@ -64,7 +64,7 @@ APT-Sources: https://apt.fury.io/caddy  Packages
 Description: Caddy - Powerful, enterprise-ready, open source web server with automatic HTTPS written in Go
 ```
 
-- `apt list` – zobrazí dostupná verzie zadaného balíčku
+- `apt list` – zobrazí dostupné verzie zadaného balíčku
 
 ```bash
 apt list -a hugo
