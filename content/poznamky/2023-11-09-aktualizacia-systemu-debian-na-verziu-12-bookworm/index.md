@@ -72,7 +72,7 @@ Ak som s výsledkom spokojný, reštartujem počítač, aby sa všetky vykonané
 sudo systemctl reboot
 ```
 
-## Kontrola stavu pred povýšením
+### Kontrola stavu pred povýšením
 
 Skontrolujem stav jednotlivých nainštalovaných balíčkov a ich pripravenosť na aktualizáciu. Výstup nasledujúceho príkazu zobrazí všetky balíčky, ktoré sa nepodarilo správne nainštalovať (majú príznaky ako napr. `Half-Installed` alebo `Failed-Config`).
 
@@ -88,11 +88,11 @@ sudo dpkg --get-selections | grep 'hold$'
 sudo apt-mark showhold
 ```
 
-## Záloha
+### Záloha
 
 Vykonám zálohu podľa najlepšieho vedomia a svedomia :)
 
-## Aktualizácia repozitárov
+### Aktualizácia repozitárov
 
 Vytvorím záložné kópie zoznamov zdrojov softwaru.
 
@@ -121,7 +121,7 @@ Na záver tohto kroku vykonám aktualizáciu repozitárov.
 sudo apt update
 ```
 
-## Minimálna aktualizácia systému
+### Minimálna aktualizácia systému
 
 Najskôr vykonám aktualizáciu už nainštalovaných súčasti operačného systému, bez pridávania nových balíčkov.
 
@@ -129,7 +129,7 @@ Najskôr vykonám aktualizáciu už nainštalovaných súčasti operačného sys
 sudo apt upgrade --without-new-pkgs
 ```
 
-## Povýšenie systému na Debian 12 Bookworm
+### Povýšenie systému na Debian 12 Bookworm
 
 Následne vykonám kompletnú aktualizáciu operačného systému na najnovšiu verziu.
 
@@ -146,7 +146,7 @@ sudo sshd -t
 sudo systemctl reboot
 ```
 
-## Odstránenie nepotrebných balíčkov
+### Odstránenie nepotrebných balíčkov
 
 Po úspešnom povýšení systému môžem odstrániť skôr nainštalované, ale ďalej už nie potrebné balíčky. Odstránim aj všetky stiahnuté balíčky.
 
@@ -155,7 +155,7 @@ sudo apt --purge autoremove
 sudo apt autoclean
 ```
 
-## Príprava na ďalšie vydanie
+### Príprava na ďalšie vydanie
 
 Na záver vykonám kontrolu, nechám si vypísať zoznam odstránených balíčkov po ktorých mohlo v systéme niečo ostať (napr. konfiguračné súbory a podobne).
 
