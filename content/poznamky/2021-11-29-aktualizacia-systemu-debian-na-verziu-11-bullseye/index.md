@@ -15,7 +15,7 @@ toc: true
 
 Chcem aktualizovať serverový operačný systém Debian z verzie 10 Buster na najnovšiu stabilnú verziu 11 Bullseye. Aktualizáciu chcem uskutočniť počas normálnej prevádzky serveru, bez odstávky, respektíve s minimálnym časom nedostupnosti jednotlivých služieb.
 
-Debian 11 „Bullseye“ bol vydaný 14. augusta 2021, posledná aktualizácia -- Debian 11.1 bola uvoľnená 9. októbra.
+Debian 11 „Bullseye“ bol vydaný 14. augusta 2021, posledná aktualizácia -- Debian 11.8 bola uvoľnená 7. októbra 2023.
 
 ## Upozornenie
 
@@ -182,5 +182,6 @@ A to by už malo byť vážne všetko.
 
 ## Zdroj
 
+- [Debian “bullseye” Release Information](https://www.debian.org/releases/bullseye/)
 - [Upgrades from Debian 10 (buster)](https://www.debian.org/releases/stable/mips64el/release-notes/ch-upgrading.en.html)
 - [How To Upgrade To Debian 11 Bullseye From Debian 10 Buster](https://ostechnix.com/upgrade-to-debian-11-bullseye-from-debian-10-buster/)
