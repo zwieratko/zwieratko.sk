@@ -50,6 +50,7 @@ let filesToCacheExtra = [
   '/poznamky/2023/01/git-praca-s-repozitarmi/',
   '/poznamky/2023/01/git-zaznamenavanie-zmien/',
   '/poznamky/2023/01/git-podpisovanie-zaznamov-o-zmenach/',
+  '/poznamky/2023/11/aktualizacia-systemu-debian-na-verziu-12-bookworm/',
   '/recepty/',
   '/recepty/2016/12/medvedie-labky/',
   '/recepty/2016/12/minonky/',
@@ -133,6 +134,7 @@ let filesToCacheExtra = [
   '/recepty/2023/07/marhulovy-kolac-s-posypkou/',
   '/recepty/2023/08/babovka-z-prepelicich-vajec/',
   '/recepty/2023/09/nepecena-rolada-s-gastanovym-pyre/',
+  '/recepty/2023/11/drozdova-natierka/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
