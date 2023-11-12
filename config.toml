@@ -18,8 +18,8 @@ copyright = "This work is licensed under a Creative Commons Attribution-ShareAli
 # disqusShortname = "yourdiscussshortname"
 removePathAccents = true
 
-[author]
-  name = "zwieratko.sk"
+# [author]
+#   name = "zwieratko.sk"
 
 [markup]
   defaultMarkdownHandler = "goldmark" #goldmark or blackfriday
@@ -98,6 +98,10 @@ removePathAccents = true
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
   #customCSS = ["css/syntax.css"]
+
+  [params.author]
+    name = "zwieratko.sk"
+    email = "zwieratko@zwieratko.sk"
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
