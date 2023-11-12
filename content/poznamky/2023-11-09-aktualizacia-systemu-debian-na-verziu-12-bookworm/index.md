@@ -2,7 +2,7 @@
 title: "Aktualizácia systému Debian na verziu 12 Bookworm"
 date: 2023-11-09T20:22:12+01:00
 draft: false
-description: Ako aktualizovať serverový operačný systém Debian z verzie 10 Bullseye na najnovšiu stabilnú verziu 11 Bookworm.
+description: Ako aktualizovať serverový operačný systém Debian z verzie 11 Bullseye na najnovšiu stabilnú verziu 12 Bookworm.
 type: posts
 tags:
   - Debian
