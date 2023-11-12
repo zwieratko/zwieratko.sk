@@ -1,6 +1,8 @@
 ---
 title: "História príkazov v PowerShell"
 date: 2023-11-12T12:29:12+01:00
+author:
+  short: zw
 draft: false
 description: Ako vyhľadať nejaký už skôr zadaný príkaz v prostredí PowerShell v operačnom systéme MS Windows 10 / 11.
 type: posts
@@ -36,7 +38,7 @@ Zadaním príkazu `Get-History` alebo zadaním jeho aliasu `history` sa vypíše
 
 Podobne ako v Linuxe sa pomocou stláčania šípok na klávesnici pohybujem v zozname histórie zadaných príkazov, `šípka hore` ma v zozname posúva ďalej do minulosti, naopak `šípka dole` ma posúva späť, bližšie k súčasnosti. Čiže ak na novom prázdnom príkazovom riadku stlačím klávesu `šípka hore` zobrazí sa posledný zadaný príkaz.
 
-
+Okrem toho môžem zobraziť históriu zadávaných príkazov zobrazením obsahu súboru do ktorého sa táto história ukladá.
 
 ```powershell
 # Cela ulozena historia
@@ -77,10 +79,18 @@ Môžem zobraziť nastavenia, premenné týkajúce sa histórie zadávaných pr�
 ```powershell
 Get-PSReadLineOption | Select-Object -Property '*history*'
 ```
+Ak chcem napríklad zmeniť maximálne množstvo príkazov ktoré sa majú uchovať v histórii, zmením hodnotu systémovej premennej `MaximumHistoryCount`, ak chcem aby sa zmenená hodnota uchovala trvalo, zapíšem nastavenie premennej do jedného z [profilov](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_profiles?view=powershell-7.3).
 
+```powershell
+# PowerShell 5.1 napriklad do $HOME\Documents\WindowsPowerShell\Profile.ps1
+# PowerShell 7.3 napriklad do $HOME\Documents\PowerShell\Profile.ps1
+# Maximalna povolena hodnota je 32767
+$MaximumHistoryCount = 32767
+```
 
 ---
 
 ## Zdroj
 
-- [about_History](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_history?view=powershell-5.1)
+- [about_History](https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_history?view=powershell-7.3)
+- [Command History](https://learn.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.3#command-history)
