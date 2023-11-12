@@ -102,6 +102,7 @@ removePathAccents = true
   [params.author]
     name = "zwieratko.sk"
     email = "zwieratko@zwieratko.sk"
+    short = "zw"
 
   # Social Icons
   # Check https://github.com/Track3/hermit#social-icons for more info.
