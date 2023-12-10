@@ -2,7 +2,7 @@
 title: "Vínové pečivo"
 date: 2023-12-09T18:08:39+01:00
 draft: false
-description:
+description: Základný a mimoriadne jednoduchý recept na vianočné pečivo s neutrálnou chuťou a výrazným listovaním.
 type: posts
 tags:
   - Vianoce
@@ -17,6 +17,8 @@ images:
  - /recepty/2023/12/vinove-pecivo/vinove-pecivo-03.webp
  - /recepty/2023/12/vinove-pecivo/vinove-pecivo-04.webp
 ---
+
+Základný a mimoriadne jednoduchý recept na vianočné pečivo s neutrálnou chuťou a výrazným listovaním.
 
 ## Suroviny
 

@@ -2,7 +2,7 @@
 title: "Drožďová nátierka"
 date: 2023-11-11T11:11:11+01:00
 draft: false
-description:
+description: Veľmi jednoduchá, no zároveň výživná nátierka s príjemnou sladkastou chuťou a vôňou čerstvých kvasníc.
 type: posts
 tags:
   - Nátierka
@@ -15,6 +15,8 @@ toc: false
 #images:
 #  - /recepty/...
 ---
+
+Veľmi jednoduchá, no zároveň výživná nátierka s príjemnou sladkastou chuťou a vôňou čerstvých kvasníc.
 
 ## Suroviny
 

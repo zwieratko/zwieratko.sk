@@ -2,7 +2,7 @@
 title: "Nepečená roláda s gaštanovým pyré"
 date: 2023-09-17T09:09:23+02:00
 draft: false
-description: 
+description: Rýchla ne pečená roláda s výraznou príchuťou lahodného gaštanového pyré a kávy.
 type: posts
 tags:
   - Gaštanové pyré
@@ -17,6 +17,8 @@ images:
   - /recepty/2023-09-17-nepecena-rolada-s-gastanovym-pyre/nepecena-rolada-s-gastanovym-pyre-02.webp
   - /recepty/2023-09-17-nepecena-rolada-s-gastanovym-pyre/nepecena-rolada-s-gastanovym-pyre-03.webp
 ---
+
+Rýchla ne pečená roláda s výraznou príchuťou lahodného gaštanového pyré a kávy.
 
 ## Suroviny
 
