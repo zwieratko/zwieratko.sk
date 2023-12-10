@@ -43,7 +43,7 @@ Typické krehké vianočné pečivo, z múky, tuku, cukru a vaječných žĺtkov
 6. Na pomúčenej doske necháme cesto chvíľu oteplieť, len tak aby pri vaľkaní na okrajoch nepraskalo.
 7. Cesto vyvaľkáme tak na hrúbku približne 3 až 5 milimetrov. Snažíme sa, aby malo rovnakú hrúbku po celej ploche.
 8. Vykrajujeme z neho rôzne tvary podľa potreby, zvyčajne jedna polovica vykrojených tvarov je bez otvoru v prostriedku. Tá druhá polovica môže mať otvor v strede, pôjde na vrch koláčiku. Ukladáme ich na plech s papierom na pečenie. Nechávame medzi nimi dostatok miesta, pri pečeni sa mierne zväčšia.
-9. Plech dáme piecť do rúry vyhriatej na 200 °C, pečieme 11 až 12 minút.
+9. Plech dáme piecť do rúry vyhriatej na 180 °C, pečieme 10 až 11 minút.
 10. Po dopečení ich preložíme na taniere, časť koláčikov s otvorom môžeme poprášiť práškovým cukrom, necháme úplne vychladnúť.
 11. Koláčik bez otvoru (spodná časť) natrieme obľúbeným kyselkavým džemom, najlepší je samozrejme domáci [ríbezľový džem](/recepty/2020/06/ribezlovo-malinovy-dzem/) a na vrch položíme časť s otvorom, ktorá je už posypaná práškovým cukrom a je to, máme linecký koláčik.
 12. Odkladáme ich do uzatvárateľnej nádoby, najlepšie sú až za pár dní, keď sa prepoja chute pečiva a džemu. Linecké koláčiky postupne zmäknú a stanú sa krehkými.
@@ -52,6 +52,7 @@ Typické krehké vianočné pečivo, z múky, tuku, cukru a vaječných žĺtkov
 
 - z uvedeného množstva surovín vzniklo cesto postačujúce na výrobu 62 ks koláčikov, z ktorých je možné vyrobiť 31 lineckých koláčikov (17ks okrúhlych a 14ks v tvare srdca)
 - rok 2022: z uvedeného navýšeného množstva surovín vzniklo 875 g cesta postačujúceho na výrobu 94 ks pečiva, z ktorých sme nalepili 25 ks okrúhlych a 22 ks koláčikov v tvare srdca
+- rok 2023: z uvedeného navýšeného množstva surovín vzniklo 850 g cesta postačujúceho na výrobu 114 ks pečiva (4 plechy), z ktorých je možné nalepiť 30 ks okrúhlych koláčikov a 16 ks koláčikov v tvare srdca
 
 ---
 

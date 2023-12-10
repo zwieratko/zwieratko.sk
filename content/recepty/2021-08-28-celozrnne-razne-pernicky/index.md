@@ -10,6 +10,7 @@ tags:
   - Celozrnná múka
   - Orechy
   - Med
+  - Vianoce
 categories:
   - Recepty
 toc: false
@@ -23,16 +24,16 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 
 ## Suroviny
 
-- celozrnná ražná múka -- 216 g
-- sóda bikarbóna -- 1 kl
-- zmes perníkového korenia -- 2 kl
-- bezfosfátový prášok do pečiva -- 1/2 ks
-- trstinový cukor -- 80 g
-- vlašské orechy mleté -- 50 g
-- vajcia -- 1 ks
-- maslo -- 70 g
-- med -- 100 g
-- orechy rôzne na ozdobu -- 25 ks
+- celozrnná ražná múka -- 216 g / 477 g
+- sóda bikarbóna -- 1 kl / 2 kl
+- zmes perníkového korenia -- 2 kl / 4 kl
+- bezfosfátový prášok do pečiva -- 1/2 ks / 1 ks
+- trstinový cukor -- 80 g / 144 g
+- vlašské orechy mleté -- 50 g / 120 g
+- vajcia -- 1 ks / 2 ks
+- maslo -- 70 g / 150 g
+- med -- 100 g / 220 g
+- orechy rôzne na ozdobu -- 25 ks / 100 ks
 
 ## Postup
 
@@ -46,11 +47,12 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 
 ## Poznámky
 
-- z uvedeného množstva je možné vyrobiť približne 25 ks perníkov
+- z uvedeného (menšieho) množstva je možné vyrobiť približne 25 ks perníkov
 - množstvo cukru a medu je možné upraviť podľa chuti
 - rok 2021: z uvedeného navýšeného množstva vzniklo 1235 g cesta, postačujúceho na výrobu približne 100 ks medovníkov
 - rok 2022: z pôvodného, menšieho množstva vzniklo 68 ks perníčkov s vykrajovaným priemerom 4,5 cm, po upečení mali cca 5 cm a hrúbku 4-5 mm
 - rok 2022: z navýšeného množstva surovín vzniklo 1330 g cesta postačujúceho na výrobu 111 ks perníkov
+- rok 2023: z pôvodného, menšieho množstva vzniklo 642 g cesta postačujúceho na výrobu 70 ks perníčkov s vykrajovaným priemerom 4,5 cm
 
 surovina | pôvodné | navýšené
 :---|:---:|:---:

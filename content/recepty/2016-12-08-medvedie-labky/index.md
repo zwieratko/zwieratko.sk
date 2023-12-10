@@ -35,13 +35,23 @@ Najlepšie vianočné pečivo s orechovo-vanilkovou príchuťou. Základom je ba
 - práškový cukor na obaľovanie
 - formičky na pečenie
 
+surovina | originál | +25% | +50%
+:---:|:---:|:---:|:---:
+vlašské orechy | 140 | 175 | 210
+hladká múka | 360 | 450 | 540
+práškový cukor | 60 | 75 | 90
+rastlinný tuk „Hera“ | 300 | 375 | 450
+vajíčko „L“ | 1 | 1 | 2
+vanilínový cukor | 2 | 2 | 3
+vanilkový cukor | 1 | 1 | 2
+
 ## Postup
 
 1. Nadrobno pomelieme vlašské orechy.
 2. Do väčšej misy si preosejeme hladkú múku (00 alebo akúkoľvek hladkú vhodnú na krehké pečivo) a práškový cukor, pridáme pomleté orechy a zľahka premiešame. Podľa chuti pridáme vanilkový alebo vanilínový cukor.
 3. Do suchej zmesi jemne zapracujeme zmäknutú Heru a rozšľahané vajíčko. Rukou miesime aby sa všetko prepojilo. Na noc odložíme do chladničky.
 4. Pripravíme si kovové formičky, vnútro jemne pomúčime a vyplníme kúskom pripravenej hmoty, ukladáme na plech. Formičky sa snažíme naplniť približne rovnakým množstvom hmoty.
-5. Predhrejeme si rúru na 200 °C (elektrická, ohrev vrch - spodok) a pečieme 15-20 minút plech s malými formičkami a 20-25 minút s veľkými. Medvedie labky musia ostať svetlé, len pri okrajoch mierne tmavšie.
+5. Predhrejeme si rúru na 180-200 °C (elektrická, ohrev vrch - spodok) a pečieme 15-20 minút plech s malými formičkami a 20-25 minút s veľkými. Medvedie labky musia ostať svetlé, len pri okrajoch mierne tmavšie.
 6. Do väčšej misy si preosejeme práškový cukor a pridáme vanilku ( vanilkový aj vanilínový cukor ). Po upečení vyklopíme obsah formičky do misy s cukrom a jemne obalíme. Ukladáme na taniere a necháme vychladnúť.
 7. Po vychladnutí ukladáme do nádob ktoré je možné uzavrieť, medvedie labky takto vydržia aj týždne. Odstáte sú najlepšie.
 
@@ -50,6 +60,10 @@ Najlepšie vianočné pečivo s orechovo-vanilkovou príchuťou. Základom je ba
 - pri surovinách je uvedené aj pôvodné množstvo (v zátvorke, prečiarknuté), z navýšeného množstva surovín vznikne 1183 g cesta, z ktorého je možné naplniť 76 ks malých formičiek a 17 ks veľkých (skoro tri plechy)
 - rok 2021: z uvedeného množstva vzniklo cesto postačujúce na naplnenie 97 ks malých a 15 ks veľkých formičiek
 - rok 2022: z uvedeného navýšeného množstva surovín vzniklo 1187 g cesta postačujúceho na naplnenie 63 ks malých a 20 ks veľkých formičiek
+- rok 2023: z uvedeného navýšeného množstva (+50%) surovín vzniklo 1375 g cesta postačujúceho na naplnenie:
+  - 70 ks malých formičiek (doba pečenia 15 min.) / 2 plechy
+  - 14 ks stredných formičiek (doba pečenia 17 min.) / 1 plech
+  - 21 ks veľkých formičiek (doba pečenia 23 min.) / 1 nie celý plech
 
 ---
 
