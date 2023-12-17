@@ -149,6 +149,19 @@ ssh-keygen -M screen -f moduli-4096.candidates moduli-4096
 
 Je to však časovo náročné. Na prenajatom VPS s jedným jadrom (AMD EPYC 7281) a 1 GB RAM trvalo generovanie (prvý riadok vyššie) 5 minút a následná kontrola (druhý riadok) 1,5 hodiny. A to je len pre veľkosť 4096 bitov, toto je potrebné zopakovať ešte niekoľkokrát (pre 6144, 7680 a 8192 bitov).
 
+#### ~/.ssh/authorized_keys
+
+Dôležitý súbor obsahujúci verejné kľúče užívateľov oprávnených prihlasovať sa do systému cez OpenSSH. Súbor sa nachádza v adresári užívateľa pod ktorým sa prihlasujeme na server.
+
+Každý kľúč je na novom riadku.
+
+```bash
+mkdir -p ~/.ssh
+chmod 700 ~/.ssh
+touch ~/.ssh/authorized_keys
+chmod 600 ~/.ssh/authorized_keys
+```
+
 #### Kontrola logov
 
 Neodmysliteľnou súčasťou správy OpenSSH servera je aj kontrola logov. Je vhodné ju vykonávať priebežne.
@@ -271,7 +284,7 @@ ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "komentar_na_odlisenie" -P 
 ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "komentar_na_odlisenie" -N ""
 ```
 
-Výsledkom je pár OpenSSH kľúčov, uložený v `~/.ssh`. Súkromná časť páru kľúčov je uložená pod zadaným menom `id_ed25519` a verejná časť, ako `id_ed25519.pub`. Kópiu verejnej časti vložím na server kam sa chcem prihlasovať, do súboru `~/.ssh/authorized_keys`. Súkromnú časť strážim jak oko v hlave.
+Výsledkom je pár OpenSSH kľúčov, uložený v `~/.ssh`. Súkromná časť páru kľúčov je uložená pod zadaným menom `id_ed25519` a verejná časť, ako `id_ed25519.pub`. Kópiu verejnej časti vložím na **server** kam sa chcem prihlasovať, do súboru [~/.ssh/authorized_keys](#sshauthorized_keys). Súkromnú časť strážim jak oko v hlave.
 
 Zvyšujúca hodnota parametru `-a` zvyšuje odolnosť súkromného kľúča voči odhaleniu hesla hrubou silou („brute force attack“). Je to počet opakovaní matematickej funkcie s generovaným kľúčom s heslom.
 
@@ -302,17 +315,6 @@ sudo chown $USER:$USER ~/.ssh/id*
 chmod 600 ~/.ssh/id*
 # verejné kľúče možu byť čitateľné všetkými
 chmod 644 ~/.ssh/id*.pub
-```
-
-#### ~/.ssh/authorized_keys
-
-Dôležitý súbor obsahujúci verejné kľúče užívateľov oprávnených prihlasovať sa do systému cez OpenSSH. Každý kľúč je na novom riadku.
-
-```bash
-mkdir -p ~/.ssh
-chmod 700 ~/.ssh
-touch ~/.ssh/authorized_keys
-chmod 600 ~/.ssh/authorized_keys
 ```
 
 #### ~/.ssh/known_hosts
