@@ -42,7 +42,7 @@ removePathAccents = true
     style = "monokai"
     tabWidth = 4
   [markup.tableOfContents]
-    endLevel = 3 # default value: 3
+    endLevel = 4 # default value: 3
     ordered = false
     startLevel = 2
 
