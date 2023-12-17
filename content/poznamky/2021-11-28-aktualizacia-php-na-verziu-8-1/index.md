@@ -17,7 +17,9 @@ toc: true
 
 Chcem aktualizovať PHP na najnovšiu podporovanú verziu na počítači s operačným systémom z rodiny Debian.
 
-PHP je populárny, obľúbený a silný programovací jazyk. Momentálne (november 2021) sa skončila [aktívna podpora](https://www.php.net/supported-versions.php) pre PHP verziu 7.4, oficialne už bude dostávať len bezpečnostné opravy. Aktívna podpora je pre verzie 8.0 (do 26.11.2022) a 8.1 (do 25.11.2023). Predposledný Debian 10 má predvolenú verziu 7.3 a Debian 11 aj Ubuntu 20.04 LTS majú PHP verziu 7.4, ja by som chcel však aktualizovať na najnovšiu dostupnú verziu [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+PHP je populárny, obľúbený a silný programovací jazyk. Momentálne (november 2021) sa skončila [aktívna podpora](https://www.php.net/supported-versions.php) pre PHP verziu 7.4, oficiálne už bude dostávať len bezpečnostné opravy. Aktívna podpora je pre verzie 8.0 (do 26.11.2022) a 8.1 (do 25.11.2023). Predposledný Debian 10 má predvolenú verziu 7.3 a Debian 11 aj Ubuntu 20.04 LTS majú PHP verziu 7.4, ja by som chcel však aktualizovať na najnovšiu dostupnú verziu [PHP 8.1](https://www.php.net/releases/8.1/en.php).
+
+### Aktualizácia na novšiu verziu viď [Aktualizácia PHP na verziu 8.3](/poznamky/2023/12/aktualizacia-php-na-verziu-8.3/).
 
 ## Upozornenie
 
