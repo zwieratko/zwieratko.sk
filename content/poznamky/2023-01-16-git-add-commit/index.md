@@ -173,6 +173,24 @@ Z toho vyplýva, že aj sebe menšia zmena akéhokoľvek z vyššie uvedených �
 
 ---
 
+### Zaznamenanie zmien v submodule
+
+Submodul je vlastne akoby ďalší repozitár vnorený v hlavnom repozitári. Čiže zaznamenanie zmien bude spočívať v dvoch krokoch, najskôr zaznamenám zmeny vo vnorenom submodule a následne v hlavnom / nadradenom repozitári.
+
+```sh
+cd adresar/so/submodulom
+git add zmeneny_subor_01
+git commit
+git push
+
+cd ../hlavny_projekt
+git add adresar/so/submodulom
+git commit
+git push
+```
+
+---
+
 ### Odstránenie / zmena záznamov o zmene (lokálne)
 
 Pre nasledujúce platí zásadná podmienka, že vykonané záznamy o zmene (`git commit`) ešte neboli odoslané na vzdialené úložisko!
@@ -196,6 +214,17 @@ git reset HEAD~
 
 # alebo tiež
 git reset --mixed HEAD~
+
+# ak som zadal git reset HEAD~ omylom, toto mozem zvratit
+git reset 'HEAD@{1}'
+```
+
+Ak som omylom zahrnul do posledného zaznamenaného záznamu o zmene aj nejaký súbor ktorý tam nemal byť, môžem záznam zrušiť, odobrať konkrétny súbor z prípravnej oblasti a opätovne vykonať záznam o zmene, no už bez odobratého súboru, ale zato aj s pôvodným obsahom sprievodného záznamu o zmene.
+
+```sh
+git reset --soft HEAD~1
+git reset HEAD odoberany_subor.txt
+git commit -c ORIG_HEAD
 ```
 
 Alebo ešte môžem aj okrem odstránenia posledného záznamu o zmene a odobratí pozmenených súborov z prípravnej oblasti, zvrátiť aj zmeny na tých súboroch. Čiže pracovný adresár sa ocitne ako v stave tesne po predposlednom zázname o zmene.
@@ -209,16 +238,61 @@ git reset --hard HEAD~3
 # plus odstrání všetky súbory pridané počas posledných 3 záznamov !!
 ```
 
-Pozor! Toto teda odstráni aj novo pridané súbory, nie len zmeny na starých! A taktiež odstráni **nevratne** všetky zmeny o ktorých nebol vykonaný záznam o zmene!
+**Pozor!** Toto teda odstráni aj novo pridané súbory, nie len zmeny na starých! A taktiež odstráni **nevratne** všetky zmeny o ktorých nebol vykonaný záznam o zmene!
 
-Preto ak potrebujem vykonať `git reset --hard` je vyslovene vhodné zmeny ktoré ešte nie sú zaznamenané a chcem ich uchovať odložiť bokom - `git stash`.
+Preto ak potrebujem vykonať `git reset --hard` je vyslovene vhodné zmeny ktoré ešte nie sú zaznamenané a chcem ich uchovať odložiť bokom - [git stash](https://opensource.com/article/21/4/git-stash).
 
 ---
 
-#### Doplniť:
+### Šablóna pre záznam o zmene
 
-- zaznamenanie zmien v submoduloch
-- pred vyplnený vzor pre správu v zázname o zmene
+Keďže záznam o zmene je veľmi dôležitá súčasť systému na správu verzii Git, lebo umožňuje iným alebo aj mne samému neskôr pochopiť o čo v danej zmene išlo, je potrebne dodržiavať isté pravidlá pri písaní týchto záznamov o zmene (viď [vyššie](#zaznamenanie-zmien-v-úložisku)).
+
+Šablóna alebo pred vyplnený vzor záznamu o zmene mi uľahči písanie správnych záznamov tým, že ma núti dodržiavať osnovu, presnú, vopred definovanú štruktúru záznamu.
+
+Najskôr si vytvorím požadovanú šablónu, do ktorej zakomponujem všetky potrebné pravidlá. V domovskom adresári vytvorím napríklad súbor `~/.gitmessage`.
+
+```
+######## 50 znakov ###############################
+#<typ>[volitelne oblast]: <samotny subjekt>#######
+##################################################
+#typ: Nové / Oprava / Test / Späť / Vzhľad / Iné #
+#oblast: (poznamky) / (recepty) / (galeria) / (tema)
+##################################################
+# SUBJEKT: #######################################
+##################################################
+
+##################################################
+# Nezabudnut vynechat jeden prazdny riadok #######
+# medzi nadpisom / subjektom a telom zaznamu. ####
+##################################################
+
+######## 72 znakov #####################################################
+# Telo zaznamu o zmene moze byt zlozene z viacerych casti###############
+# Dolezitejsie je vysvetlit co? a preco? nez ako? ######################
+########################################################################
+# TELO: ################################################################
+########################################################################
+# Problem, uloha, dovod, ucel, ciel, pouzivatelsky pribeh atd.
+
+########################################################################
+# Riesenie alebo zoznam zmien
+#
+########################################################################
+# Specialne pokyny, testovacie kroky, spoluautori s emailom atd.
+#
+```
+
+Môžem použiť jednu šablónu pre všetky repozitáre, alebo mať pre každé úložisko iný pred vyplnený vzor. Šablónu pridám v príkazovom riadku, alebo úpravou zodpovedajúceho konfiguračného súboru.
+
+```bash
+# pre vsetky repozitare
+git config --global commit.template ~/.gitmessage
+
+# alebo len pre jeden repozitar
+cd repozitar
+git config commit.template ~/.gitmessage
+```
 
 ---
 
