@@ -145,6 +145,9 @@ git config --global core.editor "nano -r 72"
 
 # alebo prítulnejší Visual Code
 git config --global core.editor "code --wait"
+
+# predvoleny nazov hlavnej vetvy (od verzie 2.28)
+git config --global init.defaultBranch main
 ```
 
 Ak pracujem vo viacerých operačných systémoch, ktoré rôznym spôsobom [ukončujú riadok](https://en.wikipedia.org/wiki/Newline), je vhodné nastaviť jednotný spôsob.
@@ -166,10 +169,10 @@ Nastavené hodnoty môžem zobraziť.
 ``` bash
 git config --list
 
-# alebo aj s umiestnením kde je dané nastavenie uložené
+# alebo aj s umiestnením konfiguraku (--show-origin od verzie 2.8.0)
 git config --list --show-origin
 
-# a ešte aj s rozsahom pôsobnosti
+# a ešte aj s rozsahom pôsobnosti ( --show-scope od verzie 2.26.0)
 git config --list --show-origin --show-scope
 ```
 
@@ -189,6 +192,7 @@ Konfiguráciu Gitu je možné vykonať na rôznych úrovniach, s rozdielnym rozs
 	- `--global`
 	- často používaná
 	- platí pre všetky repozitáre daného užívateľa
+	- nižšie úrovne ju prepíšu
 	- v Linuxe `$HOME/.gitconfig`
 	- v MS Windows `$env:userprofile\.gitconfig`
 
@@ -213,4 +217,6 @@ Konfiguráciu Gitu je možné vykonať na rôznych úrovniach, s rozdielnym rozs
 ## Zdroj
 
 - [Pro Git](https://git-scm.com/book/cs/v2)
+- [Getting Started - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
+- [Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
 - [Systémy pre správu verzií](https://kurzy.kpi.fei.tuke.sk/zsi/labs/02-git.html)
