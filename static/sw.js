@@ -52,6 +52,8 @@ let filesToCacheExtra = [
   '/poznamky/2023/01/git-podpisovanie-zaznamov-o-zmenach/',
   '/poznamky/2023/11/aktualizacia-systemu-debian-na-verziu-12-bookworm/',
   '/poznamky/2023/11/historia-prikazov-v-powershell/',
+  '/poznamky/2023/12/aktualizacia-php-na-verziu-8.3/',
+  '/poznamky/2023/12/php-a-sqlite3/',
   '/recepty/',
   '/recepty/2016/12/medvedie-labky/',
   '/recepty/2016/12/minonky/',
