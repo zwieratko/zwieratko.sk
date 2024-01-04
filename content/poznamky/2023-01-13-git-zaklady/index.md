@@ -164,6 +164,20 @@ git config --local core.eol lf
 git config --local core.filemode false
 ```
 
+V prostredí MS Windows je možné, že príkaz `ssh.exe` je vo viacerých verziách, jedna je nainštalovaná so samotným `Git for Windows` a ďalšia ako súčasť operačného systému. Preto môže nastať situácia, že aj keď mam prístup na GitHub pomocou SSH kľúča, tak neviem repozitár sťahovať / aktualizovať pomocou SSH. Vyriešim to nastavením cesty ku príkazu s ktorým mam nastavené kľúče. 
+
+```bash
+# minimalne dve verzie:
+# C:\Program Files\Git\usr\bin\ssh.exe
+# C:\Windows\System32\OpenSSH\ssh.exe
+
+# overenie pristupu napriklad na GitHub
+ssh -T git@github.com
+
+# nastavenie cesty ku ssh.exe
+git config --global core.sshCommand C:/Windows/System32/OpenSSH/ssh.exe
+```
+
 Nastavené hodnoty môžem zobraziť.
 
 ``` bash
