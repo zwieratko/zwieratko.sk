@@ -2,7 +2,7 @@
 title: "PHP a SQLite3"
 date: 2023-12-12T10:14:50+01:00
 draft: false
-description:
+description: Ako pomocou jazyka PHP použiť databázu SQLite3.
 type: posts
 tags:
   - PHP
@@ -14,7 +14,7 @@ toc: true
 
 ## Cieľ
 
-Chcem pomocou jazyka PHP použiť databázu SQLite.
+Chcem pomocou jazyka PHP použiť databázu SQLite3.
 
 ## Riešenie
 
