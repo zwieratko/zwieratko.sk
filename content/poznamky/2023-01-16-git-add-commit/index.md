@@ -21,11 +21,13 @@ Chcem zosumarizovať poznatky o spôsobe pridávania súborov do prípravnej obl
 
 ### Príkazy
 
+- [git status](https://git-scm.com/docs/git-status)
 - [git add](https://git-scm.com/docs/git-add)
 - [git mv](https://git-scm.com/docs/git-mv)
 - [git rm](https://git-scm.com/docs/git-rm)
 - [git commit](https://git-scm.com/docs/git-commit)
 - [git reset](https://git-scm.com/docs/git-reset)
+- [git notes](https://git-scm.com/docs/git-notes)
 
 ## Riešenie
 
@@ -36,6 +38,40 @@ Toto je vlastne kľúčová úloha systému Git, uchovávať presné záznamy o 
 Ak napríklad na danom projekte vykonám zmeny v dokumentácii, vo vzhľade aplikácie, vo vnútornej logike, a ešte aj v spôsobe ukladania dát, tak je vyslovene nevhodné všetky tieto nesúvisiace zmeny pridať spolu do prípravnej oblasti  a vykonať o nich jeden spoločný záznam o zmene. Na to presne využijem pridávanie do prípravnej oblasti. Pridám tam len tie súbory, alebo ich časti, ktoré spolu súvisia a tvoria jeden logický celok, pridajú jednu vlastnosť alebo odstránia jeden problém. Dodržiavať túto zásadu o pridávaní zmien po menších častiach je veľmi dôležité pravidlo!
 
 ---
+
+### Zobrazenie stavu
+
+Skôr než začnem zaznamenávať zmeny potrebujem zobraziť stav a situáciu v repozitári. Prvý zadávaný príkaz po vstupe do adresáru v ktorom je repozitár je :
+
+```bash
+git status
+```
+
+Zobrazuje súbory (prípadne celé cesty), ktoré:
+- sú zmenené v prípravnej oblasti (`index`) oproti poslednej zaznamenanej zmene (`HEAD`) => teda už boli pridané do indexu pomocou git add a mal by nasledovať git commit
+- sú zmenené v pracovnom adresári (`working tree`) oproti prípravnej oblasti (`index`) => teda boli zmenené, ale ešte nie sú pridané do indexu, malo by nasledovať git add
+- ešte nie sú vôbec sledované => teda úplne nove súbory, alebo súbory premenované v pracovnom adresári, malo by nasledovať taktiež git add
+
+![git status](git-status.png)
+
+Ak je zmenených súborov veľké množstvo, alebo len jednoducho chcem vidieť kratší výpis, môžem použiť prepínač `-s / --short`.
+
+```bash
+git status --short
+```
+
+Rozdielne / zmenené súbory sú vo výpise na začiatku riadku označené písmenom označujúcim typ ich zmeny:
+- M - zmenené (obsah súboru)
+- T - zmenené (typ súboru)
+- A - novo pridané do prípravnej oblasti
+- D - zmazané
+- R - premenované (len index oproti HEAD)
+- C - kopírované (?)
+- ? - nesledované
+
+Pokiaľ je písmeno na mieste prvého znaku, na začiatku riadku, ide o zmenu v indexe oproti HEAD, pokiaľ je na mieste druhého znaku, ide o zmenu v pracovnom adresári oproti indexu.
+
+![git status](git-status--short.png)
 
 ### Pridanie súborov do prípravnej oblasti
 
@@ -146,7 +182,7 @@ Záznam o zmene by mal obsahovať aspoň dve časti:
 - subjekt - nadpis, stručné zhrnutie
 - telo - podrobnejšie vysvetlenie
 
-Odporúčania ako správne napísať správu o zmene (commit message):
+Odporúčania ako správne napísať správu o zmene (`commit message`):
 
 - Nepoužívať prepínač `-m` a `--message=`
 - Oddeliť subjekt a telo jedným prázdnym riadkom
@@ -294,6 +330,63 @@ cd repozitar
 git config commit.template ~/.gitmessage
 ```
 
+### Poznámky ku záznamu o zmene
+
+Súčasťou každého záznamu o zmene je aj sprievodný text (`commit message`), ktorý je však veľmi úzko previazaný so samotným záznamom a teda aj veľmi malá zmena v sprievodnom texte spôsobí, že je to už zase úplne nová zmena :) Na to aby som mohol ku záznamu o zmene pridávať neskôr aj ďalšie informácie bez toho aby som pozmenil samotný záznam o zmene, môžem použiť poznámky.
+
+Praktické využitie poznámok môže byt mnohoraké:
+- sledovanie času stráveného na danej zmene
+- doplňujúce informácie o kontrole a testovaní
+- doplňujúce informácie o zmenách v kóde
+- odkaz na vlákno / kanál kde sa diskutuje o danej zmene
+
+```bash
+# zobrazi vsetky poznamky v podobe:
+# <jedinecne cislo poznamky> <jedinecne cislo zmeny>
+git notes
+
+# alebo to iste
+git notes list
+
+# prida poznamku ku poslednemu zaznamu o zmene (HEAD)
+git notes add
+
+# prida poznamku ku zaznamu s SHA-1 a95a584
+git notes add a95a584
+
+# zobrazi poznamku pridanu ku poslednemu zaznamu
+git notes show
+
+# zobrazi poznamku pridanu ku zaznamu s SHA-1 a95a584
+git notes show a95a584
+
+# pripoji dalsiu poznamku ku poslednemu zaznamu o zmene
+git notes append -m "text poznamky"
+```
+
+Ako poznámky ku záznamu o zmene môžem pripojiť aj celé ďalšie textové súbory - napríklad výstupy testov, automatizácie atď., pomocou prepínačov `--ref` - určím kam sa majú poznámky ukladať a `-F` - nastavím súbor ktorý sa ma pripojiť.
+
+```bash
+# prida ku poslednemu zaznamu o zmene (HEAD)
+# subor .\build\junit.xml
+# a ulozi ho v refs/notes/junit
+git notes --ref junit add -F .\build\junit.xml
+
+# zobrazi poznamku pridanu ku poslednemu zaznamu
+# ulozenu v refs/notes/junit
+git notes --ref junit show
+```
+
+Podobne ako značky (`tags`) ani poznámky nie sú v predvolenom nastavení posielané / sťahované na / zo vzdialeného úložiska a je to potrebne urobiť v samostatnom kroku.
+
+```bash
+# odoslanie poznamok na vzdialene ulozisko
+git push origin refs/notes/commits
+
+# Stiahnutie vsetkych poznamok zo vzdialeneho uloziska do lokalneho
+git fetch origin refs/notes/commits:refs/notes/commits
+```
+
 ---
 
 ## Zdroj
@@ -301,3 +394,4 @@ git config commit.template ~/.gitmessage
 - [The anatomy of a Git commit](https://blog.thoughtram.io/git/2014/11/18/the-anatomy-of-a-git-commit.html)
 - [How to Write a Git Commit Message](https://cbea.ms/git-commit/)
 - [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
+- [Improve your CI-CD-Workflow with Git-Notes](https://medium.com/digitalfrontiers/git-your-stuff-together-storing-test-reports-along-your-sources-with-git-notes-f5c8068dc981)
