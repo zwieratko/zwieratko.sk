@@ -28,29 +28,35 @@ Chcem objasniť základné pojmy a zosumarizovať poznatky ohľadom inštalácie
 
 ### Základné pojmy
 
-- `Repository` – repozitár je dátové úložisko. Obsahuje: súbory a dáta o nich, v podobe uložených snímok súborového systému v čase, záznamy o vykonaných zmenách, vytvorené vetvy, kópie vytvorené v určitom čase. Je to vlastne databáza obrazov stavu súborového systému, resp. záznamy o tom v akom stave sa nachádzali zahrnuté súbory v okamihoch keď boli vykonané záznamy o zmene (commits).
+- `Repository` – repozitár je dátové úložisko. Obsahuje: súbory a dáta o nich, v podobe uložených snímok súborového systému v čase, záznamy o vykonaných zmenách, vytvorené vetvy, kópie vytvorené v určitom čase. Je to vlastne databáza obrazov stavu súborového systému, resp. záznamy o tom v akom stave sa nachádzali zahrnuté súbory v okamihoch keď boli vykonané záznamy o zmene (commits). Lokálny / miestny repozitár je adresár, zvyčajne pomenovaný `.git`, ktorý sa nachádza v pracovnom adresári.
 
 - `Remote repository` – vzdialený repozitár, zvyčajne niekde na internete, v cloude, u rôznych poskytovateľov (GitHub, GitLab, Bitbucket atď.), ale môže byť aj na vlastných serveroch.
 
-- `Working directory` – lokálna pracovná kópia repozitáru v počítači v ktorej môžem pracovať so súbormi.
+- `Working directory` alebo tiež `workspace` alebo ešte inak `project folder` – pracovný adresár,  adresár v ktorom sú umiestnené všetky adresáre/súbory ktoré sú pod kontrolou systému na správu verzii, v tomto adresári sa nachádza aj samotný lokálny repozitár, čo je vlastne len ďalší adresár s názvom `.git`.
 
 - `Stage area / Index` – vrstva medzi pracovným adresárom a lokálnym repozitárom. Je to vlastne zoznam zmien v súboroch o ktorých je možné vykonať záznam o zmene (commit).
 
-- `Commit` – záznam o vykonanej zmene. Obsahuje informácie o tom kto a kedy vykonal zmenu, popis vykonanej zmeny a jednoznačný identifikátor zmeny a aj priamo jej predchádzajúcej zmeny.
+- `Blob` čo je skrátene pre `binary large object` – je to obsah súboru (bez ďalších metadát), ktorý je pod kontrolou systému na správu verzii. Každý `blob` je identifikovaný jedinečným identifikátorom (SHA-1 hash).
 
-- `Branch` – vetva, kópia repozitáru v istom čase, izolovaná od ostatných, v ktorej je možné vykonávať zmeny na súboroch, s vlastnou históriou. Medzi rôznymi vetvami sa je možné prepínať. Vetvy je možné naspäť začleňovať jednu do druhej, spájať ich.
+- `Tree` – v systéme na správu verzii Git je to obdoba adresára v súborovom systéme, môže obsahovať `blobs` alebo ďalšie vnorené `trees`. Každý `tree` je identifikovaný jedinečným identifikátorom (SHA-1 hash).
+
+- `Commit` – záznam o vykonanej zmene (`snapshot`). Obsahuje informácie o tom kto a kedy vykonal zmenu, popis vykonanej zmeny a jednoznačný identifikátor zmeny (SHA-1 hash) a aj priamo jej predchádzajúcej zmeny (ak taká existuje).
+
+- `SHA-1 hash` – hašovacia funkcia, ktorá zo vstupu (blobs, trees, commits) vytvorí 160 bitovú hašovaciu hodnotu, ktorú je možne zobraziť ako 40 hexadecimálnych znakov. Z toho istého vstupu vznikne vždy ten istý výstup. Z výstupu nie je možné zrekonštruovať naspäť vstup.
+
+- `Branch` – vetva, stav repozitáru v istom čase, je izolovaná od ostatných, je v nej možné vykonávať zmeny na súboroch, má vlastnú históriou. Medzi rôznymi vetvami sa je možné prepínať. Vetvy je možné naspäť začleňovať jednu do druhej, spájať ich. Vetva je vlastne len pomenovaný odkaz na konkrétny záznam o zmene (commit).
 
 - `Main` (~~Master~~) – zvyčajne hlavná, lokálna aj vzdialená vetva, v repozitári.
 
-- `Head` – ukazuje na posledný záznam (commit) o zmene v každej vetve (branch).
+- `Head` – ďalší pomenovaný odkaz smerujúci na aktuálnu vetvu (branch), ktorá odkazuje na aktuálny / posledný záznam o zmene (commit).
 
-- `Checkout` – prepína z aktuálnej do akejkoľvek inej vetvy, a podáva informácie o stave v danej vetve.
+- `Checkout` – prepína z aktuálnej do akejkoľvek inej vetvy, a podáva informácie o stave v danej vetve. Možné vykonať príkazmi "git checkout" alebo "git switch".
 
-- `Clone` – vytvorenie vernej kópie repozitáru jeho stiahnutím, klonovaním do počítaču. Naklonovaný repozitár môžem udržiavať naďalej zosynchronizovaný s pôvodným pomocou sťahovania a zasielania zmien (`git pull / push`).
+- `Clone` – vytvorenie vernej kópie repozitáru jeho stiahnutím, klonovaním do počítaču. Naklonovaný repozitár môžem udržiavať naďalej zosynchronizovaný s pôvodným pomocou sťahovania a zasielania zmien ("git pull" / " git push").
 
-- `Fork` – vytvorenie vernej kópie repozitáru vytvorením ďalšieho, zvyčajne vzdialeného repozitáru. Vykoná sa pomocou `git clone`. Obsahuje tie isté súbory aj s históriou. Takto vytvorený repozitár vyzerá, ako novo vytvorený repozitár obsahujúci súbory, ako pôvodný v čase vytvárania kópie. Môže takto vzniknúť alternatívna cesta vývoja projektu.
+- `Fork` – vytvorenie vernej kópie repozitáru vytvorením ďalšieho, zvyčajne vzdialeného repozitáru. Vykoná sa pomocou "git clone". Obsahuje tie isté súbory aj s históriou. Takto vytvorený repozitár vyzerá, ako novo vytvorený repozitár obsahujúci súbory, ako pôvodný v čase vytvárania kópie. Môže takto vzniknúť alternatívna cesta vývoja projektu.
 
-„Forkovanie“ je koncept, klonovanie je proces. Obe činnosti využívajú príkaz `git clone`.
+„Forkovanie“ je koncept, klonovanie je proces. Obe činnosti využívajú príkaz "git clone".
 
 ---
 
@@ -234,3 +240,4 @@ Konfiguráciu Gitu je možné vykonať na rôznych úrovniach, s rozdielnym rozs
 - [Getting Started - First-Time Git Setup](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
 - [Customizing Git - Git Configuration](https://git-scm.com/book/en/v2/Customizing-Git-Git-Configuration)
 - [Systémy pre správu verzií](https://kurzy.kpi.fei.tuke.sk/zsi/labs/02-git.html)
+- [Gitting Things Done – A Visual and Practical Guide to Git](https://www.freecodecamp.org/news/gitting-things-done-book/)
