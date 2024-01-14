@@ -7,7 +7,8 @@ type: posts
 tags:
   - Debian
   - Linux
-  - Apt
+  - APT
+  - Správca balíčkov
 categories:
   - Poznámky
 series:
