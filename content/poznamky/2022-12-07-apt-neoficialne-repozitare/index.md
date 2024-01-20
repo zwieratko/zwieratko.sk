@@ -100,6 +100,7 @@ Na identifikáciu kľúča, ktorý chcem zmazať potrebujem jeho „odtlačok pr
 
 ```bash
 sudo apt-key del "C03B 4888 7D5E 56B0 4671  5D32 97BD 1A01 3344 9C3D"
+
 # alebo
 sudo apt-key del 33449C3D
 ```

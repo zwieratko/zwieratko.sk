@@ -154,8 +154,10 @@ python -V
 
 # alebo
 python --version
+
 # alebo
 py -V
+
 # alebo
 py --version
 ```

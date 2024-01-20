@@ -225,18 +225,24 @@ Zobrazenie všetkých nainštalovaných balíčkov:
 
 ```bash
 dpkg -l
+
 # alebo ich počet
 dpkg -l | grep "^ii" | wc -l
+
 # alebo zoznam pomocou apt-mark
 # zoznam automaticky nainštalovaných balíčkov
 apt-mark showauto
+
 # zoznam ručne nainštalovaných balíčkov
 apt-mark showmanual
+
 # to isté, ale pomocou apt list (nevhodné do skriptov)
 # všetky nainštalované
 apt list --installed
+
 # nainštalované manuálne
 apt list --manual--installed=true
+
 # ešte jedna možnosť, ale len za posledný rok, z logov
 zgrep " installed " /var/log/dpkg.log* | wc -l
 ```
