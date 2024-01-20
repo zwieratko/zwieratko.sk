@@ -35,10 +35,10 @@ Mňa vyslovene zaujal posledný menovaný. `Scoop` je zaujímavý okrem iného a
 
 ### Inštalácia nástroja Scoop
 
-Správcu balíčkov `Scoop` môžem nainštalovať stiahnutím a vykonaním inštalačného skriptu. Samozrejme zdroju by som mal dôverovať, respektíve skript si môžem kuknúť na zadávanej adrese ešte pred jeho spustením. Nasledujúce príkazy musím zadávať v prostredí PowerShell vo verzii 5.1 a vyššie.
+Správcu balíčkov `Scoop` môžem nainštalovať stiahnutím a vykonaním inštalačného skriptu. Samozrejme zdroju by som mal dôverovať, respektíve skript si môžem kuknúť na zadávanej adrese alebo na [gite](https://github.com/ScoopInstaller/Install) ešte pred jeho spustením. Nasledujúce príkazy musím zadávať v prostredí PowerShell vo verzii 5.1 a vyššie.
 
 ```sh
-# mozem si najskor overit ci mam povolene vykovata skripty
+# mozem si najskor overit ci mam povolene vykonavat skripty
 Get-ExecutionPolicy
 
 # ak este nie, mozem povolit
@@ -49,6 +49,28 @@ Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 # alebo to iste, ale v skratenej podobe
 irm get.scoop.sh | iex
+```
+
+V prípade ak chcem inštalovať na iné ako predvolené miesto (`C:\Users\<meno>\scoop`), môžem inštalačný skript len stiahnuť a spustiť ho neskôr aj s vlastnými parametrami.
+
+```sh
+irm get.scoop.sh -outfile 'installScoop.ps1'
+
+# alebo ak musim stahovat cez proxy
+irm get.scoop.sh -Proxy 'http://127.0.0.1:3128' -OutFile 'installScoop.ps1'
+
+# dalsie parametre mozem kuknut na gite:
+# https://github.com/ScoopInstaller/Install/blob/master/install.ps1 
+./installScoop.ps1 -ScoopDir 'D:\App\Scoop'
+
+# alebo aj instalovat cez proxy
+./installScoop.ps1 -ScoopDir 'C:\App\Scoop' -Proxy 'http://127.0.0.1:3128'
+```
+
+Ak potrebujem komunikovať cez proxy stále, aj pri ďalšom používaní `Scoop`, môžem ho nastaviť.
+
+```sh
+scoop config proxy 127.0.0.1:3128
 ```
 
 ### Softvérové katalógy
@@ -163,7 +185,7 @@ Nainštalovanú aplikáciu môžem neskôr odinštalovať príkazom `scoop unins
 scoop uninstall googlechrome
 ```
 
-Nainstalovane aplikacia mozem dalej zobrazit (`scoop list`) alebo ich jednotlivo alebo naraz vsetky aktualizovat na novsie verzie (`scoop update`).
+Nainštalované aplikácie môžem ďalej zobraziť (`scoop list`) alebo ich jednotlivo alebo naraz všetky aktualizovať na novšie verzie (`scoop update`).
 
 ```sh
 # zobrazi zoznam vsetkych nainstalovanych aplikacii
