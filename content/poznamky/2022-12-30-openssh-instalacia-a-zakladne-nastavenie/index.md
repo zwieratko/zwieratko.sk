@@ -169,8 +169,10 @@ Neodmysliteľnou súčasťou správy OpenSSH servera je aj kontrola logov. Je vh
 ```bash
 # Zobraziť všetky dostupné logy o OpenSSH
 sudo journalctl --unit ssh
+
 # alebo len od posledného spustenia systému
 sudo journalctl -u ssh -b
+
 # alebo len za poslednú hodinu
 sudo journalctl -u ssh --since "1 hour ago"
 ```
@@ -179,6 +181,7 @@ Je dôležité kontrolovať kto sa pripája ku serveru.
 
 ```bash
 sudo journalctl -u ssh | grep -i 'accepted key' | uniq
+
 # alebo len za posledný týždeň
 sudo journalctl -u ssh --since "7 days ago" | grep -i 'accepted key' | uniq
 ```
@@ -278,8 +281,10 @@ Bezpečný a pohodlný spôsob overovania identity pri prihlasovaní na server j
 
 ```bash
 ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "komentar_na_odlisenie"
+
 # alebo aj rovno s heslom
 ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "komentar_na_odlisenie" -P "heslo"
+
 # alebo rovno bez hesla
 ssh-keygen -a 100 -t ed25519 -f ~/.ssh/id_ed25519 -C "komentar_na_odlisenie" -N ""
 ```
@@ -311,8 +316,10 @@ Kľúče či už generované alebo skopírované by mali mať nastavené správn
 ```bash
 # užívateľom aj skupinou všetkých kľúčov by som mal byť ja
 sudo chown $USER:$USER ~/.ssh/id*
+
 # všetky súkromné kľúče majú byť prístupné výhradne užívateľovi
 chmod 600 ~/.ssh/id*
+
 # verejné kľúče možu byť čitateľné všetkými
 chmod 644 ~/.ssh/id*.pub
 ```
