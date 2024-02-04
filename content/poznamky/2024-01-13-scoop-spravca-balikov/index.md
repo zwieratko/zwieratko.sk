@@ -191,14 +191,20 @@ Nainštalované aplikácie môžem ďalej zobraziť (`scoop list`) alebo ich jed
 # zobrazi zoznam vsetkych nainstalovanych aplikacii
 scoop list
 
+# mozem aktualizovat informacie o dostupnosti novsich
+# verzii nastroja 'scoop' aj nainstalovanych balikov
+scoop update
+
+# zobrazi stav samotnej aplikacie 'scoop' a pridanych bucketov
+# po predchadzajucom 'scoop update' zobrazi zoznam balikov,
+# ktore maju dostupnu novsiu verziu
+scoop status
+
 # mozem aktualizvat len jednu, konkretnu aplikaciu
 scoop update jq
 
 # alebo mozem aktualizovat vsetky nainstalovane aplikacie
 scoop update *
-
-# zobrazi stav samotneho scoopu a aktualnost bucketov
-scoop status
 ```
 
 ---
