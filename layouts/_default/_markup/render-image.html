@@ -1,10 +1,10 @@
 {{ $image := .Page.Resources.GetMatch (printf "%s" (.Destination | safeURL)) }}
 {{ with $image }}
-{{ $tiny := $image.Resize "320x q50 webp" }}
-{{ $small := $image.Resize "480x q50 webp" }}
-{{ $small2 := $image.Resize "640x q50 webp" }}
-{{ $medium := $image.Resize "720x q50 webp" }}
-{{ $big := $image.Resize "900x q50 webp" }}
+{{ $tiny := $image.Resize "320x q70 webp" }}
+{{ $small := $image.Resize "480x q70 webp" }}
+{{ $small2 := $image.Resize "640x q70 webp" }}
+{{ $medium := $image.Resize "720x q70 webp" }}
+{{ $big := $image.Resize "900x q70 webp" }}
 {{ $alt := $.Text }}
 {{ $caption := "" }}
 {{ with .Title }}
