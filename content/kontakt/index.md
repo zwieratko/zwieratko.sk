@@ -1,7 +1,7 @@
-+++
-title = "Kontakt"
-description = "Kontaktné informácie a možnosti podpory."
-+++
+---
+title: "Kontakt"
+description: "Kontaktné informácie a možnosti podpory."
+---
 
 Spojiť sa so mnou môžete cez internet:
 

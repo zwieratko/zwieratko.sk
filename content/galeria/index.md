@@ -1,7 +1,7 @@
-+++
-title = "Galéria"
-description = "Digitálom zvečnené okamihy :)"
-+++
+---
+title: "Galéria"
+description: "Digitálom zvečnené okamihy :)"
+---
 
 Digitálom zvečnené okamihy :)
 

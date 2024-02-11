@@ -1,7 +1,7 @@
-+++
-title = "Poznámky"
-description = "Krátke poznámky a návody o Linuxe a veciach okolo. Slúži to hlavne ako pripomienka pre mňa, ako som „to“ urobil."
-+++
+---
+title: "Poznámky"
+description: "Krátke poznámky a návody o Linuxe a veciach okolo. Slúži to hlavne ako pripomienka pre mňa, ako som „to“ urobil."
+---
 
 Krátke poznámky a návody o Linuxe a veciach okolo. Slúži to hlavne ako pripomienka pre mňa, ako som „to“ urobil.
 
