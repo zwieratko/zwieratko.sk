@@ -62,7 +62,6 @@ Na stránkach [PostgreSQL Downloads](https://www.postgresql.org/download/) je na
 - Red Hat/Rocky/Alma
 - SUSE
 - Ubuntu
-- Ine
 
 Pri každej z distribúcii je postup veľmi podobný a je zložený z niekoľkých krokov:
 
@@ -71,7 +70,7 @@ Pri každej z distribúcii je postup veľmi podobný a je zložený z niekoľký
 - Prípadné odstránenie starších verzii
 - Inštalácia PostgreSQL servera v požadovanej verzii
 
-V prostredí operačného systému Debian, najskôr nainštalujem podpisový kľúč k repozitáru, potom pridám repozitár, aktualizujem zdroje a môžem inštalovať. Meta balík bez čísla verzie nainštaluje najnovšiu dostupnú verziu.
+V prostredí operačného systému **Debian**, najskôr nainštalujem podpisový kľúč k repozitáru, potom pridám repozitár, aktualizujem zdroje a môžem inštalovať. Meta balík bez čísla verzie nainštaluje najnovšiu dostupnú verziu.
 
 ```sh
 # Debian
@@ -89,7 +88,7 @@ sudo apt install postgresql
 
 Môžem inštalovať aj inú ako najnovšiu verziu, číslo požadovanej verzie pripojím za pomlčku, ako napríklad `postgresql-12`.
 
-V prostredí rodiny operačných systémov Red Hat najskôr nainštalujem repozitár a potom pri najbližšom aktualizovaní alebo vyhľadávaní balíkov, odsúhlasím pridanie podpisových kľúčov, pre každú verziu musím schváliť osobitný kľúč. Pri verziách RHEL 7 a 8 je ešte potrebné vypnúť modul z distribučných repozitárov. Potom môžem balíky inštalovať, názov zadávam v tvare `postgresql<cislo pozadovanej verzie>-server`.
+V prostredí rodiny operačných systémov **Red Hat** najskôr nainštalujem repozitár a potom pri najbližšom aktualizovaní alebo vyhľadávaní balíkov, odsúhlasím pridanie podpisových kľúčov, pre každú verziu musím schváliť osobitný kľúč. Pri verziách RHEL 7 a 8 je ešte potrebné vypnúť modul z distribučných repozitárov. Potom môžem balíky inštalovať, názov zadávam v tvare `postgresql<cislo-pozadovanej-verzie>-server`.
 
 ```sh
 # Red Hat / Rocky Linux / Alma Linux
@@ -99,12 +98,34 @@ https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-r
 sudo dnf -qy module disable postgresql
 
 sudo dnf install postgresql16-server
+
+# v OS z rodiny Red Hat je este vhodne inicializovat DB
+sudo /usr/pgsql-16/bin/postgresql-16-setup initdb
 ```
 
 Úspešnosť inštalácie a nainštalovanú verziu si môžem overiť.
 
 ```sh
 postgres --version
+```
+
+V linuxových operačných systémoch so správcom systému a služieb `systemd` môžem potom databázový server PostgreSQL zapínať, vypínať, spúšťať a tak ďalej pomocou príkazu `systemctl`.
+
+```sh
+# kontrola stavu sluzby
+systemctl status postgresql
+
+# opatovne spustenie DB
+sudo systemctl restart postgresql
+
+# zasatvenie DB
+sudo systemctl stop postgresql
+
+# vypnutie automatickeho spustania po starte :)
+sudo systemctl disable postgresql
+
+# zapnutie automatickeho spustania po starte OS
+sudo systemctl enable postgresql
 ```
 
 #### Windows
@@ -117,7 +138,7 @@ scoop install postgresql
 
 V repozitári `main` je zvyčajne dostupná najnovšia verzia, v repozitári `versions` sú dostupné aj staršie verzie PostgreSQL. Všetky dostupné vyhľadám pomocou `scoop search postgresql`:
 
-```
+```output
 Results from local buckets...
 
 Name         Version Source   Binaries
@@ -139,19 +160,130 @@ postgres --version
 
 Ak prebehla inštalácia úspešne zobrazí sa číslo nainštalovanej verzie:
 
-```
+```output
 postgres (PostgreSQL) 16.1
 ```
 
-#### Docker
+Následne môžem  databázu PostgreSQL inicializovať, spustiť, zastaviť a tak ďalej s nástrojom `pg_ctl`.
+
+```powershell
+# kontrola stavu sluzby
+pg_ctl status
+
+# spustenie DB
+pg_ctl start
+
+# zastavenie DB
+pg_ctl stop
+
+# znovu nacitanie konfiguracnych suborov
+pg_ctl reload
+
+# zozanm moznych pod prikazov a prepinacov
+pg_ctl --help
+```
+
+#### Kontajner
 
 Na učenie a testovanie je ale zrejme najjednoduchšie a najrýchlejšie používať PostgreSQL ako kontajner.
 
+Ak mám nainštalovaný `docker`, môžem novú PostgreSQL databázu spustiť priamo z príkazového riadku a napríklad len s anonymným zväzkom, ktorý sa po zastavení kontajneru zmaže.
 
+```sh
+docker container run --rm -it --env POSTGRES_PASSWORD=secret postgres:16-alpine
+```
 
-### Prvé kroky
+Po sérii hlásení by ako posledné malo zostať zobrazené, že: `database system is ready to accept connections`.
 
+Prípadne si môžem vytvoriť jednoduchú kompozíciu s jednou databázou, pomenovaným zväzkom a portami vystavenými von z kontajnera.
 
+```yaml
+version: '3'
+
+services:
+  # latest postgres 16 on alpine
+  pg16:
+    image: postgres:alpine
+    ports:
+      - '5432:5432'
+    volumes:
+      - pg16:/var/lib/postgresql/data
+    environment:
+      - TZ=Europe/Bratislava
+      - POSTGRES_PASSWORD=secret
+
+volumes:
+  pg16:
+```
+
+Potom môžem kompozíciu spustiť z priečinku kde je vytvorený konfiguračný súbor `compose.yaml` a teda rozbehnúť aj databázu ku ktorej bude možné pripojiť sa aj z vonku aj z vnútra kontajnera.
+
+```sh
+docker compose up || docker compose down
+
+# pripadne ak chcem po zastaveni kompozicie
+# aj rovno zmazat pomenovane zvazky
+docker compose up || docker compose down --volumes
+```
+
+### Úvodné nastavenie
+
+Databázový server PostgreSQL je vyslovene odporúčané spúšťať pod špeciálne na to vytvoreným užívateľom.
+
+Pri inštalácii z pred pripravených balíčkov z oficiálneho repozitára bude vytvorený takýto zvláštny užívateľský účet `postgres`, ktorý bude vlastníkom adresára (zvyčajne `/var/lib/postgresql`) a aj všetkých dátových a konfiguračných súborov a procesov pre databázový server PostgreSQL. Teda užívateľa nie je potrebne vytvárať ani pri inštalácii z predpripravených balíčkov a ani pri použití DB v kontajneri.
+
+Pri produkčných systémoch je ale vhodné nastaviť dostatočne silné heslo pre tohto `postgres` užívateľa.
+
+```sh
+passwd postgres
+```
+
+### Pripojenie ku DB
+
+Ku spustenému PostgreSQL serveru sa môžem pripojiť pomocou klienta [psql](https://www.postgresql.org/docs/current/app-psql.html) - PostgreSQL interaktívny terminál. Mal by sa nainštalovať ako závislosť pri inštalovaní serveru. Môžem ho však v prípade potreby nainštalovať aj samostatne.
+
+```sh
+# OS Debian / Ubuntu
+sudo apt install postgresql-client
+
+# OS Red Hat / Alma / Rocky
+sudo dnf install postgresql16
+```
+
+Ak som prihlásený na stroji kde je spustený PostgreSQL server, postačuje ak zmením užívateľa na `postgres` a spustím klienta.
+
+```sh
+sudo su - postgres
+psql
+```
+
+Ak potrebujem klienta spustiť z iného stroja než na akom je spustený PostgreSQL server, musím nastaviť adresu kde je spustený server.
+
+```sh
+psql -h 172.26.170.30 -U postgres
+```
+
+Ak mám DB spustenú v kontajneri, môžem najskôr v bežiacom kontajneri spustiť shell, potom zmeniť užívateľa na `postgres` a nakoniec spustiť `psql`.
+
+```sh
+docker container exec -it <kontajner-id> sh
+
+# dalej uz v kontajneri
+su - postgres
+psql
+```
+
+Alebo môžem vykonať v bežiacom kontajneri spustenie `psql` ako užívateľ `postgres` v jednom kroku.
+
+```sh
+docker container exec -it <kontajner-id> sh -c "su -c psql postgres"
+```
+
+Aj ku DB spustenej v kontajneri sa môžem pripojiť z vonka kontajneru rovnako ako ku klasicky nainštalovanej DB, musia byt ale zverejnené / publikované porty na ktorých počúva DB.
+
+```sh
+psql -h localhost -U postgres
+```
 
 ---
 
