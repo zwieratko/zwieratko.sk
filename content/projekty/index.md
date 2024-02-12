@@ -69,6 +69,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 ## Iné 🖖
 
 - [Za komunistů jsme se měli lépe…?](https://www.zakomunistu.cz/)
+- [The 512KB Club](https://512kb.club/)
 
 ---
 
