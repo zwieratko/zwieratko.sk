@@ -160,7 +160,8 @@ Header set Cache-Control "max-age=604800, public"
 
 # 0 days
 <filesMatch "\.(x?html?|php)\.br$">
-Header always set Cache-Control "no-store, max-age=0"
+Header always set Cache-Control "max-age=300"
+# Header always set Cache-Control "no-store, max-age=0"
 #Header always set Pragma "no-cache"
 #Header always set Expires 0
 </filesMatch>
