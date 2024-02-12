@@ -50,7 +50,7 @@ PostgreSQL je implementovaný v jazyku C, široko dostupný na všetkých bežn�
 
 ---
 
-### Inštalácia
+### Inštalácia a spustenie
 
 #### Linux
 
@@ -226,6 +226,83 @@ docker compose up || docker compose down
 docker compose up || docker compose down --volumes
 ```
 
+### Kontrola stavu
+
+Stav PostgreSQL servera môžem skontrolovať ako akúkoľvek inú systémovú službu `systemd`.
+
+```sh
+# OS Linux a systemd
+# Debian / Ubuntu
+systemctl status postgresql
+
+# Red Hat / Alma / Rocky
+systemctl status postgresql-16
+
+# OS Linux odpoved
+#● postgresql.service - PostgreSQL RDBMS
+#     Loaded: loaded (/lib/systemd/system/postgresql.service; enabled; vendor preset: enabled)
+#     Active: active (exited) since Sun 2024-02-11 22:24:21 CET; 16s ago
+#   Main PID: 2335 (code=exited, status=0/SUCCESS)
+#
+#Feb 11 22:24:21 ubuntu systemd[1]: Starting PostgreSQL RDBMS...
+#Feb 11 22:24:21 ubuntu systemd[1]: Finished PostgreSQL RDBMS.
+
+
+# OS Windows
+pg_ctl status
+
+# OS Windows odpoved:
+#pg_ctl: server is running (PID: 19648)
+#C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe
+```
+
+Alebo môžem skontrolovať spustené `postgres` procesy.
+
+```sh
+# OS Linux
+ps up $(pgrep post)
+
+# OS Linux odpoved
+#USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+#postgres    3155  0.0  0.3 217264 30380 ?        Ss   22:24   0:00 /usr/lib/postgresql/16/bin/postgres -D /var/lib/postgresql/16/main -c config_file=/etc/postgresql/16/main/postgresql.conf
+#postgres    3156  0.0  0.0 217264  6980 ?        Ss   22:24   0:00 postgres: 16/main: checkpointer
+#postgres    3157  0.0  0.0 217400  6980 ?        Ss   22:24   0:00 postgres: 16/main: background writer
+#postgres    3159  0.0  0.1 217264 11632 ?        Ss   22:24   0:00 postgres: 16/main: walwriter
+#postgres    3160  0.0  0.1 218852  8908 ?        Ss   22:24   0:00 postgres: 16/main: autovacuum launcher
+#postgres    3161  0.0  0.1 218828  9648 ?        Ss   22:24   0:00 postgres: 16/main: logical replication launcher
+
+
+# OS Windows
+Get-Process | Where {$_.ProcessName -Like "post*"}
+
+# OS Windows odpoved, zoznam procesov:
+# NPM(K)    PM(M)      WS(M)     CPU(s)      Id  SI ProcessName
+# ------    -----      -----     ------      --  -- -----------
+#     11     3,71      11,01       0,09    3192   1 postgres
+#     11     3,20      14,48       0,08    6064   1 postgres
+#     11     3,18      10,42       0,08    6480   1 postgres
+#     11     3,71      11,14       0,09    8032   1 postgres
+#     11     3,26      10,76       0,11   18068   1 postgres
+#     13     3,26      21,79       0,16   19648   1 postgres
+
+# alebo aj s celym prikazom, ktory spustil dany proces
+Get-Process | `
+Where {$_.ProcessName -Like "post*"} | `
+Select-Object -ExpandProperty Id | `
+% { Get-Process -Id $_ | `
+Select-Object Id,CommandLine}
+
+# OS Windows odpoved:
+#   Id CommandLine
+#   -- -----------
+# 3192 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe" "--forkbgworker=0" "5312"
+# 6064 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe" "--forkaux" "5344" "4"
+# 6480 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe" "--forkaux" "5380" "3"
+# 8032 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe" "--forkavlauncher" "5352"
+#18068 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe" "--forkaux" "5384" "1"
+#19648 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe"
+```
+
 ### Úvodné nastavenie
 
 Databázový server PostgreSQL je vyslovene odporúčané spúšťať pod špeciálne na to vytvoreným užívateľom.
@@ -257,7 +334,11 @@ sudo su - postgres
 psql
 ```
 
-Ak potrebujem klienta spustiť z iného stroja než na akom je spustený PostgreSQL server, musím nastaviť adresu kde je spustený server.
+Ak potrebujem klienta spustiť z iného stroja než na akom je spustený PostgreSQL server:
+
+- musím s prepínačom `-h` nastaviť adresu kde je spustený server
+- v konfiguračnom súbore (`/etc/postgresql/16/main/postgresql.conf`) musím nastaviť IP adresu na ktorej bude server prijímať spojenie (alebo `*` - bude prijímať spojenie na všetkých dostupných adresách)
+- v konfiguračnom súbore (`/etc/postgresql/16/main/pg_hba.conf`) musí byt nastavený spôsob overenia identity pre daný typ pripojenia
 
 ```sh
 psql -h 172.26.170.30 -U postgres
