@@ -14,6 +14,9 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [Crontab Generator](https://crontab-generator.org/)
 - [Slovníkový portál Jazykovedného ústavu Ľ. Štúra SAV](https://slovnik.juls.savba.sk/)
 - [Learn X in Y minutes](https://learnxinyminutes.com/)
+- [paste.debian.net](https://paste.debian.net/)
+- [carbon](https://carbon.now.sh/)
+- [YAML Lint](https://www.yamllint.com/)
 
 ## Blogy
 
