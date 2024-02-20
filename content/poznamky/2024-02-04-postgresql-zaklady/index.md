@@ -26,7 +26,7 @@ V rebríčku [DB-Engines Ranking](https://db-engines.com/en/ranking) je PostgreS
 
 PostgreSQL je implementovaný v jazyku C, široko dostupný na všetkých bežných operačných systémoch a funkcionalitu je možné ďalej rozširovať pomocou veľkého množstva doplnkov.
 
-### Základné pojmy
+## Základné pojmy
 
 - `postgres` – je PostgreSQL databázový server
 
@@ -50,9 +50,9 @@ PostgreSQL je implementovaný v jazyku C, široko dostupný na všetkých bežn�
 
 ---
 
-### Inštalácia a spustenie
+## Inštalácia a spustenie
 
-#### Linux
+### Linux
 
 Jednotlivé distribúcie obsahujú aj vo svojich vlastných repozitároch balíky pre inštaláciu PostgreSQL ale zvyčajne to sú staršie verzie dostupné v čase vydanie danej distribúcie. Ak potrebujem nainštalovať novšiu alebo iné verzie môžem pridať oficiálny repozitár PostgreSQL.
 
@@ -91,7 +91,7 @@ Môžem inštalovať aj inú ako najnovšiu verziu, číslo požadovanej verzie 
 V prostredí rodiny operačných systémov **Red Hat** najskôr nainštalujem repozitár a potom pri najbližšom aktualizovaní alebo vyhľadávaní balíkov, odsúhlasím pridanie podpisových kľúčov, pre každú verziu musím schváliť osobitný kľúč. Pri verziách RHEL 7 a 8 je ešte potrebné vypnúť modul z distribučných repozitárov. Potom môžem balíky inštalovať, názov zadávam v tvare `postgresql<cislo-pozadovanej-verzie>-server`.
 
 ```sh
-# Red Hat / Rocky Linux / Alma Linux
+# Red Hat / CentOS / Alma / Rocky
 sudo dnf install -y \
 https://download.postgresql.org/pub/repos/yum/reporpms/EL-9-x86_64/pgdg-redhat-repo-latest.noarch.rpm
 
@@ -128,7 +128,7 @@ sudo systemctl disable postgresql
 sudo systemctl enable postgresql
 ```
 
-#### Windows
+### Windows
 
 Keďže v prostredí operačného systému MS Windows pôjde skôr o testovacie / výukové nasadenie, tak ma nezaujíma plnohodnotná inštalácia (návodov je aj tak obrovské množstvo), ale PostgreSQL chcem nainštalovať pomocou balíkovacieho nástroja [Scoop](/poznamky/2024/01/scoop-spravca-balickov/).
 
@@ -183,7 +183,7 @@ pg_ctl reload
 pg_ctl --help
 ```
 
-#### Kontajner
+### Kontajner
 
 Na učenie a testovanie je ale zrejme najjednoduchšie a najrýchlejšie používať PostgreSQL ako kontajner.
 
@@ -226,7 +226,7 @@ docker compose up || docker compose down
 docker compose up || docker compose down --volumes
 ```
 
-### Kontrola stavu
+## Kontrola stavu
 
 Stav PostgreSQL servera môžem skontrolovať ako akúkoľvek inú systémovú službu `systemd`.
 
@@ -235,7 +235,7 @@ Stav PostgreSQL servera môžem skontrolovať ako akúkoľvek inú systémovú s
 # Debian / Ubuntu
 systemctl status postgresql
 
-# Red Hat / Alma / Rocky
+# Red Hat / CentOS / Alma / Rocky
 systemctl status postgresql-16
 
 # OS Linux odpoved
@@ -303,7 +303,9 @@ Select-Object Id,CommandLine}
 #19648 "C:/Users/zwier/scoop/apps/postgresql/current/bin/postgres.exe"
 ```
 
-### Úvodné nastavenie
+## Nastavenie DB servera
+
+### Užívateľ `postgres`
 
 Databázový server PostgreSQL je vyslovene odporúčané spúšťať pod špeciálne na to vytvoreným užívateľom.
 
@@ -315,7 +317,48 @@ Pri produkčných systémoch je ale vhodné nastaviť dostatočne silné heslo p
 passwd postgres
 ```
 
-### Pripojenie ku DB
+### Vytvorenie DB klastra
+
+Ako prvé po inštalácii je vhodné vytvoriť DB klaster (pri inštalácii z balíčkov alebo pri DB v kontajneri už je klaster zvyčajne vytvorený).
+
+```sh
+# vytvorenie klastra v OS Linux
+sudo mkdir -p /var/lib/postgresql/datanew/
+sudo chown postgres /var/lib/postgresql/datanew/
+sudo su - postgres
+initdb -D /var/lib/postgresql/datanew/
+
+# vytvorenie klastra v OS Windows / Linux
+pg_ctl -D /var/lib/postgresql/datanew/ initdb
+```
+
+### Spustenie DB servera
+
+Pri testovaní môžem PostgreSQL server spúšťať priamo z príkazového riadku. Pomocou prepínača `-D` nastavím cestu ku DB klastru.
+
+```sh
+postgres -D /var/lib/postgresql/data/ >logfile 2>&1
+```
+
+Na spúšťanie z príkazového riadku môžem ešte použiť aj nástroj [pg_ctl](https://www.postgresql.org/docs/current/app-pg-ctl.html).
+
+```sh
+pg_ctl start -D /var/lib/postgresql/data/ -l logfile
+```
+
+Pri reálnom nasadení je samozrejme vhodné spúšťať DB server ako službu.
+
+```sh
+# Debian / Ubuntu
+sudo systemctl enable postgresql
+sudo systemctl start postgresql
+
+# Red Hat / CentOS / Alma / Rocky
+sudo systemctl enable postgresql-16
+sudo systemctl start postgresql-16
+```
+
+## Pripojenie ku DB
 
 Ku spustenému PostgreSQL serveru sa môžem pripojiť pomocou klienta [psql](https://www.postgresql.org/docs/current/app-psql.html) - PostgreSQL interaktívny terminál. Mal by sa nainštalovať ako závislosť pri inštalovaní serveru. Môžem ho však v prípade potreby nainštalovať aj samostatne.
 
@@ -323,7 +366,7 @@ Ku spustenému PostgreSQL serveru sa môžem pripojiť pomocou klienta [psql](ht
 # OS Debian / Ubuntu
 sudo apt install postgresql-client
 
-# OS Red Hat / Alma / Rocky
+# OS Red Hat / CentOS / Alma / Rocky
 sudo dnf install postgresql16
 ```
 
@@ -336,9 +379,13 @@ psql
 
 Ak potrebujem klienta spustiť z iného stroja než na akom je spustený PostgreSQL server:
 
-- musím s prepínačom `-h` nastaviť adresu kde je spustený server
-- v konfiguračnom súbore (`/etc/postgresql/16/main/postgresql.conf`) musím nastaviť IP adresu na ktorej bude server prijímať spojenie (alebo `*` - bude prijímať spojenie na všetkých dostupných adresách)
-- v konfiguračnom súbore (`/etc/postgresql/16/main/pg_hba.conf`) musí byt nastavený spôsob overenia identity pre daný typ pripojenia
+- pri klientovi musím s prepínačom `-h` nastaviť adresu servera
+- v konfiguračnom súbore `postgresql.conf` musím nastaviť IP adresu na ktorej bude server prijímať spojenie (alebo `*` - bude prijímať spojenie na všetkých dostupných adresách)
+  - `/etc/postgresql/16/main/postgresql.conf` - nainštalované z repozitára
+  - `/var/lib/postgresql/data/postgresql.conf` - v kontajneri
+- v ďalšom konfiguračnom súbore na serveri, `pg_hba.conf` musí byť nastavený spôsob overenia identity pre daný typ pripojenia
+  - `/etc/postgresql/16/main/pg_hba.conf` - nainštalované z repozitára
+  - `/var/lib/postgresql/data/pg_hba.conf` - v kontajneri
 
 ```sh
 psql -h 172.26.170.30 -U postgres
