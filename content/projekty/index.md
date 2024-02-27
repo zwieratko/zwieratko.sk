@@ -18,13 +18,6 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [carbon](https://carbon.now.sh/)
 - [YAML Lint](https://www.yamllint.com/)
 
-## Blogy
-
-- [Julia Evans](https://jvns.ca/)
-- [Victoria Drake's Blog](https://victoria.dev/blog/)
-- [akos.ma](https://akos.ma/)
-- [Notes mac-blog.org.ua](https://mac-blog.org.ua/)
-
 ## Bash
 
 - [GNU Bash manual](https://www.gnu.org/software/bash/manual/)
@@ -63,6 +56,19 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 
 - [bashblog](https://github.com/cfenollosa/bashblog)
 - [kanban-python](https://github.com/Zaloog/kanban-python)
+
+## Rôzne
+
+- [DNS proxy](https://github.com/AdguardTeam/dnsproxy)
+- [Px - HTTP(s) proxy server](https://github.com/genotrance/px)
+- [A List of Static Site Generators](https://jamstack.org/generators/)
+
+## Blogy
+
+- [Julia Evans](https://jvns.ca/)
+- [Victoria Drake's Blog](https://victoria.dev/blog/)
+- [akos.ma](https://akos.ma/)
+- [Notes mac-blog.org.ua](https://mac-blog.org.ua/)
 
 ## Varenie
 
