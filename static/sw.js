@@ -142,6 +142,7 @@ let filesToCacheExtra = [
   '/recepty/2023/09/nepecena-rolada-s-gastanovym-pyre/',
   '/recepty/2023/11/drozdova-natierka/',
   '/recepty/2023/12/vinove-pecivo/',
+  '/recepty/2024/03/plnene-kurca/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
