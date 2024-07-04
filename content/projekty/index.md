@@ -100,6 +100,10 @@ A s veľkou pokorou pripájam ku týmto velikánom na koniec aj moje mikro prís
 
     ~~Tie isté dáta je možné zobraziť ešte aj na thingspeak kanáloch. Z Humenného je to [thingspeak.com/channels/373096](https://thingspeak.com/channels/373096) a z Motrogoňu je to [thingspeak.com/channels/391462](https://thingspeak.com/channels/391462)~~
 
-- [balkanovica.eu](https://test99.balkanovica.eu/) -- kus menšie dáta
+- [test99.balkanovica.eu](https://test99.balkanovica.eu/) -- kus menšie dáta
 
     Veľmi podobné, ale dáta sú čerpané z iného voľne dostupného [zdroja](https://open-meteo.com/).
+
+- [test77.balkanovica.eu](https://test77.balkanovica.eu/) -- zdieľanie kódu
+
+    Jednoduchý nástroj na zvýraznenie syntaxe s možnosťou zdieľať kód pomocou relatívne krátkej URL.
