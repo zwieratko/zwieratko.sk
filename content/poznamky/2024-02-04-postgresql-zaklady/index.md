@@ -388,6 +388,7 @@ Ak potrebujem klienta spustiť z iného stroja než na akom je spustený Postgre
   - `/var/lib/postgresql/data/pg_hba.conf` - v kontajneri
 
 ```sh
+# ak PostgreSQL bezi na stroji s IP 172.26.170.30
 psql -h 172.26.170.30 -U postgres
 ```
 
@@ -417,5 +418,5 @@ psql -h localhost -U postgres
 
 ## Zdroj
 
-- [PostgreSQL 16.1 Documentation](https://www.postgresql.org/docs/current/)
+- [PostgreSQL Documentation](https://www.postgresql.org/docs/current/)
 - [PostgreSQL Tutorial](https://www.postgresqltutorial.com/)
