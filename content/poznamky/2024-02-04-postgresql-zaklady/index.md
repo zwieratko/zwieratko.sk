@@ -1,7 +1,7 @@
 ---
 title: "PostgreSQL – základy"
 date: 2024-02-04T10:09:15+01:00
-draft: true
+draft: false
 description:
 type: posts
 tags:
