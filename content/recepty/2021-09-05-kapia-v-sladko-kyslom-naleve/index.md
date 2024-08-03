@@ -39,6 +39,7 @@ Nakladaná jednodruhová zelenina, neodmysliteľná surovina na prípravu oblož
 
 - z uvedeného množstva surovín je možné naložiť 6 ks 3-decových fľaštičiek
 - do jednej fľaštičky je možné nakrájať 2 kapie
+- rok 2024: 10ks paprík (1,5kg) a výsledok je 6ks 3-decových fľaštičiek plus dve 3-decové fľaštičky odrezkov, nálevu bolo akurát
 
 ---
 
