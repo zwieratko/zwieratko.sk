@@ -20,6 +20,8 @@ Nedopatrením som to heslo zabudol a to čo som mal poznamenané nefungovalo a j
 
 ## Riešenie
 
+Tento postup som použil konkrétne na Raspberry Pi 3 Model B Rev 1.2.
+
 Z rôznych nájdených / dostupných metód som zvolil metódu dočasného pridania ďalšieho parametru `init=/bin/sh` jadru pri najbližšom spúšťaní OS.
 
 Raspberry Pi OS používa na takéto odovzdanie parametrov jadru súbor `/boot/cmdline.txt`.

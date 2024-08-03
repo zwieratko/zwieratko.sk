@@ -29,6 +29,8 @@ Nesprávne alebo nepresne zadané príkazy, či príkazy zadané v nesprávnom p
 
 ## Riešenie
 
+Tento postup som použil konkrétne na Raspberry Pi 3 Model B Rev 1.2.
+
 ### Bežná aktualizáciu systému
 
 Pred samotnou aktualizáciou operačného systému na novšiu verziu vykonám tradičnú aktualizáciu všetkých nainštalovaných súčastí.
