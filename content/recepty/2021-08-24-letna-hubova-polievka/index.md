@@ -20,9 +20,10 @@ images:
 ## Suroviny
 
 - olej -- 2 pl
-- maslo -- 
+- maslo
 - cibuľa -- 1 ks
 - cesnak -- 3 strúčiky
+- soľ
 - drvená rasca -- 1 kl
 - mleté čierne korenie -- 1/3 kl
 - mrkva -- 1 ks
