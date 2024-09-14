@@ -39,6 +39,21 @@ This theme has 3 CSS classes made for figure elements:
 
 If a figure has no class set, the image will behave just like a normal markdown image: `![]()`.
 
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+
+> [!TIP]
+> Helpful advice for doing things better or more easily.
+
+> [!IMPORTANT]
+> Key information users need to know to achieve their goal.
+
+> [!WARNING]
+> Urgent info that needs immediate user attention to avoid problems.
+
+> [!CAUTION]
+> Advises about risks or negative outcomes of certain actions.
+
 Here's some examples, please be aware that these styles only take effect when the page width is over 1300px.
 
 {{< figure src="https://via.placeholder.com/1600x800" alt="image" caption="figure-normal (without any classes)" >}}
