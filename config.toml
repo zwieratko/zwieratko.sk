@@ -29,6 +29,9 @@ removePathAccents = true
     # noreferrerLinks = true
     # nofollowLinks = true
   [markup.goldmark]
+    [markup.goldmark.parser]
+      [markup.goldmark.parser.attribute]
+        block = true
     [markup.goldmark.renderer]
       unsafe = false # default value: false
   [markup.highlight]
