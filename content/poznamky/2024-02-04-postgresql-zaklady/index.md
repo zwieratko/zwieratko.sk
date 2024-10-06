@@ -2,7 +2,7 @@
 title: "PostgreSQL – základy"
 date: 2024-02-04T10:09:15+01:00
 draft: false
-description:
+description: Základy používania databázového systému PostgreSQL.
 type: posts
 tags:
   - PostgreSQL
