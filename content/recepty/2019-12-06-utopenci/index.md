@@ -8,6 +8,12 @@ toc: false
 tags:
   - Ku pivu
   - Bez pečenia
+featuredImg: utopenci-04.webp
+images:
+  - /recepty/2019/12/utopenci/utopenci-01.webp
+  - /recepty/2019/12/utopenci/utopenci-02.webp
+  - /recepty/2019/12/utopenci/utopenci-03.webp
+  - /recepty/2019/12/utopenci/utopenci-04.webp
 ---
 
 Absolútna klasika. Špekáčiky nakladané v kyslo-pikantnom náleve. Ku pivu najlepšia pochúťka.
@@ -36,3 +42,19 @@ Absolútna klasika. Špekáčiky nakladané v kyslo-pikantnom náleve. Ku pivu n
 5. Plné fľaše zalejeme čo najhorúcejším nálevom, opatrne ich uzavrieme.
 6. Necháme úplne vychladnúť, počkáme 24 hodín a potom uložíme do chladničky.
 7. Ak je to možné je potrebné utopencov nechať odležať aspoň 3 týždne. Toto je najťažšie. V chladničke potom vydržia aj niekoľko mesiacov.
+
+---
+
+![Utopenci 1](utopenci-01.webp "Utopenci 1 (autor: zwieratko, 2024)")
+
+---
+
+![Utopenci 2](utopenci-02.webp "Utopenci 2 (autor: zwieratko, 2024)")
+
+---
+
+![Utopenci 3](utopenci-03.webp "Utopenci 3 (autor: zwieratko, 2024)")
+
+---
+
+![Utopenci 4](utopenci-04.webp "Utopenci 4 (autor: zwieratko, 2024)")
