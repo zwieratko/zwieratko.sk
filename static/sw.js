@@ -60,6 +60,7 @@ let filesToCacheExtra = [
   '/poznamky/2024/02/postgresql-zaklady/',
   '/poznamky/2024/07/aktualizacia-systemu-raspbian-na-verziu-11-bullseye/',
   '/poznamky/2024/07/raspberry-pi-os-ako-zmenit-zabudnute-heslo/',
+  '/poznamky/2024/10/nastavenie-pristupovych-prav-k-suboru-vo-windows/',
   '/recepty/',
   '/recepty/2016/12/medvedie-labky/',
   '/recepty/2016/12/minonky/',
@@ -146,6 +147,8 @@ let filesToCacheExtra = [
   '/recepty/2023/11/drozdova-natierka/',
   '/recepty/2023/12/vinove-pecivo/',
   '/recepty/2024/03/plnene-kurca/',
+  '/recepty/2024/08/hubova-polievka-nakyslo/',
+  '/recepty/2024/08/razne-jablkove-muffiny/',
   '/projekty/',
   '/galeria/',
   '/kontakt/'
