@@ -17,6 +17,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [paste.debian.net](https://paste.debian.net/)
 - [carbon](https://carbon.now.sh/)
 - [YAML Lint](https://www.yamllint.com/)
+- [CoddyRef](https://ref.coddy.tech/)
 
 ## Bash
 
@@ -69,6 +70,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [Victoria Drake's Blog](https://victoria.dev/blog/)
 - [akos.ma](https://akos.ma/)
 - [Notes mac-blog.org.ua](https://mac-blog.org.ua/)
+- [Today I Learnt…](https://til.codeinthehole.com/)
 
 ## Varenie
 
