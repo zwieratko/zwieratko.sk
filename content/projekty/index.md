@@ -35,7 +35,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 
 ## POSIX shell
 
-- [Shell Command Language](https://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html)
+- [Shell Command Language](https://pubs.opengroup.org/onlinepubs/9799919799/utilities/V3_chap02.html)
 - [POSIX Shell and Utilities Quick Reference](https://shellhaters.org/)
 - [POSIX Shell Tutorial](https://www.grymoire.com/Unix/Sh.html)
 - [pure-sh-bible](https://github.com/dylanaraps/pure-sh-bible)
