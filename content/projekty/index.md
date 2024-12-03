@@ -18,6 +18,8 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [carbon](https://carbon.now.sh/)
 - [YAML Lint](https://www.yamllint.com/)
 - [CoddyRef](https://ref.coddy.tech/)
+- [NERD FONTS](https://www.nerdfonts.com/)
+- [150 Programming fonts](https://www.programmingfonts.org/)
 
 ## Bash
 
@@ -71,6 +73,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [akos.ma](https://akos.ma/)
 - [Notes mac-blog.org.ua](https://mac-blog.org.ua/)
 - [Today I Learnt…](https://til.codeinthehole.com/)
+- [Kenno’s Open Note 👋](https://blog.khmersite.net/)
 
 ## Varenie
 
