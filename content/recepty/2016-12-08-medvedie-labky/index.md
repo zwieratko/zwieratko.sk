@@ -64,6 +64,9 @@ vanilkový cukor | 1 | 1 | 2
   - 70 ks malých formičiek (doba pečenia 15 min.) / 2 plechy
   - 14 ks stredných formičiek (doba pečenia 17 min.) / 1 plech
   - 21 ks veľkých formičiek (doba pečenia 23 min.) / 1 nie celý plech
+- rok 2024: z uvedeného zväčšeného množstva (+50%) surovín vzniklo 1489 g cesta postačujúceho na naplnenie:
+  - 77 ks malých formičiek (doba pečenia 15 min.) / 2 plechy
+  - 28 ks veľkých formičiek (doba pečenia 23 min.) / 1 plech
 
 ---
 

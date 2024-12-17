@@ -53,6 +53,7 @@ Trvanlivé, chrumkavé sušienky z najzdravšej celozrnnej ražnej múky s pern�
 - rok 2022: z pôvodného, menšieho množstva vzniklo 68 ks perníčkov s vykrajovaným priemerom 4,5 cm, po upečení mali cca 5 cm a hrúbku 4-5 mm
 - rok 2022: z navýšeného množstva surovín vzniklo 1330 g cesta postačujúceho na výrobu 111 ks perníkov
 - rok 2023: z pôvodného, menšieho množstva vzniklo 642 g cesta postačujúceho na výrobu 70 ks perníčkov s vykrajovaným priemerom 4,5 cm
+- rok 2024: z pôvodného, menšieho množstva vzniklo 646 g cesta postačujúceho na výrobu 59 ks perníčkov s vykrajovaným priemerom 4,5 cm (2 plechy)
 
 surovina | pôvodné | navýšené
 :---|:---:|:---:

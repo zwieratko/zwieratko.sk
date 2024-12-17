@@ -47,6 +47,7 @@ Krehké vianočné pečivo s príjemnou vanilkovo-orieškovou chuťou.
 - rok 2021: z uvedeného množstva vzniklo cesto postačujúce na výrobu 152 ks vanilkových rožkov
 - rok 2022: z uvedeného množstva surovín vzniklo 1085 g cesta postačujúceho na výrobu 140 ks rožkov
 - rok 2023: z uvedeného množstva surovín vzniklo 1104 g cesta postačujúceho na výrobu 147 ks vanilkových rožtekov (3 plechy)
+- rok 2024: z uvedeného množstva surovín vzniklo 1092 g cesta postačujúceho na výrobu 200 ks vanilkových rožtekov (3 plechy)
 
 ---
 

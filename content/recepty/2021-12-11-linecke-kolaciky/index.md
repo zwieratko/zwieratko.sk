@@ -53,6 +53,7 @@ Typické krehké vianočné pečivo, z múky, tuku, cukru a vaječných žĺtkov
 - z uvedeného množstva surovín vzniklo cesto postačujúce na výrobu 62 ks koláčikov, z ktorých je možné vyrobiť 31 lineckých koláčikov (17ks okrúhlych a 14ks v tvare srdca)
 - rok 2022: z uvedeného navýšeného množstva surovín vzniklo 875 g cesta postačujúceho na výrobu 94 ks pečiva, z ktorých sme nalepili 25 ks okrúhlych a 22 ks koláčikov v tvare srdca
 - rok 2023: z uvedeného navýšeného množstva surovín vzniklo 850 g cesta postačujúceho na výrobu 114 ks pečiva (4 plechy), z ktorých je možné nalepiť 30 ks okrúhlych koláčikov a 16 ks koláčikov v tvare srdca
+- rok 2024: z uvedeného zväčšeného množstva surovín vzniklo 883 g cesta postačujúceho na výrobu 92 ks pečiva (3 plechy), z ktorých je možné nalepiť 15 ks okrúhlych koláčikov, 20 ks koláčikov v tvare srdca plus nejaké samotné sušienky
 
 ---
 
