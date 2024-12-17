@@ -8,6 +8,7 @@ tags:
   - Linux
   - Ubuntu
   - Debian
+  - Jadro
 categories:
   - Poznámky
 toc: true
