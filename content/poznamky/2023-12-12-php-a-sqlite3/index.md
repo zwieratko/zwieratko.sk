@@ -7,6 +7,7 @@ type: posts
 tags:
   - PHP
   - Sqlite3
+  - DB
 categories:
   - Poznámky
 toc: true

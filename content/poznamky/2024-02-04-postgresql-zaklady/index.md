@@ -8,6 +8,7 @@ tags:
   - PostgreSQL
   - Windows
   - Linux
+  - DB
   - Kontajnery
 categories:
   - Poznámky

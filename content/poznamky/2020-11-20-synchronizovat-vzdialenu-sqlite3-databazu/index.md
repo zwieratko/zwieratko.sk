@@ -5,8 +5,9 @@ draft: false
 description: Ako zabezpečiť bezpečnú synchronizáciu (replikáciu) databáz SQLite3 na lokálnych a vzdialených serveroch s čo najmenším objemom prenášaných dát.
 type: posts
 tags:
-  - Sqlite3
   - Linux
+  - Sqlite3
+  - DB
 categories:
   - Poznámky
 toc: true
