@@ -59,6 +59,13 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 
 - [bashblog](https://github.com/cfenollosa/bashblog)
 - [kanban-python](https://github.com/Zaloog/kanban-python)
+- [NeoMutt](https://neomutt.org/)
+
+## Súbory s bodkou
+
+- [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
+- [SeniorMars/dotfiles](https://github.com/SeniorMars/dotfiles)
+- [demure/dotfiles](https://github.com/demure/dotfiles)
 
 ## Rôzne
 
