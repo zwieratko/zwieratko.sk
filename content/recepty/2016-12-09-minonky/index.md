@@ -32,13 +32,12 @@ Miňonky alebo tiež šuhajdy či košíčky. Jednoduchý nepečený orechovo-č
 - vanilínový cukor -- 1 ks
 - maslo -- 170 g
 - tuzemský rum -- 5 pl
-- košíčky ( priemer 35 mm ) -- 60 ks
+- košíčky ( priemer 35 mm ) -- ~~60~~ 75 ks
 
 ### Čokoládová poleva
 
-- čokoláda na varenie -- 320 g
-- stužený tuk „Cera“ -- 140 g
-
+- čokoláda na varenie -- ~~320~~ 480 g
+- stužený tuk „Cera“ -- ~~140~~ 210 g
 
 ## Postup
 
@@ -51,6 +50,7 @@ Miňonky alebo tiež šuhajdy či košíčky. Jednoduchý nepečený orechovo-č
 ## Poznámky
 
 - rok 2022: z uvedeného množstva surovín sa podarilo vytvoriť 66 ks miňoniek
+- rok 2024: z uvedeného množstva surovín sa podarilo vytvoriť 75 ks miňoniek v košíčkoch so spodným priemerom 35 mm a výškou 20 mm
 
 ---
 

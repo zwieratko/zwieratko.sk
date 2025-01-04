@@ -70,7 +70,8 @@ tuzemský rum | 2 pl | 4 pl
 - z navýšeného množstva vznikla hmota, z ktorej bolo možné vytvoriť 28 ks úlikov
 - 180 g detských piškót je množstvo, ktoré ostane vo veľkom balení (240g) po odobratí 30 ks (na zatváranie úlikov)
 - rok 2022: z navýšeného množstva surovín sa podarilo vytvoriť 34 ks úlikov
- 
+- rok 2024: zo zvýšeného množstva surovín sa podarilo vytvoriť 38 ks úlikov
+
 ---
  
 ![Úliky](uliky-1200px.jpg "Úliky (autor: zwieratko, 2020)")

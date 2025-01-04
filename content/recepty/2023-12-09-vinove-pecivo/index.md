@@ -42,6 +42,7 @@ Základný a mimoriadne jednoduchý recept na vianočné pečivo s neutrálnou c
 
 - z uvedeného množstva surovín vzniklo 621 g cesta postačujúceho na výrobu 67 ks koláčikov (2 plechy)
 - zo zvyšného tuku (175 g), hladkej muky (210 g), 5 polievkových lyžíc bieleho vina a jednej kávovej lyžičky soli vzniklo 435 g cesta postačujúceho na výrobu 46 ks koláčikov (1 plech) v slanom prevedení
+- rok 2024: z uvedeného množstva surovín vzniklo 625 g cesta postačujúceho na výrobu 65 ks koláčikov (2 plechy)
 
 ---
 
