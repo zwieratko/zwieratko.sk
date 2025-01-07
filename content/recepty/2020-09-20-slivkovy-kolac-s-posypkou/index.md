@@ -68,7 +68,7 @@ hladká múka - g | 400 | 248
 cukor kryštálový - g | 50 | 31
 vajíčko - ks | 1 | 1
 acidofilné mlieko - ml | 60 | 37
-soľ
+soľ | &nbsp; | &nbsp;
 slivky vykôstkované - g | 670 | 415
 hrubá múka - g | 100 | 62
 cukor kryštálový - g | 100 | 62

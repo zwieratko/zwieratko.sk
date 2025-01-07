@@ -43,9 +43,9 @@ Lahodná a sýta polievka s hubami a smotanou plná rôznych chutí.
 1. Do rozohriateho oleja pridáme na drobno nakrájanú cibuľu, za občasného miešania pražíme. Zľahka posolíme a okoreníme.
 2. Po chvíľke pridáme cukor a poriadne premiešame, necháme ho úplne rozpustiť.
 3. Ďalej pridáme droždie, rukou ho rozmrvíme po celej ploche, premiešame a zľahka opražíme, intenzívne sa rozvonia.
-4. Pridáme dva na drobno rozkrájane strúčiky cesnaku, zamiešame a stále pražíme.
+4. Pridáme dva na drobno rozkrájané strúčiky cesnaku, zamiešame a stále pražíme.
 5. Najlepšie sú čerstvo nazbierané, no môžeme použiť akékoľvek dostupné, obľúbené huby. Pridáme ich nakrájané na tenké plátky a pokračujeme v pražení.
-6. Po zmäknutí húb (ako na hubovú praženicu) pridáme úplne na drobno nakrájané zemiačiky, na hrubo nastrúhanú mrkvu a jeden celý strúčik cesnaku. Do zmesi dáme soľ aj drvenú rascu a dôkladne premiešame.
+6. Po zmäknutí húb (ako na hubovú praženicu) pridáme úplne na drobno nakrájané zemiačky, na hrubo nastrúhanú mrkvu a jeden celý strúčik cesnaku. Do zmesi dáme soľ aj drvenú rascu a dôkladne premiešame.
 7. Prilejeme 1,5 l vriacej vody (ak máme, môže byť aj vývar), zamiešame, vhodíme bobkov list, celé čierne korenie a celé nové korenie, necháme variť aspoň 15 minút.
 8. Po uvarení zemiakov pridáme ocot a nalejeme rozšľahané vajíčko (ako do rascovej polievky), intenzívne premiešame.
 9. V smotane na varenie si dôkladne rozhabarkujeme múku aby tam neostali žiadne hrudky a za stáleho miešania to vlejeme do polievky, počkáme kým opäť zovrie a varíme ešte aspoň zo tri minútky.

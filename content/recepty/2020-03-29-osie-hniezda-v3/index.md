@@ -71,7 +71,7 @@ hrubá múka | 50 g | x | x
 cukor kryštálový | 50 g | 50 g | 75 g
 vajíčko | 1 ks | 1 ks | 1 ks
 olej | 100 ml | 100 ml | 100 ml
-soľ
+soľ | &nbsp; | &nbsp; | &nbsp;
 maslo | 50 g | 50 g | 75 g
 cukor práškový | 2 pl | 2 pl | 3 pl
 škorica | 2 kl | 2 kl | 3 kl

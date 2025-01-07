@@ -39,7 +39,7 @@ Lahodný domáci džem aj sladký, aj mierne kyselkavý, voňajúci po viničká
 
 ## Poznámky
 
-Pri najbližšej výrobe džemu musíme: 
+Pri najbližšej výrobe džemu musíme:
 
 - znížiť množstvo cukru na maximálne 30-40 % hmotnosti vylisovanej šťavy
 - kyselinu citrónovú nahradiť šťavou z citrónu alebo limetky

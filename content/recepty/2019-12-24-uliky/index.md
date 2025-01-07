@@ -73,5 +73,5 @@ tuzemský rum | 2 pl | 4 pl
 - rok 2024: zo zvýšeného množstva surovín sa podarilo vytvoriť 38 ks úlikov
 
 ---
- 
+
 ![Úliky](uliky-1200px.jpg "Úliky (autor: zwieratko, 2020)")
