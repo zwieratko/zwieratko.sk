@@ -2,7 +2,7 @@
 title: "Jahodový džem"
 date: 2021-06-12T22:15:43+02:00
 draft: false
-description: Poctivý jednodruhový džem z jahôd s jemným vanilkovým nádychom.
+description: Poctivý jedno-druhový džem z jahôd s jemným vanilkovým nádychom.
 type: posts
 tags:
   - Jahody
@@ -15,7 +15,7 @@ toc: false
 #  - /recepty/...
 ---
 
-Poctivý jednodruhový džem z jahôd s jemným vanilkovým nádychom.
+Poctivý jedno-druhový džem z jahôd s jemným vanilkovým nádychom.
 
 ## Suroviny
 

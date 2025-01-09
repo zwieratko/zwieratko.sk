@@ -45,11 +45,11 @@ Pri najbližšej výrobe džemu musíme:
 - kyselinu citrónovú nahradiť šťavou z citrónu alebo limetky
 
 Množstvo pektínu v rôznych plodoch:
-
+<!--cSpell:disable -->
 - [pickyourown.org](https://www.pickyourown.org/pectin_levels_in_fruit.php)
 - [thespruceeats.com](https://www.thespruceeats.com/high-and-low-pectin-fruit-1327800)
 - [fannyzanotti.com](https://fannyzanotti.com/sugar-acid-and-pectin-content-of-fruits/)
-
+<!--cSpell:enable-->
 ## Historické dáta
 
 surovina / várka | 2019a | 2019b | 2020

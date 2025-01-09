@@ -42,7 +42,7 @@ images:
 1. V hrnci rozohrejeme olej a maslo. Pridáme na drobno pokrájanú cibuľu a pražíme.
 2. Po chvíli pridáme na drobno pokrájaný cesnak, premiešame a stále pražíme.
 3. Prisypeme rascu a korenie, premiešame a ďalej krátko pražíme.
-4. Pridáme na drobno pokrájanú mrkvu a zamiešame, pridáme aj pokrájane huby a dôkladne premiešame, pražíme až kým sa huby kúsok nezmenšia.
+4. Pridáme na drobno pokrájanú mrkvu a zamiešame, pridáme aj pokrájané huby a dôkladne premiešame, pražíme až kým sa huby kúsok nezmenšia.
 5. Pridáme mletú papriku, premiešame a vložíme aj zvyšnú zeleninu: pokrájané zemiaky, petržlen a zeler. Prilejeme vodu, prihodíme bobkov list aj nové korenie a prikryté privedieme k varu.
 6. Pozvoľna varíme 25-30 minút v zakrytom hrnci.
 7. Na záver môžeme dochutiť v rukách rozdrveným sušeným majoránom.

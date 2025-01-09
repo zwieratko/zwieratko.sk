@@ -42,7 +42,7 @@ Nadýchaný pečený koláč s kakaovou polevou, obaľovaný v strúhanom kokose
 
 1. Do misy preosejeme hladkú múku, kypriaci prášok aj práškový cukor, premiešame.
 2. Pridáme všetky tekuté ingrediencie a dôkladne vymiešame. Vznikne hladké tekuté cesto.
-3. Na plech vystlatý papierom na pečenie vylejeme cesto a špachtličkou ho zarovnáme.
+3. Na plech vystlaný papierom na pečenie vylejeme cesto a špachtličkou ho zarovnáme.
 4. Pečieme v rúre predhriatej na 200 °C asi tak 15--20 minút. Kontrolujeme klasicky so špajľou.
 5. Po upečení necháme vychladnúť a rozkrojíme na približne rovnako veľké kúsky. Cesto by malo mať konzistenciu tuhšieho piškótového cesta.
 6. V kastróle rozpustíme maslo, pridáme mlieko a rum, premiešame.

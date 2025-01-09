@@ -39,11 +39,11 @@ cukor | 1/4 kl | 1 kl
 2. Do misy preosejeme múku, pridáme soľ, sódu a cukor, premiešame.
 3. K múke prilejeme zmes tekutých surovín a rukou vypracujeme lepivé cesto. Má držať pokope, byť vláčne, gumové a zároveň lepkavé.
 4. Cesto necháme chvíľu odpočívať. Medzi tým si pripravíme náplň:
-  - na drobno pokrájaná surová kyslá kapusta
-  - dochutený slaný tvaroh
-  - dochutená bryndza
-  - v šupke uvarené, rozpučené a dochutené zemiaky
-  - alebo ich kombinácie
+    - na drobno pokrájaná surová kyslá kapusta
+    - dochutený slaný tvaroh
+    - dochutená bryndza
+    - v šupke uvarené, rozpučené a dochutené zemiaky
+    - alebo ich kombinácie
 5. Odpočinuté cesto preložíme na pomúčenú dosku, rozvaľkáme ho na hrúbku približne pol centimetra.
 6. Nástrojom vykrajujeme kruhy, ktoré potom v opačnej časti nástroja plníme plnkou a zlepujeme.
 7. Zlepené pirohy vkladáme do rozpáleného oleja, vyprážame z oboch strán do zhnednutia.

@@ -46,7 +46,7 @@ Príjemne pikantné a hrejivé bezmäsité kari z dostupnej sezónnej zeleniny.
 1. Na panvici rozohrejeme olej, pridáme maslo a necháme ho rozpustiť a speniť.
 2. Pridáme pokrájanú cibuľu (žltú a červenú) a chvíľu pražíme, občas premiešame. Jemne posolíme a pokoreníme. Keď je už cibuľka sklovitá, pridáme pretlačený cesnak, premiešame a ešte chvíľu popražíme.
 3. Na malý tanierik si môžeme pripraviť všetky sypké koreniny. Ja som použil konkrétne kari zmes od Vitany a na miesto čerstvého nastrúhaného zázvoru sušený Kotányi. Všetky korenia prisypeme na opraženú cibuľu naraz a dôkladne premiešame. Korenie pražíme len chvíľu aby neprihorelo.
-4. Prilejeme vodu, pridáme soľ, nadrobno nakrájanú mrkvu, papriku, paradajky, bataty a pretlak, premiešame a prikryté dusíme 20 minút. 
+4. Prilejeme vodu, pridáme soľ, nadrobno nakrájanú mrkvu, papriku, paradajky, bataty a pretlak, premiešame a prikryté dusíme 20 minút.
 5. Pridáme na drobno pokrájanú cuketu, prilejeme smotanu na varenie, premiešame a podusíme ďalších 15-20 minút. Hotovo.
 
 ## Poznámky

@@ -50,12 +50,12 @@ Domáce, chrumkavé, sterilizované uhorky v slano-pikantnom náleve. Mamkin rec
 ## Postup
 
 1. Pár hodín vopred dôkladne umyjeme a necháme odkvapkať fľaše na zaváranie. Vrchnáky vyvaríme a tak isto necháme odkvapkať.
-1. Do hrnca postupne vložíme všetky suroviny na prípravu nálevu, privedieme k varu a prikryté povaríme na najmenšom plameni zo 5 minút.
-2. Zeleninu najskôr dôkladne umyjeme, poškodené časti odstránime. Mrkvu orežeme, cesnak aj cibuľu olúpeme. Všetku zeleninu okrem uhoriek aj rozkrájame na požadovanú veľkosť.
-3. Do zaváracích fliaš vkladáme uhorky čo možno najtesnejšie k sebe. Do každej fľaše priložíme aj približne rovnaké množstvo ostatnej zeleniny.
-4. Vriaci nálev postupne prilievame do jednotlivých fliaš až úplne po okraj. Poriadne zatvoríme vrchnákom.
-5. Fľaše vkladáme do čo možno najväčšieho hrnca s vriacou vodou a utierkou na dne. Väčšia časť fľaše by mala byť ponorená, no určite nie celá fľaša. Nesmú sa navzájom dotýkať. Sterilizujeme 5 minút, potom vyberieme a ukladáme bokom vychladnúť.
-5. Po 24 hodinách skontrolujeme vrchnáky, mali by byť vtiahnuté mierne smerom do vnútra fľaše. Odkladáme do komory, na tmavé miesto.
+2. Do hrnca postupne vložíme všetky suroviny na prípravu nálevu, privedieme k varu a prikryté povaríme na najmenšom plameni zo 5 minút.
+3. Zeleninu najskôr dôkladne umyjeme, poškodené časti odstránime. Mrkvu orežeme, cesnak aj cibuľu olúpeme. Všetku zeleninu okrem uhoriek aj rozkrájame na požadovanú veľkosť.
+4. Do zaváracích fliaš vkladáme uhorky čo možno najtesnejšie k sebe. Do každej fľaše priložíme aj približne rovnaké množstvo ostatnej zeleniny.
+5. Vriaci nálev postupne prilievame do jednotlivých fliaš až úplne po okraj. Poriadne zatvoríme vrchnákom.
+6. Fľaše vkladáme do čo možno najväčšieho hrnca s vriacou vodou a utierkou na dne. Väčšia časť fľaše by mala byť ponorená, no určite nie celá fľaša. Nesmú sa navzájom dotýkať. Sterilizujeme 5 minút, potom vyberieme a ukladáme bokom vychladnúť.
+7. Po 24 hodinách skontrolujeme vrchnáky, mali by byť vtiahnuté mierne smerom do vnútra fľaše. Odkladáme do komory, na tmavé miesto.
 
 ## Poznámky
 
@@ -89,7 +89,7 @@ cesnak - hlávka | 0,5 | 2
 kôpor - zväzok | - | 1
 paprika sladká - ks | 0,5 | 1
 paprika štipľavá - ks | 0,25 | 0,5
-feferón - ks | 2,5 | - |
+feferón - ks | 2,5 | -
 čili sladké - ks | - | 2
 
 ---

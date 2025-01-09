@@ -37,9 +37,9 @@ Nie len vianočná, sladká pochúťka pripravená z karamelizovaného cukru, ma
 6. Necháme pár hodín chladnúť, potom nožom rozkrájame na požadované kúsky.
 
 ---
-
+<!--cSpell:disable -->
 {{< youtube id="cWoMVN0dFJM" autoplay="false" >}}
-
+<!--cSpell:enable -->
 ---
 
 ![Griláž](grilaz-1200px.jpg "Griláž (autor: zwieratko, 2020)")

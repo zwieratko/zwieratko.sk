@@ -55,7 +55,7 @@ Klasický závin z kysnutého cesta plnený pomletým makom.
 5. Pripravíme si makovú plnku, v miske si zmiešame pomletý mak, cukor, vanilky a sušenú, mletú citrónovú aj pomarančovú kôru. Dôkladne premiešame.
 6. Na cesto rozotrieme rozpustené maslo a rovnomerne rozsypeme makovú zmes. Rozprašovačom ju zvlhčíme mliekom.
 7. Cesto zrolujeme. Ostrým nožom odkrajujeme kúsky dlhé približne 10 cm. Rovnaký postup zopakujeme aj s druhou polovicou cesta. Z tohto množstva surovín je možné vyrobiť približne 12 kusov malých makovníkov.
-8. Makovníky ukladáme na plech vystlatý papierom na pečenie. Povrch natierame rozšľahaným vajíčkom.
+8. Makovníky ukladáme na plech vystlaný papierom na pečenie. Povrch natierame rozšľahaným vajíčkom.
 9. Rúru predhrejeme na 200°C, vložíme plech a pečieme 18 až 20 minút.
 
 ---

@@ -24,7 +24,7 @@ Delikátne domáce chrumkavé rožky z kysnutého cesta.
 ## Suroviny
 
 - pivo -- 300 ml
-- krištálový cukor -- 1 kl
+- krištáľový cukor -- 1 kl
 - droždie -- 1 ks
 - maslo -- 50 g
 - múka hladká -- 520 g

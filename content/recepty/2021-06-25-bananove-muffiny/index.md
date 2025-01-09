@@ -43,11 +43,11 @@ Muffiny z celozrnnej ražnej múky s čokoládovo-banánovou príchuťou.
 
 1. V mise premiešame všetky suché suroviny, teda: múku, kypriaci prášok, sódu, preosiate kakao a citrónovú kôru.
 2. Oddelíme si vaječné bielka a so štipkou soli z nich vyšľaháme tuhý sneh.
-2. V inej mise spojíme zase postupne mokré suroviny. Najskôr si v nej vidličkou rozpučíme banány, pridáme vaječné žĺtky, kyslé mlieko, arašidové maslo aj vanilkové cukre a esenciu a dôkladne ich spolu premiešame.
-3. Do misy s vymiešanými mokrými surovinami prisypeme suché a miešame až pokým sa všetko poriadne neprepojí, vznikne kašovitá hmota. Do nej už len zľahka zapracujeme vaječný sneh.
-4. Do formy na pečenie muffinov poukladáme papierové košíčky a do nich naberačkou nakladáme približne rovnaké množstvo cesta, tak aby košíčky neboli úplne plné po okraj. Je možné použiť aj silikónové formičky na muffiny.
-5. Do jednotlivých košíčkov vložíme kúsky nalámanej čokolády.
-6. Pečieme v rúre predhriatej na 200 °C 30 minút.
+3. V inej mise spojíme zase postupne mokré suroviny. Najskôr si v nej vidličkou rozpučíme banány, pridáme vaječné žĺtky, kyslé mlieko, arašidové maslo aj vanilkové cukre a esenciu a dôkladne ich spolu premiešame.
+4. Do misy s vymiešanými mokrými surovinami prisypeme suché a miešame až pokým sa všetko poriadne neprepojí, vznikne kašovitá hmota. Do nej už len zľahka zapracujeme vaječný sneh.
+5. Do formy na pečenie muffinov poukladáme papierové košíčky a do nich naberačkou nakladáme približne rovnaké množstvo cesta, tak aby košíčky neboli úplne plné po okraj. Je možné použiť aj silikónové formičky na muffiny.
+6. Do jednotlivých košíčkov vložíme kúsky nalámanej čokolády.
+7. Pečieme v rúre predhriatej na 200 °C 30 minút.
 
 ## Poznámky
 
