@@ -126,6 +126,10 @@ removePathAccents = true
     url = "https://twitter.com/zwieratko/"
 
   [[params.social]]
+    name = "mastodon"
+    url = "https://hachyderm.io/@zwieratko/"
+
+  [[params.social]]
     name = "github"
     url = "https://github.com/zwieratko"
 
