@@ -13,13 +13,18 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [crontab guru](https://crontab.guru/)
 - [Crontab Generator](https://crontab-generator.org/)
 - [Slovníkový portál Jazykovedného ústavu Ľ. Štúra SAV](https://slovnik.juls.savba.sk/)
-- [Learn X in Y minutes](https://learnxinyminutes.com/)
 - [paste.debian.net](https://paste.debian.net/)
 - [carbon](https://carbon.now.sh/)
 - [YAML Lint](https://www.yamllint.com/)
-- [CoddyRef](https://ref.coddy.tech/)
 - [NERD FONTS](https://www.nerdfonts.com/)
 - [150 Programming fonts](https://www.programmingfonts.org/)
+
+## Referenčné príručky
+
+- [Learn X in Y minutes](https://learnxinyminutes.com/)
+- [CoddyRef](https://ref.coddy.tech/)
+- [Rico's cheatsheets](https://devhints.io/)
+- [Quick Reference](https://quickref.me/)
 
 ## Bash
 
@@ -60,12 +65,14 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [bashblog](https://github.com/cfenollosa/bashblog)
 - [kanban-python](https://github.com/Zaloog/kanban-python)
 - [NeoMutt](https://neomutt.org/)
+- [ncspot](https://github.com/hrkfdn/ncspot)
 
 ## Súbory s bodkou
 
 - [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
 - [SeniorMars/dotfiles](https://github.com/SeniorMars/dotfiles)
 - [demure/dotfiles](https://github.com/demure/dotfiles)
+- [jab2870/Dotfiles](https://git.jonathanh.co.uk/jab2870/Dotfiles)
 
 ## Rôzne
 
@@ -91,6 +98,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 
 - [Za komunistů jsme se měli lépe…?](https://www.zakomunistu.cz/)
 - [The 512KB Club](https://512kb.club/)
+- [Recenzie káv](https://blogokave.sk/recenzie-kav-blog-o-kave/)
 
 ---
 
