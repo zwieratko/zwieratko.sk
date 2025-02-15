@@ -15,7 +15,9 @@ Spojiť sa so mnou môžete cez internet:
 
 [WhatsApp](https://api.whatsapp.com/send?phone=421949246818)
 
-[WeChat QR kód](/kontakt/wechat-200px.jpg)
+Na [Signále](https://signal.org/install/) som tiež `zwieratko` 🖖
+
+~~[weChat QR kód](/kontakt/wechat-200px.jpg)~~
 
 ---
 
