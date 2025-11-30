@@ -16,10 +16,17 @@ jobs:
         ref: 'test2'
         submodules: 'true'
         fetch-depth: '0'
-    - name: Change the version of Service Worker
-      run: |
-        sed -i "s/const\sversion\s=\s.*;/const version = '$GITHUB_RUN_ID';/g" static/sw.js
-        head static/sw.js
+    # - name: Change the version of Service Worker
+    #   run: |
+    #     sed -i "s/const\sversion\s=\s.*;/const version = '$GITHUB_RUN_ID';/g" static/sw.js
+    #     head static/sw.js
+    - name: Setup Node.js (LTS)
+      uses: actions/setup-node@v4
+      with:
+        node-version: '24' # Node.js 24 LTS
+        cache: 'npm'
+    - name: Install NPM Dependencies (Workbox)
+      run: npm ci
     - name: Install Hugo
       env:
         HUGO_VERSION: 0.152.2
@@ -32,6 +39,8 @@ jobs:
         cd ..
     - name: Build the page with Hugo
       run: hugo --enableGitInfo --minify --buildDrafts --baseURL https://test2.zwieratko.sk/
+    - name: Generate Service Worker
+      run: npm run generate-sw
     - name: Record the build variables
       run: |
         {
@@ -49,10 +58,10 @@ jobs:
           echo "$GITHUB_RUN_NUMBER"
           echo "</p> :)"
         } > public/stav.html 2>&1
-    - name: Check and fix the version of bundle assets
-      run: |
-        sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
-        sed -i "s='/js/bundle.*,='/js/$(basename public/js/bundle*)',=g" public/sw.js
+    # - name: Check and fix the version of bundle assets
+    #   run: |
+    #     sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
+    #     sed -i "s='/js/bundle.*,='/js/$(basename public/js/bundle*)',=g" public/sw.js
     - name: Do brotli compression
       run: |
         brotli -V
