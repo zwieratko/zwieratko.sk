@@ -3,7 +3,7 @@ title: "Projekty"
 description: "Stručný prehľad o ďalších veľmi zaujímavých projektoch a stránkach."
 ---
 
-Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré mať po vždy ruke.
+Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré mať vždy po ruke.
 
 ## Pracovné pomôcky
 
