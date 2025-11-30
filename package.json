@@ -1,0 +1,25 @@
+{
+  "name": "zwieratko.sk",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-sw": "workbox generateSW workbox-config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zwieratko/zwieratko.sk.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/zwieratko/zwieratko.sk/issues"
+  },
+  "homepage": "https://github.com/zwieratko/zwieratko.sk#readme",
+  "devDependencies": {
+    "workbox-cli": "^7.4.0"
+  }
+}
