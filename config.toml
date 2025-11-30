@@ -97,7 +97,7 @@ removePathAccents = true
   code_copy_button = true # Turn on/off the code-copy-button for code-fields
 
   #disableKinds = ["RSS"]
-  
+
   # Add custom css
   # customCSS = ["css/foo.css", "css/bar.css"]
   #customCSS = ["css/syntax.css"]
