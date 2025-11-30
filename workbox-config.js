@@ -12,7 +12,8 @@ module.exports = {
   // Súbory, ktoré majú byť automaticky kešované pri inštalácii (Precaching)
   globPatterns: [
     "**/*.{html,css,js,json}",
-    "**/*.{png,jpg,jpeg,svg,webp}",
+    "**/*.{png,svg}",
+    //"**/*.{png,jpg,jpeg,svg,webp}",
     //"webfonts/**/*.{woff2,woff,ttf,eot}",
   ],
 
