@@ -29,7 +29,7 @@ jobs:
       run: npm ci
     - name: Install Hugo
       env:
-        HUGO_VERSION: 0.152.2
+        HUGO_VERSION: 0.155.3
       run: |
         mkdir -p download
         cd download
