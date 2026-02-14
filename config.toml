@@ -1,7 +1,7 @@
 baseURL = "https://zwieratko.sk/"
 languageCode = "sk-sk"
 defaultContentLanguage = "sk"
-title = "zwieratko"
+title = "Zwieratko"
 theme = "zwhermit"
 # enableGitInfo = true
 pygmentsCodefences  = true
@@ -29,6 +29,12 @@ removePathAccents = true
     # noreferrerLinks = true
     # nofollowLinks = true
   [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.extras]
+        [markup.goldmark.extensions.extras.subscript]
+          enable = false
+        [markup.goldmark.extensions.extras.superscript]
+          enable = true
     [markup.goldmark.parser]
       [markup.goldmark.parser.attribute]
         block = true
@@ -81,7 +87,7 @@ removePathAccents = true
   title = "Zwieratkov Blok"
   themeColor = "#494f5c"
 
-  #homeSubtitle = "osobná stránka"
+  homeSubtitle = "Osobná stránka, poznámkový blok."
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
   #bgImg = "pictures/cover/zwieratko-cover.jpg"  # Homepage background-image URL
   #imagesBg = ["pictures/cover/zwieratko-cover.jpg"]
@@ -103,7 +109,7 @@ removePathAccents = true
   #customCSS = ["css/syntax.css"]
 
   [params.author]
-    name = "zwieratko.sk"
+    name = "Rado van Zwieratko"
     email = "zwieratko@zwieratko.sk"
     short = "zw"
 
@@ -114,6 +120,10 @@ removePathAccents = true
     url = "mailto:zwieratko@zwieratko.sk"
 
   [[params.social]]
+    name = "mastodon"
+    url = "https://hachyderm.io/@zwieratko/"
+
+  [[params.social]]
     name = "facebook"
     url = "https://facebook.com/zwieratko/"
 
@@ -121,13 +131,9 @@ removePathAccents = true
     name = "instagram"
     url = "https://instagram.com/zwieratko/"
 
-  [[params.social]]
-    name = "twitter"
-    url = "https://twitter.com/zwieratko/"
-
-  [[params.social]]
-    name = "mastodon"
-    url = "https://hachyderm.io/@zwieratko/"
+  # [[params.social]]
+  #   name = "twitter"
+  #   url = "https://twitter.com/zwieratko/"
 
   [[params.social]]
     name = "github"
@@ -163,3 +169,8 @@ removePathAccents = true
     name = "Kontakt"
     url = "kontakt/"
     weight = 50
+
+  [[menu.main]]
+    name = "Micro.blog"
+    url = "https://micro.zwieratko.sk/"
+    weight = 60
