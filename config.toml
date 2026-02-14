@@ -91,6 +91,7 @@ removePathAccents = true
   footerCopyright = ' &#183; <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener">CC BY-SA 4.0</a>'
   #bgImg = "pictures/cover/zwieratko-cover.jpg"  # Homepage background-image URL
   #imagesBg = ["pictures/cover/zwieratko-cover.jpg"]
+  fediverse_creator = "@zwieratko@micro.zwieratko.sk"
 
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = "https://github.com/username/repository/commit/"
