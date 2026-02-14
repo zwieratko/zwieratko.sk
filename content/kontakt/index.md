@@ -3,21 +3,24 @@ title: "Kontakt"
 description: "Kontaktné informácie a možnosti podpory."
 ---
 
-Spojiť sa so mnou môžete cez internet:
+Môžete ma nájsť alebo sledovať na rôznych sociálnych platformách:
 
-[Správa na Twitter](https://twitter.com/zwieratko)
+- Micro.blog: [@zwieratko](https://micro.blog/zwieratko)
+- Bluesky: [@zwieratko.sk](https://bsky.app/profile/zwieratko.sk)
+- Mastodon: [@zwieratko](https://hachyderm.io/@zwieratko)
+- Nostr: [npub1r2ftvq7w7g0hzgels8p27j8m24nwyra03gvqwnaa4q4ymvg78fwsxu5c98](/kontakt/nostr.png "Nostr QR kód")
+- Facebook: [@zwieratko](https://www.facebook.com/zwieratko)
+- Instagram: [@zwieratko](https://www.instagram.com/zwieratko/)
+- YouTube: [@zwieratko](https://www.youtube.com/@zwieratko)
+- RSS: [zwieratko.sk/feed](https://zwieratko.sk/index.xml)
 
-[FB messenger](https://m.me/zwieratko)
+---
 
-{{< rawhtml >}}
-<a href="skype:zwieratko?chat">Skype</a>
-{{< /rawhtml >}}
+Písať mi môžete cez:
 
-[WhatsApp](https://api.whatsapp.com/send?phone=421949246818)
-
-Na [Signále](https://signal.org/install/) som tiež `zwieratko` 🖖
-
-~~[weChat QR kód](/kontakt/wechat-200px.jpg)~~
+- Email: zwieratko@zwieratko.sk
+- Signal: [@zwieratko.42](/kontakt/signal.png "Signal QR kód")
+- FB messenger: [@zwieratko](https://m.me/zwieratko)
 
 ---
 
@@ -30,8 +33,6 @@ Podporiť ma môžete cez [PayPal](https://paypal.me/zwieratko) alebo v kryptome
 **XRP**: `rDaYBQjstywLgPhpN5kfuJVL12XFYmVyvw` ([QR kód](/kontakt/XRP.png "Ripple QR kód"))
 
 **LTC**: `ltc1qewnuzeal99fdephr2f8sx4v88rc2d4c9shxfhu` ([QR kód](/kontakt/LTC.png "Litecoin QR kód"))
-
-**BNB**: `bnb1zmqhwzw3rzz7f7fvuy3tvdt072p89gtkmwdkcf` ([QR kód](/kontakt/BNB.png "Binance QR kód"))
 
 ---
 
