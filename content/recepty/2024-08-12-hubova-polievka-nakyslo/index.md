@@ -2,7 +2,7 @@
 title: "Hubová polievka nakyslo"
 date: 2024-08-12T21:36:50+02:00
 draft: false
-description:
+description: Poctivá a sýta polievka zo sušených húb, fazule a zemiakov, dochutená júškou presne tak, ako ju máme radi.
 type: posts
 tags:
   - Polievka
@@ -16,6 +16,8 @@ featuredImg: hubova-polievka-na-kyslo.webp
 images:
  - /recepty/2024-08-12-hubova-polievka-nakyslo/hubova-polievka-na-kyslo.webp
 ---
+
+Poctivá a sýta polievka zo sušených húb, fazule a zemiakov, dochutená júškou presne tak, ako ju máme radi.
 
 ## Suroviny
 

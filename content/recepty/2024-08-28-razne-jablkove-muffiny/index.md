@@ -2,7 +2,7 @@
 title: "Ražné jablkové muffiny"
 date: 2024-08-28T12:34:31+02:00
 draft: false
-description:
+description: Nadýchaný a zdravší dezert z celozrnnej ražnej múky a kefíru, v ktorom dominujú nastrúhané jablká a vôňa citrusovej kôry.
 type: posts
 tags:
   - Muffiny
@@ -18,6 +18,8 @@ images:
  - /recepty/2024-08-28-razne-jablkove-muffiny/razne-jablkove-muffiny-03.webp
  - /recepty/2024-08-28-razne-jablkove-muffiny/razne-jablkove-muffiny-03.webp
 ---
+
+Nadýchaný a zdravší dezert z celozrnnej ražnej múky a kefíru, v ktorom dominujú nastrúhané jablká a vôňa citrusovej kôry.
 
 ## Suroviny
 

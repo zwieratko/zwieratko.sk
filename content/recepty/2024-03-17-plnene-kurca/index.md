@@ -2,7 +2,7 @@
 title: "Plnené kurča"
 date: 2024-03-17T12:04:46+01:00
 draft: false
-description:
+description: Tradičné pečené kurča s bohatou domácou plnkou z rožkov, pečienok a byliniek, zjemnenou snehom z bielkov.
 type: posts
 tags:
   - Kurča
@@ -13,6 +13,8 @@ featuredImg: plnene-kurca.webp
 images:
   - /recepty/2024/03/plnene-kurca/plnene-kurca.webp
 ---
+
+Tradičné pečené kurča s bohatou domácou plnkou z rožkov, pečienok a byliniek, zjemnenou snehom z bielkov.
 
 ## Suroviny
 
