@@ -189,4 +189,12 @@ Header always set Cache-Control "max-age=300"
     AddEncoding br .br
 </Files>
 
+# For Nostr domain validation
+<Files "nostr.json">
+    Header set Cross-Origin-Resource-Policy "cross-origin"
+    Header set Access-Control-Allow-Origin "*"
+    Header set Content-Type "application/json"
+    # Header unset Content-Security-Policy
+</Files>
+
 </IfModule>
