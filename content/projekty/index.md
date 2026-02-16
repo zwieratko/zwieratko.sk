@@ -67,6 +67,16 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [NeoMutt](https://neomutt.org/)
 - [ncspot](https://github.com/hrkfdn/ncspot)
 
+## MacOS aplikácie
+
+- [Launchie](https://github.com/nick-friedrich/launchie-launchpad-replacement-mac-os)
+- [radiola](https://github.com/SokoloffA/radiola)
+- [KeepingYouAwake](https://github.com/newmarcel/KeepingYouAwake)
+- [Keka](https://github.com/aonez/Keka)
+- [stats](https://github.com/exelban/stats)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
+- [vcmi](https://github.com/vcmi/vcmi)
+
 ## Súbory s bodkou
 
 - [webpro/awesome-dotfiles](https://github.com/webpro/awesome-dotfiles)
@@ -85,7 +95,6 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [Julia Evans](https://jvns.ca/)
 - [Victoria Drake's Blog](https://victoria.dev/blog/)
 - [akos.ma](https://akos.ma/)
-- [Notes mac-blog.org.ua](https://mac-blog.org.ua/)
 - [Today I Learnt…](https://til.codeinthehole.com/)
 - [Kenno’s Open Note 👋](https://blog.khmersite.net/)
 
