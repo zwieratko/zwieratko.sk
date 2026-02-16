@@ -191,9 +191,11 @@ Header always set Cache-Control "max-age=300"
 
 # For Nostr domain validation
 <Files "nostr.json">
-    Header set Cross-Origin-Resource-Policy "cross-origin"
-    Header set Access-Control-Allow-Origin "*"
-    Header set Content-Type "application/json"
+    Header unset Cross-Origin-Resource-Policy
+    Header always set Cross-Origin-Resource-Policy "cross-origin"
+    Header unset Access-Control-Allow-Origin
+    Header always set Access-Control-Allow-Origin "*"
+    Header always set Content-Type "application/json"
     # Header unset Content-Security-Policy
 </Files>
 
