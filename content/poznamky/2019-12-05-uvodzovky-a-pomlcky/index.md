@@ -12,15 +12,17 @@ tags:
 
 Stručne o pravidlách a spôsobe písania úvodzoviek, pomlčiek, spojovníkov a iných interpunkčných znakov.
 
+Pri každom znaku je `Alt` kombinácia pre slovenské MS Windows a v zátvorkách je uvedený spôsob, ako ho napísať na slovenskej klávesnici v macOS. Ak som to našiel 😉.
+
 ## Úvodzovky
 
-`„` -- **Alt+0132** (dolné, na začiatku, „deviatky“)  
-`“` -- **Alt+0147** (horné, na konci, „šestky“)
+`„` -- dolné, na začiatku, „deviatky“, **Alt+0132**, (`Option` + `Shift` + `N`)  
+`“` -- horné, na konci, „šestky“, **Alt+0147**, (`Option` + `Shift` + `H`)
 
 - obe úvodzovky horné, to nie je správne v slovenčine
 - medzi úvodzovkami a písmenom či iným interpunkčným znamienkom nie je medzera
 - ak je to celá veta, bodka je vo vnútri úvodzoviek
-- podrobne viď: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=60), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.7. Úvodzovky
+- pozri: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=60), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.7. Úvodzovky
 
 ## Pomlčka verzus spojovník
 
@@ -30,16 +32,16 @@ Stručne o pravidlách a spôsobe písania úvodzoviek, pomlčiek, spojovníkov 
 - spája slová atď.
 - spojovník je užší (nevidno pri proporcionálnom fonte) než pomlčka
 - Česko-Slovensko, päťsto-ročný, krížom-krážom
-- podrobne viď: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=62), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.9. Spojovník
+- pozri: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=62), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.9. Spojovník
 
-`–` -- pomlčka, **Alt+0150**  
-`—` -- dlhá pomlčka **Alt+0151**
+`–` -- pomlčka, **Alt+0150**, (`Option` + `-`)  
+`—` -- dlhá pomlčka **Alt+0151**, (`Option` + `Shift` + `-`)
 
 - s medzerami
 - rozpätie atď.
 - pomlčky sú širšie (dva druhy -- en, --- em) než spojovník
 - Humenné -- Amsterdam, Pondelok -- Piatok, Mladosť --- pochabosť
-- podrobne viď: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=61), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.8. Pomlčka
+- pozri: [Pravidlá slovenského pravopisu](https://www.juls.savba.sk/ediela/psp2000/psp.pdf#page=61), časť VIII. Interpunkcia, 2. kapitola -- Interpunkčné znamienka, 2.8. Pomlčka
 
 A aby toho nebolo málo, existuje ešte aj špeciálny znak pre mínus, odčítanie. Znak mínus je širší než užšia pomlčka, ale užší ako širšia pomlčka. Zároveň je mierne vyššie ako spojovník aj pomlčka. Dá sa napísať ako `&minus;`
 
@@ -47,16 +49,16 @@ A aby toho nebolo málo, existuje ešte aj špeciálny znak pre mínus, odčíta
 
 ## Stredná bodka
 
-`·` -- **Alt+0183** alebo `&middot;`
+`·` -- **Alt+0183** alebo `&middot;`, (?)
 
 - použitie je mnohoraké &middot;)
 - rozoberajú to na [stackexchange.com](https://tex.stackexchange.com/questions/19180/which-dot-character-to-use-in-which-context)
 
 ## Tri bodky
 
-`…` -- **Alt+0133** alebo `&hellip;`
+`…` -- **Alt+0133** alebo `&hellip;`, (`Option` + `Shift` + `ô`)
 
-- nedokončené vety atď.
+- nedokončené vety atď.,
 
 ---
 
