@@ -3,6 +3,18 @@ title: "Kontakt"
 description: "Kontaktné informácie a možnosti podpory."
 ---
 
+Takto to cítim a vnímam.
+
+> „Per aspera ad astra“  — Latinské príslovie
+
+> „Democracy dies in darkness“ — The Washington Post
+
+> „Liberté, égalité, fraternité“ — Francúzska republika
+
+> „Pravda a láska musia zvítězit nad lží a nenávistí“ — Václav Havel
+
+---
+
 Môžete ma nájsť alebo sledovať na rôznych sociálnych platformách:
 
 - Micro.blog: [@zwieratko](https://micro.blog/zwieratko)
