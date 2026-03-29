@@ -1,76 +1,53 @@
 // workbox-config.js
 
 module.exports = {
-  // --- Povinné nastavenia Workbox GenerateSW ---
-
-  // Odkiaľ brať vygenerované súbory (výstup z Hugo)
   globDirectory: "public/",
-
-  // Kam uložiť finálny Service Worker (bude sa registrovať v HTML)
   swDest: "public/sw.js",
-
-  // Súbory, ktoré majú byť automaticky kešované pri inštalácii (Precaching)
+  // Only precache the essentials (App Shell)
   globPatterns: [
-    "**/*.{html,css,js,json,webmanifest}",
+    "index.html",
+    "**/*.{css,js,json,webmanifest}",
     "**/*.{png,svg}",
     //"**/*.{png,jpg,jpeg,svg,webp}",
     //"webfonts/**/*.{woff2,woff,ttf,eot}",
   ],
-
-  // --- Nastavenia Service Workera ---
-
-  // Zabezpečí, že Service Worker prevezme kontrolu hneď po inštalácii
   skipWaiting: true,
   clientsClaim: true,
 
-  // Maximálna veľkosť súboru na kešovanie (napr. 5MB)
   maximumFileSizeToCacheInBytes: 5 * 1024 * 1024,
 
-  // --- Kešovacie stratégie (Runtime Caching) ---
-
   runtimeCaching: [
-    // Stratégia NetworkFirst pre hlavné HTML dokumenty (zabezpečí vždy najnovší obsah)
     {
-      urlPattern: ({ request }) => request.mode === "navigate", // Zameriava sa na navigáciu (HTML)
-      handler: "NetworkFirst",
+      // All other HTML pages (NetworkFirst with faster timeout)
+      urlPattern: ({ request }) => request.mode === 'navigate',
+      handler: 'NetworkFirst',
       options: {
-        cacheName: "html-pages-cache",
-        networkTimeoutSeconds: 3,
+        cacheName: 'pages-cache',
+        networkTimeoutSeconds: 5, // Slightly more for 3G
       },
     },
     {
-      // Cachovanie CSS a JS
-      urlPattern: /\.(?:js|css)$/,
-      handler: "StaleWhileRevalidate",
+      // Images - CacheFirst (they rarely change)
+      urlPattern: /\.(?:png|jpg|jpeg|svg|webp|avif)$/,
+      handler: 'CacheFirst',
       options: {
-        cacheName: "static-resources",
-      },
-    },
-    // Stratégia StaleWhileRevalidate pre dynamicky načítané obrázky (rýchle, s aktualizáciou na pozadí)
-    {
-      urlPattern: /.*\.(?:png|jpg|jpeg|svg|webp|gif)/,
-      handler: "StaleWhileRevalidate",
-      options: {
-        cacheName: "runtime-images-cache",
-        expiration: {
-          maxEntries: 50,
-          maxAgeSeconds: 30 * 24 * 60 * 60, // 30 dní
-        },
+        cacheName: 'images-cache',
+        expiration: { maxEntries: 50, maxAgeSeconds: 30 * 24 * 60 * 60 },
       },
     },
     {
-      // Cachovanie fontov
+      // Fonts ??
       urlPattern: /\.(?:woff|woff2|ttf|eot)$/,
       handler: 'CacheFirst',
       options: {
-        cacheName: 'fonts',
+        cacheName: 'fonts-cache',
         expiration: {
           maxEntries: 20,
-          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 rok
+          maxAgeSeconds: 365 * 24 * 60 * 60, // 1 year
         },
       },
     },
-    // Prípadná iná stratégia pre externé dáta/API
+    // ?? API
     // {
     //   urlPattern: /https:\/\/api\.external-service\.com\/.*/,
     //   handler: 'CacheFirst',
