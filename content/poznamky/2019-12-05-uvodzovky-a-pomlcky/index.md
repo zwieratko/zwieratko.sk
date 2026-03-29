@@ -68,3 +68,4 @@ A aby toho nebolo málo, existuje ešte aj špeciálny znak pre mínus, odčíta
 - [tvorim.net](https://tvorim.net/typografia)
 - [publications.europa.eu](https://publications.europa.eu/code/sk/sk-4100000.htm)
 - [sk.wikipedia.org](https://sk.wikipedia.org/wiki/Pomoc:Typografia)
+- [ASCII and Unicode quotation marks](https://www.cl.cam.ac.uk/~mgk25/ucs/quotes.html)
