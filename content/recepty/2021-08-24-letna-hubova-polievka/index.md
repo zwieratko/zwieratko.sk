@@ -37,6 +37,12 @@ images:
 - celé nové korenie -- 5 ks
 - sušená majoránka -- 1 kl
 
+## Upozornenie ⚠️
+
+Akékoľvek voľne rastúce huby zbierajte vždy len vtedy, ak ste si ich identifikáciou stopercentne istí. 
+
+Všetky druhy húb si vyžadujú poctivú a dostatočne dlhú tepelnú úpravu (minimálne 15 – 20 minút), aby boli bezpečné na konzumáciu.
+
 ## Postup
 
 1. V hrnci rozohrejeme olej a maslo. Pridáme na drobno pokrájanú cibuľu a pražíme.

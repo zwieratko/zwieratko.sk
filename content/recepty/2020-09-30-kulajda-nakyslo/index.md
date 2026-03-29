@@ -38,6 +38,12 @@ Lahodná a sýta polievka s hubami a smotanou plná rôznych chutí.
 - majoránka -- 1 kl
 - čerstvá petržlenová vňať
 
+## Upozornenie ⚠️
+
+Akékoľvek voľne rastúce huby zbierajte vždy len vtedy, ak ste si ich identifikáciou stopercentne istí. 
+
+Všetky druhy húb si vyžadujú poctivú a dostatočne dlhú tepelnú úpravu (minimálne 15 – 20 minút), aby boli bezpečné na konzumáciu.
+
 ## Postup
 
 1. Do rozohriateho oleja pridáme na drobno nakrájanú cibuľu, za občasného miešania pražíme. Zľahka posolíme a okoreníme.

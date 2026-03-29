@@ -23,12 +23,18 @@ images:
 - cibuľa -- 1 ks
 - cesnak -- 3 strúčiky
 - soľ
-- mleté čierna korenie
+- mleté čierne korenie
 - mrkva -- 1 ks
 - huby -- 3 až 5 ks
 - ryža -- 200 g
 - hrášok -- 130 g
 - parmezán -- 50 g
+
+## Upozornenie ⚠️
+
+Dubáky, resp. akékoľvek voľne rastúce huby zbierajte vždy len vtedy, ak ste si ich identifikáciou stopercentne istí. 
+
+Všetky druhy húb si vyžadujú poctivú a dostatočne dlhú tepelnú úpravu (minimálne 15 – 20 minút), aby boli bezpečné na konzumáciu.
 
 ## Postup
 
