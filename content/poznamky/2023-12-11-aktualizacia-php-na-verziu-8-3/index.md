@@ -25,7 +25,7 @@ Novšie verzie PHP prinášajú zlepšenia a zvyčajne aj opravy a zrýchlenie, 
 
 ## Riešenie
 
-Najskôr si nainštalujem potrebné pomocné programy, ďalej podpisový kľúč k repozitáru, potom pridám [Ondrejov](https://deb.sury.org/) repozitár medzi zdroje a nakoniec zdroje aktualizujem. Ak som už mal nainštalovanú nejakú verziu PHP, s veľkou pravdepodobnosťou budú dostupných veľa aktualizácií.
+Najskôr si nainštalujem potrebné pomocné programy, ďalej podpisový kľúč k repozitáru, potom pridám [Ondrejov](https://deb.sury.org/) repozitár medzi zdroje a nakoniec zdroje aktualizujem. Ak som už mal nainštalovanú nejakú verziu PHP, s veľkou pravdepodobnosťou bude k dispozícii množstvo aktualizácií.
 
 ```sh
 sudo apt install apt-transport-https lsb-release curl
