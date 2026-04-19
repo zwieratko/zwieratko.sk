@@ -3,6 +3,8 @@ on:
   push:
     branches:
     - main
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
 
 jobs:
   deploy_job:
@@ -70,11 +72,15 @@ jobs:
     - name: SSH setup
       env:
         DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }} #private SSH key
-        KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }} #output of ssh-keyscan -p PORT -H some.domain.com some_IP
+        # KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }} #output of ssh-keyscan -p PORT -H some.domain.com some_IP
+        DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
+        DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
       run: |
         mkdir -p ~/.ssh
-        echo "${KNOWN_HOSTS}" >> ~/.ssh/known_hosts
+        # echo "${KNOWN_HOSTS}" >> ~/.ssh/known_hosts
+        ssh-keyscan -p $DEPLOY_PORT -H "$DEPLOY_HOST" >> ~/.ssh/known_hosts
         echo "${DEPLOY_KEY}" > ~/.ssh/my_rsync_key
+        chmod 600 ~/.ssh/my_rsync_key
         {
           echo "HostKeyAlgorithms ssh-ed25519-cert-v01@openssh.com,ssh-ed25519"
           echo "KexAlgorithms curve25519-sha256,curve25519-sha256@libssh.org"
