@@ -1,5 +1,5 @@
 baseURL = "https://zwieratko.sk/"
-languageCode = "sk-sk"
+locale = "sk-sk"
 defaultContentLanguage = "sk"
 title = "Zwieratko"
 theme = "zwhermit"
