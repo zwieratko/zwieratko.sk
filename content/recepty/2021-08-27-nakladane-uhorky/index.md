@@ -67,30 +67,36 @@ Domáce, chrumkavé, sterilizované uhorky v slano-pikantnom náleve. Mamkin rec
   - 1 uhorka má približne 7 cm a váži 22,3 g
   - v priemere vychádza 0,37 l nálevu na zaváraciu fľašu
   - sušené čili nahradené 2 malými čili papričkami (silne pálivé, do nálevu)
+- sezóna 2025/2026:
+  - z 5 kg uhoriek bolo možné pripraviť 15 ks zaváracích fliaš
+  - z toho 9 ks 720 ml a 6 ks 900 ml
+  - nálev zo surovín v treťom stĺpci (5 kg) vyšiel úplne presne
+  - jeden malý zlepšovák, z nálevu môžem po zovretí vybrať malým sitkom väčšie časti, ktoré chcem presne rozdeliť do zaváracích fliaš, ako napríklad: bobkov list alebo guľôčky čierneho či nového korenia
+  - do nálevu pridané sušené čili aj štipľavá paprika
 
-surovina | na 100 ks | na 10 kg
-:---:|:---:|:---:
-voda - l | 1 | 6,75
-ocot - l | 0,5 | 3,4
-soľ - g | 50 | 337
-krištáľový cukor - pl | 2 | 13
-čierne korenie celé - ks | 20 | 135
-nové korenie celé - ks | 10 | 67
-bobkov list - ks | 4 | 27
-klinček - ks | 10 | 35
-horčičné semienko - kl/g | 3 | 60
-zázvor sušený prášok - kl | 1 | 7
-čili sušené mleté - kl/ks | 1 | 2
-uhorka nakladačka - ks/kg | 100 | 10
-mrkva - ks | 1 | 5
-chren - ks | - | 0,5
-cibuľa - ks | - | 2
-cesnak - hlávka | 0,5 | 2
-kôpor - zväzok | - | 1
-paprika sladká - ks | 0,5 | 1
-paprika štipľavá - ks | 0,25 | 0,5
-feferón - ks | 2,5 | -
-čili sladké - ks | - | 2
+surovina | na 100 ks | na 10 kg | na 5 kg
+:---:|:---:|:---: | :---:
+voda - l | 1 | 6,75 | 3,5
+ocot - l | 0,5 | 3,4 | 1,7
+soľ - g | 50 | 337 | 170
+krištáľový cukor - pl | 2 | 13 | 6
+čierne korenie celé - ks | 20 | 135 | 67
+nové korenie celé - ks | 10 | 67 | 33
+bobkov list - ks | 4 | 27 | 15
+klinček - ks | 10 | 35 | 17
+horčičné semienko - g | 3 kl | 60 | 30
+zázvor sušený prášok - kl | 1 | 7 | 3
+čili sušené (mleté) - kl | 1 | 2 | 1
+uhorka nakladačka - ks/kg | 100 | 10 | 5
+mrkva - ks | 1 | 5 | 2
+chren - ks | - | 0,5 | 1
+cibuľa - ks | - | 2 | 2
+cesnak - hlávka | 0,5 | 2 | 1
+kôpor - zväzok | - | 1 | 1
+paprika sladká - ks | 0,5 | 1 | 1
+paprika štipľavá - ks | 0,25 | 0,5 | 0,5
+feferón - ks | 2,5 | - | -
+čili sladké - ks | - | 2 | -
 
 ---
 
