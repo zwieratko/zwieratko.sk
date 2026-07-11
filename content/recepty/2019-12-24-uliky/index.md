@@ -71,6 +71,7 @@ tuzemský rum | 2 pl | 4 pl
 - 180 g detských piškót je množstvo, ktoré ostane vo veľkom balení (240g) po odobratí 30 ks (na zatváranie úlikov)
 - rok 2022: z navýšeného množstva surovín sa podarilo vytvoriť 34 ks úlikov
 - rok 2024: zo zvýšeného množstva surovín sa podarilo vytvoriť 38 ks úlikov
+- rok 2025: 41 ks
 
 ---
 

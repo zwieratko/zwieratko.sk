@@ -51,6 +51,7 @@ Miňonky alebo tiež šuhajdy či košíčky. Jednoduchý nepečený orechovo-č
 
 - rok 2022: z uvedeného množstva surovín sa podarilo vytvoriť 66 ks miňoniek
 - rok 2024: z uvedeného množstva surovín sa podarilo vytvoriť 75 ks miňoniek v košíčkoch so spodným priemerom 35 mm a výškou 20 mm
+- rok 2025: 65 ks
 
 ---
 

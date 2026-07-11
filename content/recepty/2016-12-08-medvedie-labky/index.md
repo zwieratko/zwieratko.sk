@@ -67,6 +67,9 @@ vanilkový cukor | 1 | 1 | 2
 - rok 2024: z uvedeného zväčšeného množstva (+50%) surovín vzniklo 1489 g cesta postačujúceho na naplnenie:
   - 77 ks malých formičiek (doba pečenia 15 min.) / 2 plechy
   - 28 ks veľkých formičiek (doba pečenia 23 min.) / 1 plech
+- rok 2025: 1508 g cesta
+  - 90 ks malých formičiek / 3 plechy
+  - 24 ks veľkých formičiek / 1 plech
 
 ---
 
