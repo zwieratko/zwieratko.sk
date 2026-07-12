@@ -49,11 +49,11 @@ vanilkový cukor | 1 | 1 | 2
 
 1. Nadrobno pomelieme vlašské orechy.
 2. Do väčšej misy si preosejeme hladkú múku (00 alebo akúkoľvek hladkú vhodnú na krehké pečivo) a práškový cukor, pridáme pomleté orechy a zľahka premiešame. Podľa chuti pridáme vanilkový alebo vanilínový cukor.
-3. Do suchej zmesi jemne zapracujeme zmäknutú Heru a rozšľahané vajíčko. Rukou miesime aby sa všetko prepojilo. Na noc odložíme do chladničky.
+3. Do suchej zmesi jemne zapracujeme zmäknutú Heru a rozšľahané vajíčko. Rukou miesime, aby sa všetko prepojilo. Na noc odložíme do chladničky.
 4. Pripravíme si kovové formičky, vnútro jemne pomúčime a vyplníme kúskom pripravenej hmoty, ukladáme na plech. Formičky sa snažíme naplniť približne rovnakým množstvom hmoty.
-5. Predhrejeme si rúru na 180-200 °C (elektrická, ohrev vrch - spodok) a pečieme 15-20 minút plech s malými formičkami a 20-25 minút s veľkými. Medvedie labky musia ostať svetlé, len pri okrajoch mierne tmavšie.
-6. Do väčšej misy si preosejeme práškový cukor a pridáme vanilku ( vanilkový aj vanilínový cukor ). Po upečení vyklopíme obsah formičky do misy s cukrom a jemne obalíme. Ukladáme na taniere a necháme vychladnúť.
-7. Po vychladnutí ukladáme do nádob ktoré je možné uzavrieť, medvedie labky takto vydržia aj týždne. Odstáte sú najlepšie.
+5. Predhrejeme si rúru na 180–200 °C (elektrická, ohrev vrch – spodok) a pečieme 15–20 minút plech s malými formičkami a 20–25 minút s veľkými. Medvedie labky musia ostať svetlé, len pri okrajoch mierne tmavšie.
+6. Do väčšej misy si preosejeme práškový cukor a pridáme vanilku (vanilkový aj vanilínový cukor). Po upečení vyklopíme obsah formičky do misy s cukrom a jemne obalíme. Ukladáme na taniere a necháme vychladnúť.
+7. Po vychladnutí ukladáme do nádob, ktoré je možné uzavrieť. Medvedie labky takto vydržia aj týždne. Odstáte sú najlepšie.
 
 ## Poznámky
 
