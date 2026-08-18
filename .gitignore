@@ -53,3 +53,7 @@ public/
 server.sh
 .vscode/
 server.ps1
+
+# Hugo asset pipeline cache (SCSS/JS) - cheap to rebuild, varies by Hugo version
+# NOTE: resources/_gen/images/ is intentionally NOT ignored (pre-generated, kept in repo)
+resources/_gen/assets/
