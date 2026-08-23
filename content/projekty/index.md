@@ -55,6 +55,15 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [Python Tutorial](https://www.w3schools.com/python/default.asp)
 - [Python Basics](https://www.pythontutorial.net/python-basics/)
 
+## OpenBSD
+
+- [OpenBSD Frequently Asked Questions](https://www.openbsd.org/faq/index.html)
+- [OpenBSD Handbook](https://www.openbsdhandbook.com/)
+- [OpenBSD Journal](https://undeadly.org/cgi?action=front)
+- [Running OpenBSD 7.9 is really hard (not)](https://www.k58.uk/openbsd.html)
+- [echothrust/howtos](https://echothrust.github.io/howtos/)
+- [mizik.eu/tags/openbsd](https://mizik.eu/tags/openbsd/)
+
 ## Cvičenia
 
 - [Exercism](https://exercism.org/dashboard)
@@ -97,6 +106,19 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [akos.ma](https://akos.ma/)
 - [Today I Learnt…](https://til.codeinthehole.com/)
 - [Kenno’s Open Note 👋](https://blog.khmersite.net/)
+- [Data Engineering Blog & Second Brain](https://www.ssp.sh/)
+- [alexwlchan](https://alexwlchan.net/)
+- [Steve Krouse](https://stevekrouse.com/)
+- [Oatmeal - A digital pillow fort](https://eli.li/)
+- [sean goedecke](https://www.seangoedecke.com/)
+
+## SK/CZ
+
+- [Sprievodca dedinčana svetom IT](https://www.slavino.sk/)
+- [Honza Javorek](https://honzajavorek.cz/)
+- Zoznamy nezávislých CZ/SK webov:
+  - [ring.lab8.cz](https://ring.lab8.cz/)
+  - [Planeta OpenAlt](https://planeta.openalt.org/)
 
 ## Varenie
 
