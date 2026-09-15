@@ -234,9 +234,10 @@ Potom odstránim samotnú VM.
 ```sh
 gcloud compute instances delete test-vm-01 \
   --zone=europe-west4-a \
-  --project=zw-gcp-test-01 \
-  --quiet
+  --project=zw-gcp-test-01
 ```
+
+Ak som si odstraňovanou VM úplne istý, môžem použiť prepínač `--quiet`, `-q` a tak vypnúť interatívne potvrdenie. VM sa jednoducho zmaže pbez ďalšieho potvrdenia!
 
 Ďalej odstránim NAT bránu.
 
