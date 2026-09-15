@@ -415,7 +415,7 @@ Tieto vytvorené prostriedky sú už ale spoplatnené, presnejšie Cloud NAT. A 
 
 ### Vytvorenie VM s OpenBSD
 
-A konečne 🎉 môžem pristúpiť ku vytvorenie dočasnej VM v Google Cloude s OS OpenBSD.
+A konečne 🎉 môžem pristúpiť ku vytvoreniu dočasnej VM v Google Cloude s OS OpenBSD.
 
 Pri výbere typu VM sa zameriam na Intel, bo pri detekcii AMD EPYC sa jadro v C funkcii `cpu_fix_msrs` pokúša zapísať bezpečnostnú opravu pre špekulatívne vykonávanie instrukcií a v GCP virtualizácii to kvôli prísnej izolácii vyvolá protection fault trap a pád do debuggeru.
 
