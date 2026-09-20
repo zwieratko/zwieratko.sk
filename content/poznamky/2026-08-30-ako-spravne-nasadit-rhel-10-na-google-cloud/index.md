@@ -16,6 +16,7 @@ toc: true
 ## Cieľ
 
 Chcem v prostredí Google Cloudu vytvoriť dočasnú VM inštanciu:
+
 - VM bez verejnej IP
 - s oficiálnym a čo najaktuálnejším vydaním RHEL 10
 - OS na LVM disku
@@ -61,7 +62,7 @@ Najskôr si môžeme overiť autorizáciu - teda pod akým účtom budeme zadáv
 gcloud auth list
 ```
 
-Odpoveď by mal byť zoznam autorizovaných Google účtov - emailov, a jeden z nich aktívny, označený hviečkou. A teda všetky následujúce príkazy budeme zadávať ako užívateľ prihlásený s touto emailovou adresou. 
+Odpoveď by mal byť zoznam autorizovaných Google účtov - emailov, a jeden z nich aktívny, označený hviečkou. A teda všetky následujúce príkazy budeme zadávať ako užívateľ prihlásený s touto emailovou adresou.
 
 ---
 
@@ -172,6 +173,7 @@ gcloud compute instances create test-vm-01 \
 ```
 
 Vytváram VM:
+
 - v konkrétnom projekte `zw-gcp-test-01`
 - v jednej z 3 dostupných zón regiónu `europe-west-4` (Holandsko)
 - s veľkosťou VM `e2-medium` (2vCPU / 4GB RAM)
