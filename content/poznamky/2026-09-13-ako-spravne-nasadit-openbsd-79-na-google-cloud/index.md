@@ -2,7 +2,7 @@
 title: "Ako správne nasadiť OpenBSD 7.9 na Google Cloude"
 date: 2026-09-13T07:16:45+02:00
 draft: false
-description:
+description: "Ako v cloudovom prostredí GCP vytvoriť VM bez verejnej IP s aktuálnym oficiálnym OS OpenBSD a s prístupom na internet."
 type: posts
 tags:
   - GCP
