@@ -16,7 +16,7 @@ jobs:
 
     steps:
     - name: Checkout main branch with submodules
-      uses: actions/checkout@v4
+      uses: actions/checkout@v7
       with:
         ref: 'test3'
         submodules: 'true'
@@ -27,7 +27,7 @@ jobs:
     #     head static/sw.js
 
     - name: Setup Node.js (LTS)
-      uses: actions/setup-node@v4
+      uses: actions/setup-node@v7
       with:
         node-version: '24' # Node.js 24 LTS
         cache: 'npm'
