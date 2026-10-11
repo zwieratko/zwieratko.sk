@@ -14,6 +14,10 @@ jobs:
   deploy_job:
     name: Deploy Job
     runs-on: ubuntu-26.04
+    env:
+      BASE_URL: ${{ github.ref_name == 'main' && 'https://zwieratko.sk' || format('https://{0}.zwieratko.sk', github.ref_name) }}
+      REMOTE_PATH: ${{ github.ref_name == 'main' && '~/zwieratko.sk/web/' || format('~/zwieratko.sk/sub/{0}/', github.ref_name) }}
+      HUGO_ARGS: ${{ github.ref_name == 'main' && '--enableGitInfo --minify' || format('--enableGitInfo --minify --buildDrafts --baseURL https://{0}.zwieratko.sk/', github.ref_name) }}
 
     steps:
     - name: Checkout repository with submodules
@@ -36,18 +40,6 @@ jobs:
       with:
         hugo-version: '0.167.0'
         extended: true
-
-    - name: Configure environment for branch
-      run: |
-        if [ "${{ github.ref_name }}" = "main" ]; then
-          echo "HUGO_ARGS=--enableGitInfo --minify" >> "$GITHUB_ENV"
-          echo "REMOTE_PATH=~/zwieratko.sk/web/" >> "$GITHUB_ENV"
-          echo "BASE_URL=https://zwieratko.sk" >> "$GITHUB_ENV"
-        else
-          echo "HUGO_ARGS=--enableGitInfo --minify --buildDrafts --baseURL https://${{ github.ref_name }}.zwieratko.sk/" >> "$GITHUB_ENV"
-          echo "REMOTE_PATH=~/zwieratko.sk/sub/${{ github.ref_name }}/" >> "$GITHUB_ENV"
-          echo "BASE_URL=https://${{ github.ref_name }}.zwieratko.sk" >> "$GITHUB_ENV"
-        fi
 
     - name: Build the page with Hugo
       run: hugo $HUGO_ARGS
