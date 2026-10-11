@@ -13,7 +13,7 @@ permissions:
 jobs:
   deploy_job:
     name: Deploy Job
-    runs-on: ubuntu-26.04
+    runs-on: ubuntu-latest
     env:
       BASE_URL: ${{ github.ref_name == 'main' && 'https://zwieratko.sk' || format('https://{0}.zwieratko.sk', github.ref_name) }}
       REMOTE_PATH: ${{ github.ref_name == 'main' && '~/zwieratko.sk/web/' || format('~/zwieratko.sk/sub/{0}/', github.ref_name) }}
@@ -55,7 +55,7 @@ jobs:
           echo -e "</p>\n<p>"
           hugo version
           echo -e "</p>\n<p>"
-          echo ":)"
+          echo "$GITHUB_REF_NAME"
           echo -e "</p>\n<p>"
           echo "$GITHUB_SHA"
           echo -e "</p>\n<p>"
