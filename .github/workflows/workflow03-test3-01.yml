@@ -76,7 +76,6 @@ jobs:
           --root-dir public
           --index-files index.html
           --remap "https://test3.zwieratko.sk file://${{ github.workspace }}/public"
-          --exclude "https://test3.zwieratko.sk/posts"
           public
         fail: true
 
