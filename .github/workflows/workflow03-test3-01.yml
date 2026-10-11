@@ -75,10 +75,9 @@ jobs:
           --no-progress
           --root-dir public
           --index-files index.html
-          --remap "https://test3.zwieratko.sk/(.*) file://${{ github.workspace }}/public/$1"
           --remap "https://test3.zwieratko.sk file://${{ github.workspace }}/public"
           --exclude "https://test3.zwieratko.sk/posts"
-          public/**/*.html
+          public
         fail: true
 
     - name: Do brotli compression
