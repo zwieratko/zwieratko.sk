@@ -5,6 +5,9 @@ AddDefaultCharset utf-8
 #------------------------------
 ServerSignature Off
 
+# Custom 404 error page
+ErrorDocument 404 /404.html
+
 <IfModule mod_access.c>
 # Set timezone for your server. A list of supported timezone can be found at
 # http://www.php.net/manual/en/timezones.php
