@@ -1,7 +1,10 @@
-name: Deploy web test3
+name: Deploy web
+
 on:
   push:
     branches:
+    - main
+    - test2
     - test3
 
 permissions:
@@ -13,17 +16,16 @@ jobs:
     runs-on: ubuntu-26.04
 
     steps:
-    - name: Checkout main branch with submodules
+    - name: Checkout repository with submodules
       uses: actions/checkout@v7
       with:
-        ref: 'test3'
         submodules: 'true'
         fetch-depth: '0'
 
     - name: Setup Node.js (LTS)
       uses: actions/setup-node@v7
       with:
-        node-version: '24' # Node.js 24 LTS
+        node-version: '24'
         cache: 'npm'
 
     - name: Install NPM Dependencies (Workbox)
@@ -35,8 +37,20 @@ jobs:
         hugo-version: '0.167.0'
         extended: true
 
+    - name: Configure environment for branch
+      run: |
+        if [ "${{ github.ref_name }}" = "main" ]; then
+          echo "HUGO_ARGS=--enableGitInfo --minify" >> "$GITHUB_ENV"
+          echo "REMOTE_PATH=~/zwieratko.sk/web/" >> "$GITHUB_ENV"
+          echo "BASE_URL=https://zwieratko.sk" >> "$GITHUB_ENV"
+        else
+          echo "HUGO_ARGS=--enableGitInfo --minify --buildDrafts --baseURL https://${{ github.ref_name }}.zwieratko.sk/" >> "$GITHUB_ENV"
+          echo "REMOTE_PATH=~/zwieratko.sk/sub/${{ github.ref_name }}/" >> "$GITHUB_ENV"
+          echo "BASE_URL=https://${{ github.ref_name }}.zwieratko.sk" >> "$GITHUB_ENV"
+        fi
+
     - name: Build the page with Hugo
-      run: hugo --enableGitInfo --minify --buildDrafts --baseURL https://test3.zwieratko.sk/
+      run: hugo $HUGO_ARGS
 
     - name: Generate Service Worker
       run: npm run generate-sw
@@ -67,7 +81,7 @@ jobs:
           --no-progress
           --root-dir public
           --index-files index.html
-          --remap "https://test3.zwieratko.sk file://${{ github.workspace }}/public"
+          --remap "${{ env.BASE_URL }} file://${{ github.workspace }}/public"
           public
         fail: true
 
@@ -98,6 +112,5 @@ jobs:
         DEPLOY_HOST: ${{ secrets.DEPLOY_HOST }}
         DEPLOY_PORT: ${{ secrets.DEPLOY_PORT }}
         LOCAL_PATH: 'public/'
-        REMOTE_PATH: '~/zwieratko.sk/sub/test3/'
       run: |
         rsync -azhv --stats --delete -e "ssh -T -x -p ${DEPLOY_PORT}" "${LOCAL_PATH}" "${DEPLOY_USER}@${DEPLOY_HOST}:${REMOTE_PATH}"
