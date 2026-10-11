@@ -10,7 +10,7 @@ permissions:
 jobs:
   deploy_job:
     name: Deploy Job
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-26.04
 
     steps:
     - name: Checkout main branch with submodules
@@ -19,10 +19,6 @@ jobs:
         ref: 'test3'
         submodules: 'true'
         fetch-depth: '0'
-    # - name: Change the version of Service Worker
-    #   run: |
-    #     sed -i "s/const\sversion\s=\s.*;/const version = '$GITHUB_RUN_ID';/g" static/sw.js
-    #     head static/sw.js
 
     - name: Setup Node.js (LTS)
       uses: actions/setup-node@v7
@@ -62,10 +58,6 @@ jobs:
           echo "$GITHUB_RUN_NUMBER"
           echo "</p> :)"
         } > public/stav.html 2>&1
-    # - name: Check and fix the version of bundle assets
-    #   run: |
-    #     sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
-    #     sed -i "s='/js/bundle.*,='/js/$(basename public/js/bundle*)',=g" public/sw.js
 
     - name: Check internal links with Lychee
       uses: lycheeverse/lychee-action@v2
