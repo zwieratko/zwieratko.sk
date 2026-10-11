@@ -67,6 +67,20 @@ jobs:
     #     sed -i "s='/css/style.*,='/css/$(basename public/css/style*)',=g" public/sw.js
     #     sed -i "s='/js/bundle.*,='/js/$(basename public/js/bundle*)',=g" public/sw.js
 
+    - name: Check internal links with Lychee
+      uses: lycheeverse/lychee-action@v2
+      with:
+        args: >-
+          --offline
+          --no-progress
+          --root-dir public
+          --index-files index.html
+          --remap "https://test3.zwieratko.sk/(.*) file://${{ github.workspace }}/public/$1"
+          --remap "https://test3.zwieratko.sk file://${{ github.workspace }}/public"
+          --exclude "https://test3.zwieratko.sk/posts"
+          public/**/*.html
+        fail: true
+
     - name: Do brotli compression
       run: |
         brotli -V
