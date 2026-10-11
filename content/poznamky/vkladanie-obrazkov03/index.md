@@ -158,7 +158,7 @@ Zápis v jazyku Markdown: | Výsledok:
   <picture width="960" height="960">
       <source srcset="img/makovy-zavin-960px.avif" type="image/avif" />
       <source srcset="img/makovy-zavin-960px.webp" type="image/webp" />
-      <source src="makovy-zavin-960px.jpg" type="image/jpeg" />
+      <source srcset="img/makovy-zavin-960px.jpg" type="image/jpeg" />
       <img src="https://picsum.photos/960" alt="Makový závin" loading="lazy" />
   </picture>
 {{< /rawhtml >}}

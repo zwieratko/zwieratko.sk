@@ -92,11 +92,11 @@ pomocou Markdown značky (`![]()`)
 
 ---
 
-![Obrázok IMG_1385.JPG](../galeria/IMG_1385.JPG)
+![Vanilkové rožky](vanilkove-rozky.jpg "Vanilkové rožky")
 
 ---
 
-![PHP test graf](/pictures/portrait.jpg)
+![Kancelária](office.jpg "Kancelária")
 
 ---
 
