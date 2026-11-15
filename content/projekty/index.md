@@ -85,6 +85,7 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [stats](https://github.com/exelban/stats)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [vcmi](https://github.com/vcmi/vcmi)
+- [Sloth](https://github.com/sveinbjornt/sloth)
 
 ## Súbory s bodkou
 
@@ -106,11 +107,15 @@ Rôzne iné veľmi zaujímavé projekty, stránky či návody, ktoré je dobré 
 - [akos.ma](https://akos.ma/)
 - [Today I Learnt…](https://til.codeinthehole.com/)
 - [Kenno’s Open Note 👋](https://blog.khmersite.net/)
+- [Vladimir Campos](https://vladcampos.com/en/)
 - [Data Engineering Blog & Second Brain](https://www.ssp.sh/)
 - [alexwlchan](https://alexwlchan.net/)
 - [Steve Krouse](https://stevekrouse.com/)
 - [Oatmeal - A digital pillow fort](https://eli.li/)
 - [sean goedecke](https://www.seangoedecke.com/)
+- [Alex Haydock](https://blog.infected.systems/)
+- [Christian Emmer](https://emmer.dev/)
+- [Gyptazy Manual](https://gyptazy.com/)
 
 ## SK/CZ
 
