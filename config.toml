@@ -96,7 +96,7 @@ removePathAccents = true
   # Prefix of link to the git commit detail page. GitInfo must be enabled.
   # gitUrl = "https://github.com/username/repository/commit/"
 
-  # Toggling this option needs to rebuild SCSS, requires Hugo extended version
+  # Toggling this option rebuilds CSS via Hugo asset pipeline
   justifyContent = false  # Set "text-align: justify" to `.content`.
 
   relatedPosts = true  # Add a related content section to all single posts page
