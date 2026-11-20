@@ -22,7 +22,7 @@ Chcem správne nainštalovať a bezpečne používať Podman v prostredí opera�
 
 ## Riešenie
 
-Samotná inštalácia je v podstate vďaka kvalitnému balíčkovaciemu systému `apt` veľmi jednoduchá, no má svoje špecifiká 😉. Mierne rozsiahlejšie je 
+Samotná inštalácia je v podstate vďaka kvalitnému balíčkovaciemu systému `apt` veľmi jednoduchá, no má svoje špecifiká 😉. Mierne rozsiahlejšie je až samotné nastavenie prevádzkového prostredia, od izolácie kontajnerov pod samostatným neprivilegovaným účtom, cez konfiguráciu siete a cgroups, až po čistú správu služieb pomocou natívnych `systemd` Quadletov.
 
 ### Inštalácia balíkov
 
